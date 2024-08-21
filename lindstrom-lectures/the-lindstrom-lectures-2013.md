@@ -3,6 +3,9 @@ layout: lindstrom-lectures
 title: The Lindström Lectures 2013
 speaker: Wilfrid Hodges
 year: 2013
+
+image: lindstrom-lectures/poster-2013.gif
+image_caption: The 2013 Lindström Lectures, delivered by Wilfrid Hodges
 ---
 
 The [Lindström Lectures series]({% link lindstrom-lectures/index.md %}) was inaugurated 2013 with lectures by Wilfrid Hodges, Emeritus Professor of Mathematics, Queen Mary, University of London and Fellow of the British Academy. He is best known for his influential and wide-ranging work in mathematical logic, as expounded in his exquisitely crafted papers and books, including a definitive 780-page graduate text on model theory. His recent research work has focused on general semantics, cognitive aspects of logic, and history of logic, especially Arabic logic.
