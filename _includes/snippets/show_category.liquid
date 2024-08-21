@@ -1,0 +1,20 @@
+<!-- Generate display name from category names -->
+ <!-- 
+    input:
+        category = category alias
+    output: 
+        category_name
+    -->
+{%- assign x_cat = include.category -%}
+{%- assign cat_page = site.data.categories[x_cat].page | default: nil -%}
+{%- assign cat_name = site.data.categories[x_cat].name | default: x_cat -%}
+{%- assign active = include.active | default: false -%}
+{%- if include.debug -%}active: {{ active }}; url: {{ cat_page | relative_url }}; name: {{ cat_name }}{%- endif -%}
+<i class="fa-solid fa-tag fa-sm"> </i> 
+{% if active and cat_page -%}
+    <a href="{{  cat_page | relative_url }}">
+{%- endif -%}
+{{ cat_name }}
+{%- if active and cat_page -%}
+</a>
+{%- endif -%}

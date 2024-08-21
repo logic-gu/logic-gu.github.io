@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Archive of events from {{ page.date | date:"%Y"}}</h1>
+    <p class="post-description">An archive of events from the year</p>
+  </header>
+
+  <article>
+    <div class="clearfix">
+      {% if site.debug %}content for this page{% endif %}
+    </div>
+    {% include events/display-tags.liquid 
+      categories = site.display_categories
+      %}
+
+    {% include events/display-years.liquid %}
+    
+    {% include events/list-events.html events=page.posts %}
+  </article>
+
+</div>

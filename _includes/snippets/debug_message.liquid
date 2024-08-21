@@ -1,0 +1,6 @@
+{%- if site.debug or page.debug -%}
+    <blockquote class="block-warning">
+        <code>{% if site.debug %}site.debug = true {% else %}page.debug = true ({{ page.path }}){% endif %}</code>
+        Last compiled: {{ site.time | date_to_rfc822 }}
+    </blockquote>
+{%- endif -%}

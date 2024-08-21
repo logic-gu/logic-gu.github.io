@@ -1,0 +1,10 @@
+profiles:
+  professor: "Professor"
+  s-lecturer: "Senior Lecturer"
+  ass-lecturer: "Associate Senior Lecturer"
+  lecturer: "Lecturer"
+  postdoc: "Postdoctoral Researcher"
+  phd: "PhD student"
+  visiter: "Visiting Researcher"
+  affiliate: "Affiliate member"
+

@@ -1,0 +1,68 @@
+---
+layout: page
+---
+
+<!-- about.html -->
+<div class="post">
+
+<article>
+  {{ content }}
+  
+  {% if page.profiles -%}
+    {% assign position-names = site.data.aliases.profiles %}
+    {% for position in page.profile-order %}
+      {% assign profiles = site.profiles | where:"position",position | sort: "sort_by" %}
+      {% for profile in profiles %}
+      {% unless profile.hide %}
+        <hr>
+        <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+          {%- if profile.image -%}
+            {%- assign profile-image = profile.image -%}
+          {%- else -%}
+            {%- assign profile-image = "blank.jpg" -%}
+          {%- endif -%}
+          {%- assign profile_image_path = profile-image | prepend: site.people_img_dir -%}
+
+          {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+
+          {% include figure.html
+            path = profile_image_path
+            class = profile_image_class
+            sizes = sizes
+            alt = profile.name 
+          %}
+          {%- if profile.more_info %}
+          <div class="more-info">
+            {{ profile.more_info }}
+          </div>
+          {%- endif %}
+        </div>
+
+        <div class="clearfix profile-description">
+          <h2>{{ profile.name }}, {{ position-names[profile.position] }}</h2>
+          {% if profile.content -%}
+            {{ profile.content | markdownify }}
+          {%- endif %}
+          {% if profile.homepage %}
+            <div class="profile-footer"><a href="{{ profile.homepage }}">Personal webpage</a></div>
+          {% endif %}
+        </div>
+      {% endunless %}
+      {% endfor %}
+    {% endfor %}
+    <!-- <h2>Past and affiliate members</h2>
+    <ul>
+      {% for member in site.data.members-past-affiliate %}
+      {% assign person = site.data.people[member] %}
+      <li>  
+        - **{% if person.homepage %}[{{ person.full-name }}]({{ person.homepage }} "{{ person.full-name }}"){% else %}{{ person.full-name }}{% endif %}** – _{{ person.position }}_
+        {{ person.description | markdownify }}
+        {% endfor %}
+      </li>
+    </ul> -->
+  {%- endif %}
+</article>
+
+</div>

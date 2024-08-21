@@ -1,0 +1,30 @@
+{% assign display_categories = include.categories | default: site.display_categories %}
+{% assign display_tags = include.tags | default: site.display_tags %}
+{% if display_tags or display_categories %}
+    <div class="tag-category-list">
+      <ul class="p-0 m-0">
+        {% for tag in display_tags %}
+          <li>
+            <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          </li>
+          {% unless forloop.last %}
+            <p>&bull;</p>
+          {% endunless %}
+        {% endfor %}
+        {% if display_categories.size > 0 and display_tags.size > 0 %}
+          <p>&bull;</p>
+        {% endif %}
+        {% for category in display_categories %}
+          <li>
+            {% include snippets/show_category.liquid 
+              category=category 
+              active = true
+            %}
+          </li>
+          {% unless forloop.last %}
+            <p>&bull;</p>
+          {% endunless %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}

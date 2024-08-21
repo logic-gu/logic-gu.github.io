@@ -1,0 +1,33 @@
+{% comment %}
+    Print a pretty date (somehow)
+    input:
+        start-date[=date] (date)   end-date of event
+        date              (date)   date of event
+        end-date [=date]  (date)   start-date of event
+        format          (string)   format for date
+    output:
+        start-date [-> end-date]
+        NB: (hours omitted in case of start-date)
+{% endcomment %}
+{%- assign s_date = include.start-date | default: include.date -%}
+{%- assign e_date = include.end-date | default: include.date -%}
+{%- assign hm = include.date | date: '%H%M' -%}
+{%- if s_date != e_date or hm == '0000' -%}
+    {%- assign omit_time = true -%}
+{%- else -%}
+    {%- assign omit_time = false -%}
+{%- endif -%}
+{%- case include.format -%}
+    {%- when "long", nil -%}
+        {%- assign format = '%A, %-d %B %Y' -%}
+        {%- unless omit_time -%}{%- assign format = format | append: ', %H:%M' -%}{%- endunless -%}
+    {%- when "short" -%}
+        {%- assign format = '%a, %-d %b %Y' -%}
+        {%- unless omit_time -%}{%- assign format = format | append: ', %H:%M' -%}{%- endunless -%}
+    {%- else -%}
+        {%- assign format = include.format -%}
+{%- endcase -%}
+{%- unless s_date == e_date %} 
+    <time datetime="{{ s_date }}"><i class="fa-solid fa-calendar fa-sm"> </i> {{ s_date | date: format }}</time>&nbsp; <i class="fa-solid fa-long-arrow-right fa-sm"></i>&nbsp; 
+{% endunless -%}
+<time datetime="{{ e_date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ e_date | date: format }}</time>

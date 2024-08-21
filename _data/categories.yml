@@ -1,0 +1,15 @@
+nol:
+  name: "Nordic Online Logic Seminar"
+  page: /nol/
+lindstrom-lectures:
+  name: "Lindström Lectures"
+  page: /lindstrom-lectures/
+seminars:
+  name: "Research Seminar"
+  page: /seminars/
+event: 
+  name: "Event"
+  page: '/events/'
+events: 
+  name: "Events"
+  page: '/events/'

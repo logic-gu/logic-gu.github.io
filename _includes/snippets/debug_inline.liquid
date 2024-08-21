@@ -1,0 +1,11 @@
+{% comment %}
+    Print a message for debugging
+    input:
+        message [default: page.path && page.url]
+{% endcomment %}
+ {%- if include.message -%}
+    {%- assign message = include.message -%}
+{%- else -%}
+    {%- capture message -%}(page path: {{ page.path }}; url: {{ page.url }}){%- endcapture -%}
+{%- endif -%}
+{%- if site.debug or page.debug %}{{  message }}{%- endif -%}

@@ -1,0 +1,76 @@
+{%- if site.debug or page.debug -%}{%- assign debug_mode = true -%}{%- endif -%}
+
+{% assign display_categories = page.display_categories %}
+{% unless display_categories %}
+  {% assign display_categories = site.display_categories %}
+{% endunless %}
+
+<ul class="post-list">
+
+  {%- if page.pagination.enabled -%}
+    {%- assign postlist = paginator.posts -%}
+  {%- else -%}
+    {%- assign postlist = site.posts | where_exp:"item", "display_categories contains item.categories.first" -%}
+  {%- endif -%}
+
+  {% if debug_mode %}Found {{ postlist | size }} posts{% endif %}
+
+  {% for post in postlist %}
+
+  <li>
+    {% capture speaker -%}{{ post.speaker }}{%- if post.speaker and post.affil %}, {{ post.affil }}{%- endif -%}{% endcapture %}
+
+    <a class="post-title" href="{{ post.url | relative_url }}">
+    <h3>{{ post.title }}</h3><h4>{{ speaker }}</h4>
+    </a>
+
+    <div class="post-body">
+      {%- assign excerptParts = post.content | split: post.excerpt_separator -%}
+      {%- if post.excerpt-only -%}
+        {%- if debug_mode -%}<em>Excerpt only requested:</em>{%- endif -%}
+        {{ post.excerpt }}
+      {%- elsif excerptParts[1] == nil -%}
+        {%- if debug_mode -%}<em>No excerpt:</em>{%- endif -%}
+        {{ post.content | markdownify }}
+      {%- else -%}
+        {%- if debug_mode -%}<em>More content than excerpt</em>{%- endif -%}
+        <details>
+          <summary><div>{{ post.excerpt }}</div></summary>
+          {{ excerptParts[1] | markdownify }}
+        </details>
+      {%- endif -%}
+    </div>
+    <div class="post-footer">
+      <div class="post-meta">
+          {% include snippets/show_date.liquid 
+            start-date = post.date-start
+            date = post.date
+            end-date = post.date-end
+            %}
+          <!-- {% if tags != "" %}
+          &nbsp; &middot; &nbsp;
+            {% for tag in post.tags %}
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
+              {% endfor %}
+          {% endif %} -->
+          {% if categories != "" %}
+            &nbsp; &middot; 
+            {% for category in post.categories %}
+            &nbsp;
+              {% include snippets/show_category.liquid 
+                category = category
+                active = true
+                %}
+            {% endfor %}
+          {% endif %}
+        </div>
+    </div>
+  </li>
+
+  {% endfor %}
+</ul>
+
+{%- if page.pagination.enabled -%}
+  {%- include pagination.html -%}
+{%- endif -%}

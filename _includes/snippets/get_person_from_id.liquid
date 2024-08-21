@@ -1,0 +1,8 @@
+{% comment %}
+    inputs:
+        id (id of person in _profiles/)
+    outputs:
+        person (from _profiles/)
+{% endcomment %}
+{% assign p = '/profiles/' | append: include.id %}
+{% assign person = site.profiles | where:"id", p | first %}

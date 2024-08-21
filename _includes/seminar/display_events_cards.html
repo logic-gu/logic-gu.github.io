@@ -1,0 +1,48 @@
+{% assign featured_posts = include.postlist %}
+{% assign limit = include.limit | default: featured_posts.size %}
+{% if limit > 0 %}
+<div class="container featured-posts">
+  {% assign is_even = limit | modulo: 2 %}
+  <div class="row row-cols-1">
+  {% for post in featured_posts limit: limit %}
+    {% capture speaker -%}{{ post.speaker }}{%- if post.speaker and post.affil %}, {{ post.affil }}{%- endif -%}{% endcapture %}
+    <div class="card-item col">
+      <div class="card hoverable">
+        <div class="card-body">
+          <a href="{{ post.url | relative_url }}">
+            <div class="card-title">
+              <h3>{{ post.title }}</h3>
+              <h4>{{ speaker }}</h4>
+            </div>
+            <div class="card-text">{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt }}{%- endif -%}</div>
+            </a>
+
+            <div class="post-footer">
+              <div class="post-meta">
+                {% include snippets/show_date.liquid 
+                  start-date = post.date-start
+                  date = post.date
+                  end-date = post.date-end
+                  format = "long"
+                  -%}
+                {%- if post.location -%}, {{ post.location }}{%- endif %}
+                {% if categories != "" %}
+                  &nbsp; &middot; 
+                  {% for category in post.categories %}
+                    &nbsp;
+                    {% include snippets/show_category.liquid 
+                      category = category
+                      active = true
+                      %}
+                  {% endfor %}
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+<hr>
+{% endif %}

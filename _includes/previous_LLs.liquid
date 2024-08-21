@@ -1,0 +1,11 @@
+{% assign now = site.time | date: "%Y" %}
+{% assign limit-year = include.until | default: now | plus:0 %}
+{% assign LLs = site.pages | where:"lindstrom-lecture","true" | where_exp:"item","item.year < limit-year" | sort:"year" | reverse %}
+{% if LLs.size > 0 %}
+<h2>Previous Lindström Lectures</h2>
+<ul>
+{% for lecture in LLs %}
+    <li><a href="{{ lecture.url | relative_url }}">{{ lecture.title }}</a>: {{ lecture.speaker }}</li>
+{% endfor %}
+</ul>
+{% endif %}

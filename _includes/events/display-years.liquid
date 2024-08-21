@@ -1,0 +1,16 @@
+{% assign years = site.posts | group_by_exp: "item", "item.date | date: '%Y' " | map:"name" %}
+<div class="tag-category-list">
+  <ul class="p-0 m-0">
+    {% for year in years %}
+      {% assign y = year | plus:0 %}
+      {% if y < 2020 %}{% break %}{% endif %}
+      <li>
+        <i class="fa-solid fa-calendar fa-sm"></i> <a href="{{ year | slugify | prepend: '/events/' | relative_url }}">{{ year }}</a>
+      </li>
+      <p>&bull;</p>
+    {% endfor %}
+    <li>
+      <i class="fa-solid fa-calendar fa-sm"></i> <a href="{% link seminars/archive-2014-2019.md %}">older</a>
+    </li>
+  </ul>
+</div>

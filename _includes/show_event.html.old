@@ -1,0 +1,15 @@
+{% assign event = include.event %}
+{%- assign main_cat = event.categories | first -%}
+{% include snippets/print_category_name.liquid 
+  category=main_cat 
+%},
+{% if event.redirect == blank %}
+  <a class="news-title" href="{{ event.url | relative_url }}">{{ event.title }}</a>
+{% elsif event.redirect contains '://' %}
+  <a class="news-title" href="{{ event.redirect }}" target="_blank">{{ event.title }}</a>
+  <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+{% else %}
+  <a class="news-title" href="{{ event.redirect | relative_url }}">{{ event.title }}</a>
+{% endif %}

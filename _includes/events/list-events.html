@@ -1,0 +1,85 @@
+{% comment %}
+  Show a list of events.
+  inputs:
+    events  array of events to post
+{% endcomment %}
+{%- if site.debug or page.debug -%}{%- assign debug_mode = true -%}{%- endif -%}
+
+{%- if page.pagination.enabled -%}
+  {%- assign eventlist = paginator.posts -%}
+  {%- assign e_limit = eventlist | size -%}
+{%- else -%}
+  {%- if include.events -%}
+    {%- assign eventlist = include.events -%}
+  {%- else -%}
+    {%- assign eventlist = site.posts | where_exp:"item", "display_categories contains item.categories.first" -%}
+  {%- endif -%}
+  {%- assign e_size = eventlist | size -%}
+  {%- assign e_limit = include.limit | default: e_size -%}
+{%- endif -%}
+
+<ul class="post-list">
+
+
+  {% if debug_mode %}Showing {{ e_limit }} of {{ e_size }} events{% endif %}
+
+  {% for event in eventlist limit: e_limit %}
+
+  <li>
+
+    <a class="post-title" href="{{ event.url | relative_url }}">
+    <h3>{% if event.headline %}{{ event.headline }}: {% endif %}{{ event.speaker }}{%- if event.speaker and event.affil %} <span "event-affiliation">({{ event.affil }})</span>{%- endif -%}</h3>
+    <h4>{{ event.title }}</h4>
+    </a>
+
+    <div class="post-body">
+      {%- assign excerptParts = event.content | split: event.excerpt_separator -%}
+      {%- if event.excerpt-only -%}
+        {%- if debug_mode -%}<em>Excerpt only requested:</em>{%- endif -%}
+        {{ event.excerpt }}
+      {%- elsif excerptParts[1] == nil -%}
+        {%- if debug_mode -%}<em>No excerpt:</em>{%- endif -%}
+        {{ event.content | markdownify }}
+      {%- else -%}
+        {%- if debug_mode -%}<em>More content than excerpt</em>{%- endif -%}
+        <details>
+          <summary><div>{{ event.excerpt }}</div></summary>
+          {{ excerptParts[1] | markdownify }}
+        </details>
+      {%- endif -%}
+    </div>
+    <div class="post-footer">
+      <div class="post-meta">
+          {% include snippets/show_date.liquid 
+            start-date = event.date-start
+            date = event.date
+            end-date = event.date-end
+            -%}
+          {%- if event.location -%}, {{ event.location }}{%- endif %}
+          <!-- {% if tags != "" %}
+          &nbsp; &middot; &nbsp;
+            {% for tag in event.tags %}
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
+              {% endfor %}
+          {% endif %} -->
+          {% if categories != "" %}
+            &nbsp; &middot; 
+            {% for category in event.categories %}
+            &nbsp;
+              {% include snippets/show_category.liquid 
+                category = category
+                active = true
+                %}
+            {% endfor %}
+          {% endif %}
+        </div>
+    </div>
+  </li>
+
+  {% endfor %}
+</ul>
+
+{%- if page.pagination.enabled -%}
+  {%- include pagination.html -%}
+{%- endif -%}

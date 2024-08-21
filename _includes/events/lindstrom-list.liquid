@@ -1,0 +1,42 @@
+{% comment %}
+  Show a list of events.
+  inputs:
+    events  array of events to post
+{% endcomment %}
+{%- if site.debug or page.debug -%}{%- assign debug_mode = true -%}{%- endif -%}
+
+{%- assign eventlist = include.events -%}
+{%- unless eventlist.size == 0 -%}
+
+<ul class="post-list">
+
+  {% if debug_mode %}Showing {{ e_limit }} of {{ e_size }} events{% endif %}
+
+  {% for event in eventlist %}
+
+  <li>
+
+    <a class="post-title" href="{{ event.url | relative_url }}">
+    <h3>{{ event.headline }}: {{ event.speaker }} <span "event-affiliation">({{ event.affil }})</span></h3>
+    <h4>{{ event.title }}</h4>
+    </a>
+
+    <div class="post-body">
+        {{ event.content | markdownify }}
+    </div>
+    <div class="post-footer">
+      <div class="post-meta">
+          {% include snippets/show_date.liquid 
+            start-date = event.date-start
+            date = event.date
+            end-date = event.date-end
+            -%}
+          {%- if event.location -%}, {{ event.location }}{%- endif %}
+        </div>
+    </div>
+  </li>
+
+  {% endfor %}
+</ul>
+
+{%- endunless -%}
