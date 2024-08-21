@@ -1,6 +1,6 @@
 ---
 layout: seminars
-permalink: /nol/
+permalink: nol/
 title: Nordic Online Logic Seminar
 description: An online seminar for logicians and logic aficionados worldwide.
 
