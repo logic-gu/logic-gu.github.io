@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Learning LaTeX
+permalink: resources/learning-latex
 ---
 {% assign latex = "https://www.latex-project.org" %}
 {% assign latex4logic = "https://www.logicmatters.net/latex-for-logicians" %}
