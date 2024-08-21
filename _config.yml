@@ -3,14 +3,13 @@
 # -----------------------------------------------------------------------------
 
 title: Logic@GU # the website title (if blank, full name will be used instead)
-first_name: Graham
-middle_name: E.
-last_name: Leigh
+copyright: The Logic Group at GU
+author: The Logic Group at GU
 email: graham.leigh@gu.se
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Homepage of the Logic Group at University of Gothenburg.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords:  # add your own keywords or leave empty
 
@@ -412,7 +411,7 @@ external_links:
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 
-enable_responsive_images: false
+enable_responsive_images: true
 
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
