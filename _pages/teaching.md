@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: teaching/
 title: Master in Logic
 description: Come learn Logic with us!
 nav: true

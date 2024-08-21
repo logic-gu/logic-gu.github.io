@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /resources/
+permalink: resources/
 title: Resources
 description: A page of useful links
 # nav: true

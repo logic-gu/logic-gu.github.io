@@ -1,6 +1,6 @@
 ---
 layout: profiles
-permalink: /group/
+permalink: group/
 title: People
 description: Members of the Logic group
 nav: true

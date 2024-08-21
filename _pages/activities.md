@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /activities/
+permalink: activities/
 title: Activities
 description: A list of our activities
 nav: true
