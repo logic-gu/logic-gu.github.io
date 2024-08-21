@@ -3,6 +3,10 @@ layout: lindstrom-lectures
 title: The Lindström Lectures 2022
 speaker: Sara Negri
 year: 2022
+
+
+image: lindstrom-lectures/2022-negri.jpg
+image_caption: Sara Negri
 ---
 
 The 2022 [Lindström Lectures]({% link lindstrom-lectures/index.md %}) were delivered in June 2022 by **Sara Negri**, Professor of Mathematics at the University of Genoa.
