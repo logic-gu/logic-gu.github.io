@@ -5,7 +5,11 @@ speaker: Rineke Verbrugge
 year: 2023
 
 
-image: lindstrom-lectures/2023-verbrugge.jpg
+# image_path_prefix: lindstrom-lectures/
+images:
+    - path: 2023-verbrugge.jpg
+      alt_text: The 2023 Lindström Lectures were delivered by Rineke Verbrugge
+      title: Rineke Verbrugge
 image_caption: Rineke Verbrugge
 ---
 

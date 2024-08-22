@@ -3,31 +3,44 @@ layout: default
 ---
 <!-- page.html -->
 <div class="post lindstrom-lecture">
-  {% if page.image -%}
-    {%- assign image_path = page.image | prepend: site.image_dir -%}
-    {%- assign image_class = "img-fluid z-depth-1 rounded" -%}
+  {% if page.image or page.images -%}
+  
+  <div class="page-image float-{{ page.image_align | default: 'right' }}">
+    {%- assign path_prefix = site.image_dir_LL | default: site.image_dir -%}
     {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-    {%- assign alt_text = page.image_alt -%}
-    {%- assign more_info = page.image_more_info -%}
+    {%- assign image_class = "img-fluid z-depth-1 rounded" -%}
     {%- assign image_caption = page.image_caption -%}
+    {%- assign more_info = page.image_more_info -%}
 
-    <div class="page-image float-{{ page.image_align | default: 'right' }}">
+    {%- if page.image -%}
+      {%- assign image_path = page.image | prepend: path_prefix -%}
       
       {% include figure.html
         path = image_path
         class = image_class
         sizes = sizes
-        alt = alt_text
+        alt = page.alt_text
         cache_bust = true 
         link = page.image_url
         caption = image_caption
       %}
-      {%- if more_info %}
+    {%- elsif page.images -%}
+      {%- assign common_prefix = page.image_path_prefix | prepend: site.image_dir -%}
+      {% include figures.liquid
+        path_prefix = path_prefix
+        images = page.images
+        class = image_class
+        sizes = sizes
+        cache_bust = true 
+        caption = image_caption
+      -%}
+    {%- endif -%}
+    {%- if more_info %}
       <div class="more-info">
         {{ more_info }}
       </div>
-      {%- endif %}
-    </div>
+    {%- endif %}
+  </div>
   {%- endif -%}
   
   <header class="post-header">

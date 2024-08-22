@@ -63,9 +63,16 @@ table.table a {
   }
 }
 
-figure,
-img {
-  max-width: 90vw;
+figure {
+  
+  img {
+    max-width: 90vw;
+    margin-bottom: 5px;
+  }
+
+  picture:last-child {
+      margin-bottom: 0;
+    }
 }
 
 p > img { // for images within pages
@@ -141,7 +148,7 @@ blockquote {
 
 .caption {
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 0px;
   font-size: small;
   font-style: italic;
   color: var(--global-text-color-light);

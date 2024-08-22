@@ -4,7 +4,10 @@ title: The Lindström Lectures 2013
 speaker: Wilfrid Hodges
 year: 2013
 
-image: lindstrom-lectures/poster-2013.gif
+images: 
+  - path: 2013-hodges.jpg
+    title: Wilfrid Hodges
+  - path: poster-2013.gif
 image_caption: The 2013 Lindström Lectures, delivered by Wilfrid Hodges
 ---
 

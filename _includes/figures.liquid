@@ -1,0 +1,55 @@
+{% comment %}
+ Input:
+  path_prefix : common prefix to all image paths
+  images : array of images, including:
+    path, class, alt, title, sizes, credit, ...]
+  class : class styles to attach to inset
+  caption : caption
+{% endcomment %}
+
+{%- assign credits = false -%}
+
+<figure>
+  <picture>
+    {% for img in include.images %}
+      {%- if img.credit -%}
+        {%- if credits -%}
+          {%- assign credits = credits | append:", " | append: img.credit -%}
+        {%- else -%}
+          {%- assign credits = img.credit | prepend:"credit: " -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign img_path = img.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" | remove: ".gif" | prepend: include.path_prefix -%}
+      <!-- Auto scaling with imagemagick -->
+      <!-- See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and 
+        https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images-->
+      {% if site.imagemagick.enabled %}
+        <source class = "responsive-img-srcset" srcset="
+          {% for i in site.imagemagick.widths -%}
+          {{ img_path | relative_url }}-{{ i }}.webp {{i}}w,
+          {% endfor -%}" 
+          {% if img.sizes %} sizes="{{img.sizes}}" {% else %} sizes="95vw" {% endif %}
+          type="image/webp"/>
+      {% endif %}
+      {% if img.link %}<a href="{% link {{ img.link }} %}">{% endif %}
+      <img
+        src="{% if include.cache_bust %}{{ img.path | prepend: include.path_prefix | relative_url | bust_file_cache }}{% else %}{{ img.path | prepend: include.path_prefix | relative_url }}{% endif %}"
+        {% if include.class %}class="{{ include.class }}"{% endif %}
+        {% if img.width %}width="{{ img.width }}"{% else %}width="100%"{% endif %}
+        {% if img.height %}height="{{ img.height }}"{% else %}height="auto"{% endif %}
+        {% if img.min-width %}min-width="{{ img.min-width }}"{% endif %}
+        {% if img.min-height %}min-height="{{ img.min-height }}"{% endif %}
+        {% if img.max-width %}max-width="{{ img.max-width }}"{% endif %}
+        {% if img.max-height %}max-height="{{ img.max-height }}"{% endif %}
+        {% if img.alt_text %}alt="{{ img.alt_text }}"{% endif %}
+        {% if img.title %}title="{{ img.title }}"{% endif %}
+        {% if img.zoomable %}data-zoomable{% endif %}
+        onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+      />
+      {% if img.link %}</a>{% endif %}
+    {% endfor %}
+    </picture>
+
+  {%- if include.caption or has_credits -%}<figcaption class="caption">{{ include.caption }}{% if credits %} ({{ credits }}){% endif %}</figcaption>{%- endif %}
+
+</figure>
