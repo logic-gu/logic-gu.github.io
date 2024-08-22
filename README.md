@@ -7,9 +7,9 @@ Refresh of the webpage of the Logic group at University of Gothenburg.
 
 ## Building the page
 
-The website is generated automatically using [jekyll](https://jekyllrb.com/) whenever 
-the source code is updated. Although it is necessary to build the site yourself, doing
-so locally is useful to preview changes, and locate/fix bugs. There are two ways to set
+The website is generated automatically using [Jekyll](https://jekyllrb.com/) whenever 
+the source code is updated. It is unnecessary to build the site yourself, but doing
+so can be useful to preview changes and locate/fix bugs. There are two ways to set
 up Jekyll on a local machine.
 
 ### Recommended method: Docker
