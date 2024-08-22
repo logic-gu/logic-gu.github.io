@@ -4,7 +4,10 @@ title: The Lindström Lectures 2019
 speaker: Johan van Benthem
 year: 2019
 
-image: lindstrom-lectures/poster-2019.jpg
+images: 
+  - path: 2019-van-benthem.jpg
+    title: Johan van Benthem
+  - path: poster-2019.jpg
 image_caption: The 2019 Lindström Lectures, delivered by Johan van Benthem
 ---
 The 2019 [Lindström Lectures]({% link lindstrom-lectures/index.md %}) was delivered by Johan van Benthem, University Professor of Logic, emeritus (University of Amsterdam), Henry Waldgrave Stuart Professor of Philosophy (Stanford University), Jin Yuelin Chair (Tsinghua University Beijing).

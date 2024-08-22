@@ -5,7 +5,7 @@ speaker: Sara Negri
 year: 2022
 
 
-image: lindstrom-lectures/2022-negri.jpg
+image: 2022-negri.jpg
 image_caption: Sara Negri
 ---
 

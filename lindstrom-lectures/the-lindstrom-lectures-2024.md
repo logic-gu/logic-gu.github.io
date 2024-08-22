@@ -4,9 +4,10 @@ title: The Lindström Lectures 2024
 speaker: Phokion Kolaitis
 year: 2024
 
-
-image: lindstrom-lectures/2024-kolaitis.jpeg
-image_caption: Phokion Kolaitis
+images: 
+  - path: 2024-kolaitis.jpg
+    title: Phokion Kolaitis
+image_caption: The 2024 Lindström Lectures, delivered by Phokion Kolaitis
 ---
 
 The {{ page.year }} [Lindström Lectures]({% link lindstrom-lectures/index.md %}) were delivered in April 2024 by **{{ page.speaker }}**, Distinguished Research Professor at UC Santa Cruz and a Principal Research Staff Member at the IBM Almaden Research Center, US.
