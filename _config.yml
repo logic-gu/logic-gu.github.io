@@ -254,6 +254,7 @@ exclude:
   - .devcontainer
   - .vscode
   - .ruby-lsp
+  - bundle
 keep_files:
   - CNAME
   - .nojekyll
