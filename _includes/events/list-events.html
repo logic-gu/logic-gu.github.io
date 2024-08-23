@@ -1,7 +1,8 @@
 {% comment %}
   Show a list of events.
   inputs:
-    events  array of events to post
+    events : array of events to post
+    limit : bound number of events shown
 {% endcomment %}
 {%- if site.debug or page.debug -%}{%- assign debug_mode = true -%}{%- endif -%}
 
