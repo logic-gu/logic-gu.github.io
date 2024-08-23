@@ -43,9 +43,9 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		// Jekyll server
-		4000,
+		4005,
 		// Live reload server
-		35729
+		35735
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
