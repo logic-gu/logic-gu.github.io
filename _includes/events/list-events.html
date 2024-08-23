@@ -6,25 +6,13 @@
 {% endcomment %}
 {%- if site.debug or page.debug -%}{%- assign debug_mode = true -%}{%- endif -%}
 
-{%- if page.pagination.enabled -%}
-  {%- assign eventlist = paginator.posts -%}
-  {%- assign e_limit = eventlist | size -%}
-{%- else -%}
-  {%- if include.events -%}
-    {%- assign eventlist = include.events -%}
-  {%- else -%}
-    {%- assign eventlist = site.posts | where_exp:"item", "item.speaker or item.headline or item.title != 'Logic Seminar'" | where_exp:"item", "display_categories contains item.categories.first" -%}
-  {%- endif -%}
-  {%- assign e_size = eventlist | size -%}
-  {%- assign e_limit = include.limit | default: e_size -%}
-{%- endif -%}
 
 <ul class="post-list">
 
 
-  {% if debug_mode %}Showing {{ e_limit }} of {{ e_size }} events{% endif %}
+  {% if debug_mode %}Showing {{ include.events.size }} events{% endif %}
 
-  {% for event in eventlist limit: e_limit %}
+  {% for event in include.events %}
 
   <li>
 
@@ -80,7 +68,3 @@
 
   {% endfor %}
 </ul>
-
-{%- if page.pagination.enabled -%}
-  {%- include pagination.html -%}
-{%- endif -%}

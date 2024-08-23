@@ -20,8 +20,21 @@ layout: default
 
     {% include events/display-years.liquid %}
 
+    {%- if page.pagination.enabled -%}
+      {%- assign eventlist = paginator.posts -%}
+    {%- else -%}
+      {%- assign eventlist = site.posts | where_exp:"item", "item.speaker or item.headline or item.title != 'Logic Seminar'" | where_exp:"item", "display_categories contains item.categories.first" -%}
+      {%- if page.limit -%}
+        {%- assign eventlist = eventlist | slice:0, page.limit -%}
+      {%- endif -%}
+    {%- endif -%}
+
     {% include events/list-events.html 
-        limit=page.limit
+        events=eventlist
       %}
+
+    {%- if page.pagination.enabled -%}
+      {%- include pagination.html -%}
+    {%- endif -%}
   </article>
 </div>
