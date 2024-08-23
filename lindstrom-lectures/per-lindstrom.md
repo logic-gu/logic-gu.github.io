@@ -4,7 +4,7 @@ title: Per (Pelle) Lindström
 description: >
     First professor of Logic and the University of Gothenburg
 
-image: Pelle2001.jpg
+image: lindstrom-lectures/Pelle2001.jpg
 image_caption: Per Lindstöm in 2001
 
 # permalink: /lindstrom-lectures/per-lindstrom
