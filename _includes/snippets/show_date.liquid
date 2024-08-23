@@ -20,10 +20,10 @@
 {%- case include.format -%}
     {%- when "long", nil -%}
         {%- assign format = '%A, %-d %B %Y' -%}
-        {%- unless omit_time -%}{%- assign format = format | append: ', %H:%M' -%}{%- endunless -%}
+        {%- unless omit_time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
     {%- when "short" -%}
         {%- assign format = '%a, %-d %b %Y' -%}
-        {%- unless omit_time -%}{%- assign format = format | append: ', %H:%M' -%}{%- endunless -%}
+        {%- unless omit_time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
     {%- else -%}
         {%- assign format = include.format -%}
 {%- endcase -%}

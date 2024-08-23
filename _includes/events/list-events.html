@@ -13,7 +13,7 @@
   {%- if include.events -%}
     {%- assign eventlist = include.events -%}
   {%- else -%}
-    {%- assign eventlist = site.posts | where_exp:"item", "display_categories contains item.categories.first" -%}
+    {%- assign eventlist = site.posts | where_exp:"item", "item.speaker or item.headline or item.title != 'Logic Seminar'" | where_exp:"item", "display_categories contains item.categories.first" -%}
   {%- endif -%}
   {%- assign e_size = eventlist | size -%}
   {%- assign e_limit = include.limit | default: e_size -%}
@@ -56,7 +56,7 @@
             date = event.date
             end-date = event.date-end
             -%}
-          {%- if event.location -%}, {{ event.location }}{%- endif %}
+          {%- if event.location %}{% include snippets/show_location.liquid location=event.location %}{%- endif %}
           <!-- {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in event.tags %}

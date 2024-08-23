@@ -1,34 +1,34 @@
-{% assign featured_posts = include.postlist %}
-{% assign limit = include.limit | default: featured_posts.size %}
+{% assign featured_events = include.postlist %}
+{% assign limit = include.limit | default: featured_events.size %}
 {% if limit > 0 %}
 <div class="container featured-posts">
   {% assign is_even = limit | modulo: 2 %}
   <div class="row row-cols-1">
-  {% for post in featured_posts limit: limit %}
-    {% capture speaker -%}{{ post.speaker }}{%- if post.speaker and post.affil %}, {{ post.affil }}{%- endif -%}{% endcapture %}
+  {% for event in featured_events limit: limit %}
+    {% capture speaker -%}{{ event.speaker }}{%- if event.speaker and event.affil %}, {{ event.affil }}{%- endif -%}{% endcapture %}
     <div class="card-item col">
       <div class="card hoverable">
         <div class="card-body">
-          <a href="{{ post.url | relative_url }}">
+          <a href="{{ event.url | relative_url }}">
             <div class="card-title">
-              <h3>{{ post.title }}</h3>
+              <h3>{{ event.title }}</h3>
               <h4>{{ speaker }}</h4>
             </div>
-            <div class="card-text">{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt }}{%- endif -%}</div>
+            <div class="card-text">{%- if event.description -%}{{ event.description }}{%- else -%}{{ event.excerpt }}{%- endif -%}</div>
             </a>
 
             <div class="post-footer">
               <div class="post-meta">
                 {% include snippets/show_date.liquid 
-                  start-date = post.date-start
-                  date = post.date
-                  end-date = post.date-end
+                  start-date = event.date-start
+                  date = event.date
+                  end-date = event.date-end
                   format = "long"
                   -%}
-                {%- if post.location -%}, {{ post.location }}{%- endif %}
+                {%- if event.location %}{% include snippets/show_location.liquid location=event.location %}{%- endif %}
                 {% if categories != "" %}
                   &nbsp; &middot; 
-                  {% for category in post.categories %}
+                  {% for category in event.categories %}
                     &nbsp;
                     {% include snippets/show_category.liquid 
                       category = category

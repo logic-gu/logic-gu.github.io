@@ -1,0 +1,18 @@
+{% comment %}
+    Print a pretty date (somehow)
+    input:
+        location 
+    output:
+        something
+{% endcomment %}
+{%- assign loc = include.location -%}
+{%- capture output %}
+{% case loc -%}
+    {%- when "Online", "online" -%}
+        online
+    {%- when "Zoom", "zoom" -%}
+        online (Zoom)
+    {%- else -%}
+        in {{ loc }}
+{%- endcase -%}{%- endcapture -%}
+{{ output }}
