@@ -1240,7 +1240,7 @@ nav[data-toggle="toc"] {
 
 .featured-posts {
   text-align: left!important;
-  padding: 0 0.5rem;
+  padding: 0;
   
   // Override card widths
   .row-cols-2 > * {
@@ -1288,8 +1288,8 @@ nav[data-toggle="toc"] {
 
 
   .card-item {
-    // margin-bottom: 10px;
-    padding: 0.5rem;
+    margin: 0.5rem 0;
+    padding: 0;
   }
 
   .post-footer {
