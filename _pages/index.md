@@ -4,10 +4,10 @@ title: about
 permalink: /
 subtitle: The Logic Group at the <a href='https://www.gu.se'>University of Gothenburg</a>
 
-image: logic-front.jpg
-image_alt: Logic is super cool
-image_caption: Logic is so super cool 
-image_credit: Amelie Wehr
+image: concept.jpg
+image_alt: 
+image_caption: 
+image_credit: 
 
 
 news: true  # includes a list of news items
