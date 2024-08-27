@@ -6,7 +6,7 @@ subtitle: The Logic Group at the <a href='https://www.gu.se'>University of Gothe
 
 image: concept.jpg
 image_alt: 
-image_caption: 
+image_caption: A cat playing with a Turing Machine in Gothenburg.
 image_credit: 
 
 
