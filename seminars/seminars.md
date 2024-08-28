@@ -1,7 +1,7 @@
 ---
 layout: seminars
 permalink: /seminars/
-title: Seminars, etc.
+title: Seminars
 description: >
   Seminars, workshops and other events organised by our group
 contact: graham # person in _profiles/
