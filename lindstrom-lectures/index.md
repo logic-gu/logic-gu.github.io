@@ -5,6 +5,9 @@ description: An annual lecture series in logic held in memory of Per Lindström
 permalink: lindstrom-lectures/
 year: 2050
 
+nav: true
+nav_order: 6
+
 images: 
   - path: Pelle2001.jpg
     title: Per Lindström

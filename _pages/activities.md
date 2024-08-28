@@ -3,8 +3,9 @@ layout: page
 permalink: activities/
 title: Activities
 description: A list of our activities
-nav: true
-nav_order: 6
+
+nav: false
+nav_order: 7
 ---
 
 We organise a number of different activities to promote logic and its integration into other subjects. Below you find a list of our most recent activities and events. 
