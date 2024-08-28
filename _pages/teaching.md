@@ -44,30 +44,31 @@ Next to the mandatory courses, the program offers a broad and dynamic collection
 Below you find a selection of elective courses that were offered in the recent past at our master, roughly sorted by topic. 
 Note, the choice of elective courses varies from year to year based on availability and interest, so we cannot guarantee that all courses will be offered during your stay.
 
- **Proof Theory**
- - Lambda calculus and type theory
- - Quantified modal logic, Dependence logic 
- - Provability logic
+ **Proof and Truth**
+ - Logic of provability
+ - Quantified modal logic
+ - Dependence logic 
 
  **Categorical Logic**
  - Category theory 
- - Functorial Semantics
- - Introduction to Topos Theory 
+ - Functorial semantics
+ - Introduction to topos theory 
 
  **Logic and Computation**
- - Models of computation 
- - Logic, Games and automata
+ - Models of computation
+ - Lambda calculus and type theory
+ - Logic, games and automata
  - Decision theory
 
  **Logic in Philosophy**
  - Philosophy of mathematics
  - History of logic
  - Human reasoning and cognitive science
- - Axiomatic theories of truth 
+ - Semantic paradoxes and the logic of truth 
  
 
-
-
-You’re also encouraged to choose elective courses taught at partner departments. You will receive guidance to help build a profile matching your individual plans for your future career. Seminars, peer review, and supervising will assist you in writing your thesis, which is an in-depth exploration of a topic of your choice.
+You’re also encouraged to choose elective courses taught at partner departments.
+You will receive guidance to help build a profile matching your individual plans for your future career.
+Seminars, peer review, and supervising will assist you in writing your thesis, which is an in-depth exploration of a topic of your choice.
 
 
