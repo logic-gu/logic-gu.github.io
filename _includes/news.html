@@ -11,7 +11,7 @@
     {% endif %}
     {% for item in news limit: news_limit %}
       <tr>
-        <th scope="row" style="width: 17%; text-align: right;">{{ item.date | date: "%-d %b %Y" }}</th>
+        <th scope="row" style="width: 100px; min-width: 105px; text-align: right;">{{ item.date | date: "%-d %b %Y" }}</th>
         <td>
           {% if item.content != blank -%}
             <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title | emojify  }}</a>
