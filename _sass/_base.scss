@@ -270,8 +270,13 @@ blockquote {
 // news
 
 .news {
-  .table-responsive {
-    padding-left: 1rem;
+
+  @media (min-width: 576px) {
+
+    .table-responsive {
+      padding-left: 1rem;
+    }
+    
   }
 }
 // Profile

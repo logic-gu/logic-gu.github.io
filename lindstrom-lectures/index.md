@@ -1,6 +1,6 @@
 ---
 layout: lindstrom-lectures
-title: The Lindström Lectures
+title: Lindström Lectures
 description: An annual lecture series in logic held in memory of Per Lindström
 permalink: lindstrom-lectures/
 year: 2050

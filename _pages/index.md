@@ -5,7 +5,7 @@ permalink: /
 subtitle: The Logic Group at the <a href='https://www.gu.se'>University of Gothenburg</a>
 
 image: logicat.jpg
-image_alt: The LogiCat says "Logic is super cool"
+image_alt: "The LogiCat says: Logic is super cool"
 image_caption: Logic is super cool
 image_credit: Amelie Wehr
 
