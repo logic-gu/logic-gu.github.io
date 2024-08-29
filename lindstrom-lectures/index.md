@@ -11,7 +11,7 @@ nav_order: 6
 images: 
   - path: Pelle2001.jpg
     title: Per Lindström
-image_caption: Per Lindström
+image_caption: Per Lindström in 2001
 ---
 
 The Department of Philosophy, Linguistics and Theory of Science at the University of Gothenburg launched a lecture series in 2013 to celebrate the singular achievements of Per Lindström, former professor of logic at the department.

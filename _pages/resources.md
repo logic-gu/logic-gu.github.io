@@ -6,6 +6,7 @@ description: A page of useful links
 # nav: true
 # nav_order: 7
 
+image: library.jpg
 ---
 
 The page collects a list of useful resources for our master students and international students interested in learning logic.
