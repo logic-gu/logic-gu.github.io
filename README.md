@@ -1,9 +1,6 @@
-
-**under construction**
-
 # Logic@GU
 
-Refresh of the webpage of the Logic group at University of Gothenburg.
+The homepage of the Logic group at University of Gothenburg, [logic-gu.se](https://www.logic-gu.se)
 
 ## Building the page
 
