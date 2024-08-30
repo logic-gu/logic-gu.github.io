@@ -29,7 +29,7 @@ This setup is recommend as
 4. Follow the instructions to build the docker container and re-open the repository
 in the container
 5. Select the command "Tasks: Run Build Task". If successful, you can access the local build
-at <https://127.0.0.1:4000> (or a similar address, check the build log). Jekyll is now runing 
+at <https://127.0.0.1:4005> (or a similar address, check the build log). Jekyll is now runing 
 in the background and will rebuild the page on every change.
 
 ### Second method: Local installation of Ruby & Jekyll
