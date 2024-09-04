@@ -7,6 +7,8 @@ year: 2024
 images: 
   - path: 2024-kolaitis.jpg
     title: Phokion Kolaitis
+  - path: poster-2024.jpg
+    title: 2024 Lindström Lectures
 image_caption: The 2024 Lindström Lectures, delivered by Phokion Kolaitis
 ---
 

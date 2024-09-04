@@ -7,10 +7,11 @@ year: 2023
 
 # image_path_prefix: lindstrom-lectures/
 images:
-    - path: 2023-verbrugge.jpg
-      alt_text: The 2023 Lindström Lectures were delivered by Rineke Verbrugge
-      title: Rineke Verbrugge
-image_caption: Rineke Verbrugge
+  - path: 2023-verbrugge.jpg
+    title: Rineke Verbrugge
+  - path: poster-2023.jpg
+    title: 2023 Lindström Lectures
+image_caption: The 2023 Lindström Lectures were delivered by Rineke Verbrugge
 ---
 
 The 2023 [Lindström Lectures]({% link lindstrom-lectures/index.md %}) were delivered in June 2023 by **Rineke Verbrugge**, Professor of Logic and Cognition at the Bernoulli Institute of Mathematics, Computer Science and Artificial Intelligence, University of Groningen, The Netherlands.
