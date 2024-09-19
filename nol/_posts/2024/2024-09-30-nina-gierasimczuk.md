@@ -2,7 +2,7 @@
 speaker: Nina Gierasimczuk
 affil: Danish Technical University
 title: "Coordinating quantity terms: a simulation study in monotonicity and convexity"
-date: 2024-09-30 16:30:00 +02:00
+date: 2024-09-30 16:00:00 +02:00
 --- 
 Natural languages vary in their quantity expressions, but the variation seems to be constrained by general properties, so-called universals.
 Explanations thereof have been sought among constraints of human cognition, communication, complexity, and pragmatics.
