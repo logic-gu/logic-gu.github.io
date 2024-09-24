@@ -4,6 +4,17 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Serve (incremental)",
+            "type": "shell",
+            "command": "./bin/entry_point_incremental.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
             "label": "Serve",
             "type": "shell",
             "command": "./bin/entry_point.sh",

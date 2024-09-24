@@ -4,7 +4,7 @@ CONFIG_FILE=_config.yml
 PORT=4005
 LPORT=35735
 
-/bin/bash -c "rm -f Gemfile.lock && exec jekyll serve --watch --port=$PORT --livereload --livereload-port=$LPORT --force_polling"&
+/bin/bash -c "rm -f Gemfile.lock && exec jekyll serve --watch --incremental --port=$PORT --livereload --livereload-port=$LPORT --force_polling"&
 
 while true; do
 
@@ -17,7 +17,7 @@ while true; do
     jekyll_pid=$(pgrep -f jekyll)
     kill -KILL $jekyll_pid
 
-    /bin/bash -c "rm -f Gemfile.lock && exec jekyll serve --watch --port=$PORT --livereload --livereload-port=$LPORT --force_polling"&
+    /bin/bash -c "rm -f Gemfile.lock && exec jekyll serve --watch --incremental --port=$PORT --livereload --livereload-port=$LPORT --force_polling"&
 
   fi
 
