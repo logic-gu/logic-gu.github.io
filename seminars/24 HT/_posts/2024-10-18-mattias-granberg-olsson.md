@@ -1,7 +1,7 @@
 ---
 speaker: Mattias Granberg Olsson
 affil: FLoV
-title: "Fixed IDs about truth: Truth and fixpoints in intuitionistic logic"
+title: "Fixed IDs about truth: Truth and fixpoints in intuitionistic logic (final seminar)"
 date: 2024-10-18 10:15:00 +02:00
 location: J577
 ---
