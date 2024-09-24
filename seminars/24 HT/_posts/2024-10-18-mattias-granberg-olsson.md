@@ -9,3 +9,5 @@ This dissertation concerns the properties of and relationship between positive t
 the strength of these theories relative to the arithmetic base theories, relationships
 between theories of strictly positive fixpoints and compositional and disquotational truth for strictly truth-positive sentences, and a comparison with the
 classical case.
+
+__Opponent:__ Gerhard Jäger, Professor Emiratus University of Bern
