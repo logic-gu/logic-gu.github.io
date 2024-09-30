@@ -31,7 +31,10 @@
             date = event.date
             end-date = event.date-end
             -%}
-          {%- if event.location -%}, {{ event.location }}{%- endif %}
+            {%- if event.location %}
+              &nbsp;
+              {% include snippets/show_location.liquid location=event.location %}
+            {%- endif %}
         </div>
     </div>
   </li>

@@ -3,7 +3,7 @@ speaker: Lide Grotenhuis
 affil: University of Amsterdam
 title: Intuitionistic mu-calculus with the Lewis arrow
 date: 2024-10-04 10:15:00 +02:00
-location: J577
+location: J577, Humanisten
 ---
 
 Modal logic can be traced back to Lewis’ introduction of a modal connective for ‘strict implication’, also known as the Lewis arrow. Classically, the Lewis arrow is inter-definable with box, and so the connective has fallen into disuse over time. Over an intuitionistic base, however, the arrow is more expressive than the box. 

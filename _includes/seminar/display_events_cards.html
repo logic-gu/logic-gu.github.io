@@ -23,7 +23,10 @@
                   end-date = event.date-end
                   format = "long"
                   -%}
-                {%- if event.location %}{% include snippets/show_location.liquid location=event.location %}{%- endif %}
+                {%- if event.location %}
+                  &nbsp;
+                  {% include snippets/show_location.liquid location=event.location %}
+                {%- endif %}
                 {% if categories != "" %}
                   &nbsp; &middot; 
                   {% for category in event.categories %}

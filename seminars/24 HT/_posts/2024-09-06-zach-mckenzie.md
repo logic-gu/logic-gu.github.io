@@ -3,7 +3,7 @@ speaker: Zach McKenzie
 affil: University of Chester
 title: Well-founded models of fragments of Collection
 date: 2024-09-06 10:15:00 +02:00
-location: J577
+location: J577, Humanisten
 ---
 Let M be the weak set theory obtained from ZF by removing the Collection Scheme, restricting the Separation Scheme to bounded formulae, and adding an axiom asserting that every set is contained transitive set.
 In this talk I will consider two formulations of the set-theoretic Collection Scheme restricted formulae that are &Pi;<sub>n</sub> in the Levy hierarchy: &Pi;<sub>n</sub>-Collection and Strong &Pi;<sub>n</sub>-Collection.

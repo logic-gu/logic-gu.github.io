@@ -53,6 +53,10 @@ layout: default
         date = page.date
         end-date = page.date-end
         %}
+      {%- if page.location %}
+        &nbsp;
+        {% include snippets/show_location.liquid location=page.location %}
+      {%- endif %}
       {% if categories != "" %}
         &nbsp; &middot; 
         {% for category in page.categories %}

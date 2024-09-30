@@ -6,13 +6,12 @@
         something
 {% endcomment %}
 {%- assign loc = include.location -%}
-{%- capture output %}
+<i class="fa-solid fa-location-dot fa-sm"></i> 
 {% case loc -%}
     {%- when "Online", "online" -%}
-        online
+        Online
     {%- when "Zoom", "zoom" -%}
-        online (Zoom)
+        Zoom
     {%- else -%}
-        in {{ loc }}
-{%- endcase -%}{%- endcapture -%}
-{{ output }}
+        {{ loc }}
+{%- endcase -%}

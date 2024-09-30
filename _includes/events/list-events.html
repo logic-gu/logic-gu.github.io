@@ -44,7 +44,10 @@
             date = event.date
             end-date = event.date-end
             -%}
-          {%- if event.location %}{% include snippets/show_location.liquid location=event.location %}{%- endif %}
+          {%- if event.location %}
+            &nbsp;
+            {% include snippets/show_location.liquid location=event.location %}
+          {%- endif %}
           <!-- {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in event.tags %}

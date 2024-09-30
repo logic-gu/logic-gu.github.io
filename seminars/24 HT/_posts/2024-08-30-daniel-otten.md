@@ -3,7 +3,7 @@ speaker: Daniël Otten
 affil: University of Amsterdam
 title: Cyclic Type Theory
 date: 2024-08-30 10:15:00 +02:00
-location: J577
+location: J577, Humanisten
 ---
 
 We explain some of the connections between two research areas: cyclic proof theory and proof assistants.
