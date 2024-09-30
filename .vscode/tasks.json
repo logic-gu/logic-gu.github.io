@@ -9,7 +9,7 @@
             "command": "./bin/entry_point_incremental.sh",
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             },
             "isBackground": true,
             "problemMatcher": []
