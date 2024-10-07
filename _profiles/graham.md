@@ -2,7 +2,7 @@
 name: Graham E Leigh
 short_name: Graham
 sort_by: Leigh
-position: s-lecturer
+position: professor
 homepage: https://www.gu.se/en/about/find-staff/grahamleigh
 
 
