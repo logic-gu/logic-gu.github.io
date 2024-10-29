@@ -185,6 +185,7 @@ defaults:
       path: "nol/"
       type: "posts"
     values:
+      title: Nordic Online Logic Seminar
       location: zoom
   - scope:
       path: "events/"
