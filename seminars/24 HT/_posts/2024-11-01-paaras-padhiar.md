@@ -1,5 +1,5 @@
 ---
-speaker: Paraas Padhiar
+speaker: Paaras Padhiar
 affil: University of Birmingham
 title: Nested sequents for Scott-Lemmon path axioms
 date: 2024-11-01 10:15:00 +01:00
