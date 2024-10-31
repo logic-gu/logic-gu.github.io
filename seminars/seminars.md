@@ -1,6 +1,6 @@
 ---
 layout: seminars
-permalink: /seminars/
+permalink: seminars/
 title: Seminars
 description: >
   Seminars, workshops and other events organised by our group
