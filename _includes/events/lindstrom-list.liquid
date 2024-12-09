@@ -15,27 +15,26 @@
   {% for event in eventlist %}
 
   <li>
-
-    <a class="post-title" href="{{ event.url | relative_url }}">
-    <h3>{{ event.headline }}: {{ event.speaker }} <span "event-affiliation">({{ event.affil }})</span></h3>
-    <h4>{{ event.title }}</h4>
-    </a>
+    <div class="post-title">
+      <a href="{{ event.url | relative_url }}">
+      <h3>{{ event.headline }}: {{ event.speaker }} <span class="event-affiliation">({{ event.affil }})</span></h3>
+      <h4>{{ event.title }}</h4>
+      </a>
+      <div class="post-meta">
+        {% include snippets/show_date.liquid 
+          start-date = event.date-start
+          date = event.date
+          end-date = event.date-end
+          -%}
+          {%- if event.location %}
+            &nbsp;
+            {% include snippets/show_location.liquid location=event.location %}
+          {%- endif %}
+      </div>
+    </div>
 
     <div class="post-body">
         {{ event.content | markdownify }}
-    </div>
-    <div class="post-footer">
-      <div class="post-meta">
-          {% include snippets/show_date.liquid 
-            start-date = event.date-start
-            date = event.date
-            end-date = event.date-end
-            -%}
-            {%- if event.location %}
-              &nbsp;
-              {% include snippets/show_location.liquid location=event.location %}
-            {%- endif %}
-        </div>
     </div>
   </li>
 

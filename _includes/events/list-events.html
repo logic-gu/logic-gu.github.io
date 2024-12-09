@@ -16,10 +16,33 @@
 
   <li>
 
-    <a class="post-title" href="{{ event.url | relative_url }}">
-    <h3>{% if event.headline %}{{ event.headline }}: {% endif %}{{ event.speaker }}{%- if event.speaker and event.affil %} <span "event-affiliation">({{ event.affil }})</span>{%- endif -%}</h3>
-    <h4>{{ event.title }}</h4>
-    </a>
+    <div class="post-title">
+      <a href="{{ event.url | relative_url }}">
+      <h3>{% if event.headline %}{{ event.headline }}: {% endif %}{{ event.speaker }}{%- if event.speaker and event.affil %} <span class="event-affiliation">({{ event.affil }})</span>{%- endif -%}</h3>
+      <h4>{{ event.title }}</h4>
+      </a>
+      <div class="post-meta">
+        {% include snippets/show_date.liquid 
+          start-date = event.date-start
+          date = event.date
+          end-date = event.date-end
+          -%}
+        {%- if event.location %}
+          &nbsp;
+          {% include snippets/show_location.liquid location=event.location %}
+        {%- endif %}
+        {% if categories != "" %}
+          &nbsp; &middot; 
+          {% for category in event.categories %}
+          &nbsp;
+            {% include snippets/show_category.liquid 
+              category = category
+              active = true
+              %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
 
     <div class="post-body">
       {%- assign excerptParts = event.content | split: event.excerpt_separator -%}
@@ -36,36 +59,6 @@
           {{ excerptParts[1] | markdownify }}
         </details>
       {%- endif -%}
-    </div>
-    <div class="post-footer">
-      <div class="post-meta">
-          {% include snippets/show_date.liquid 
-            start-date = event.date-start
-            date = event.date
-            end-date = event.date-end
-            -%}
-          {%- if event.location %}
-            &nbsp;
-            {% include snippets/show_location.liquid location=event.location %}
-          {%- endif %}
-          <!-- {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in event.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
-              {% endfor %}
-          {% endif %} -->
-          {% if categories != "" %}
-            &nbsp; &middot; 
-            {% for category in event.categories %}
-            &nbsp;
-              {% include snippets/show_category.liquid 
-                category = category
-                active = true
-                %}
-            {% endfor %}
-          {% endif %}
-        </div>
     </div>
   </li>
 
