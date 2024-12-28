@@ -18,8 +18,10 @@ layout: default
       %}
 
     {% include events/display-years.liquid %}
+
+    {% assign posts = page.posts | reverse %}
     
-    {% include events/list-events.html events=page.posts %}
+    {% include events/list-events.html events=posts %}
   </article>
 
 </div>
