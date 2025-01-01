@@ -12,8 +12,8 @@ In this paper, we start the study of descriptive complexity based on weighted Tu
 We provide machine-independent characterizations (over ordered structures) of the weighted complexity classes NP[S], FP[S], FPLOG[S], FPSPACE[S], and FPSPACEpoly[S] in terms of definability in suitable weighted logics for an arbitrary semiring S.
 In particular, we prove weighted versions of Fagin’s theorem (even for arbitrary structures, not necessarily ordered, provided that the semiring is idempotent and commutative), the Immerman–Vardi’s theorem (originally for P) and the Abiteboul–Vianu–Vardi’s theorem (originally for PSPACE).
 We also discuss a recent open problem proposed by Eiter and Kiesel.
-<!--more-->
 
+<!--more-->
 Recently, the above mentioned weighted complexity classes have been investigated in connection to classical counting complexity classes.
 Furthermore, several classical counting complexity classes have been characterized in terms of particular weighted logics over the semiring N of natural numbers.
 In this work, we cover several of these classes and obtain new results for others such as NPMV, ⊕P, or the collection of real-valued languages realized by nondeterministic polynomial-time real-valued Turing machines.
