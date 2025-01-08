@@ -8,13 +8,17 @@ nav_order: 1
 
 profiles: true
 profile-order:
-  - professor
-  - s-lecturer
-  - ass-lecturer
-  - lecturer
-  - postdoc
-  - phd
-  - visitor
+  primary:
+    - professor
+    - s-lecturer
+    - ass-lecturer
+    - lecturer
+    - postdoc
+    - phd
+  secondary:
+    - visitor
+    - affiliate
+    - past
 
 ---
 

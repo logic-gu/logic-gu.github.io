@@ -9,8 +9,8 @@ layout: page
   {{ content }}
   
   {% if page.profiles -%}
-    {% for position in page.profile-order %}
     {% assign position-names = site.data.profiles.aliases %}
+    {% for position in page.profile-order.primary %}
       {% assign profiles = site.profiles | where:"position",position | sort: "sort_by" %}
       {% for profile in profiles %}
       {% unless profile.hide %}
@@ -52,16 +52,24 @@ layout: page
       {% endunless %}
       {% endfor %}
     {% endfor %}
-    <!-- <h2>Past and affiliate members</h2>
-    <ul>
-      {% for member in site.data.members-past-affiliate %}
-      {% assign person = site.data.people[member] %}
-      <li>  
-        - **{% if person.homepage %}[{{ person.full-name }}]({{ person.homepage }} "{{ person.full-name }}"){% else %}{{ person.full-name }}{% endif %}** – _{{ person.position }}_
-        {{ person.description | markdownify }}
-        {% endfor %}
-      </li>
-    </ul> -->
+    <h2>Past and affiliate members</h2>
+    {% for position in page.profile-order.secondary %}
+      {% assign profiles = site.profiles | where:"position",position | sort: "sort_by" %}
+      {% for profile in profiles %}
+      {% unless profile.hide %}
+        <hr>
+         <div class="clearfix profile-description">
+          <h2>{{ profile.name }}, {{ position-names[profile.position] }}</h2>
+          {% if profile.content -%}
+            {{ profile.content | markdownify }}
+          {%- endif %}
+          {% if profile.homepage %}
+            <div class="profile-footer"><a href="{{ profile.homepage }}">Personal webpage</a></div>
+          {% endif %}
+        </div>
+      {% endunless %}
+      {% endfor %}
+    {% endfor %}
   {%- endif %}
 </article>
 
