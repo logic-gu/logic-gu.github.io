@@ -2,7 +2,7 @@
 name: Ivan Di Liberti
 short_name: Ivan
 sort_by: Di Liberti
-position: postdoc
+position: ass-lecturer
 homepage: https://diliberti.github.io
 
 
