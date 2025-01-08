@@ -1,10 +1,11 @@
-profiles:
+aliases:
   professor: "Professor"
   s-lecturer: "Senior Lecturer"
   ass-lecturer: "Associate Senior Lecturer"
   lecturer: "Lecturer"
   postdoc: "Postdoctoral Researcher"
   phd: "PhD student"
-  visiter: "Visiting Researcher"
+  visitor: "Visiting Researcher"
   affiliate: "Affiliate member"
+  past: "Past member"
 

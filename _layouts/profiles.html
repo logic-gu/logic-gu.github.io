@@ -9,8 +9,8 @@ layout: page
   {{ content }}
   
   {% if page.profiles -%}
-    {% assign position-names = site.data.aliases.profiles %}
     {% for position in page.profile-order %}
+    {% assign position-names = site.data.profiles.aliases %}
       {% assign profiles = site.profiles | where:"position",position | sort: "sort_by" %}
       {% for profile in profiles %}
       {% unless profile.hide %}
