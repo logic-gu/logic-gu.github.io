@@ -9,6 +9,8 @@ Examples include propositional dynamic logics such as PDL and KAT (Kleene Algebr
 Underlying each of these is a “binary relation algebra” , i.e., an algebraic signature consisting of finitely many operations on binary relations.
 The specific set of operators, in each of the aforementioned languages, is typically chosen as a compromise between computational complexity and expressive power and/or may be based on a requirement to preserve certain natural structural properties such as functionality or bisimulation.
 
+<!--more-->
+
 Preservation theorems link semantics properties of formulas to their syntactic shape.
 The most famous example is the Łoś-Tarski theorem, which states that a first-order formula is preserved under induced substructures (i.e., remains true if one passes from a structure to an induced substructure) if and only if it can be written without using any existential quantifiers (assuming negation normal form).
 In this talk, we will review some recent results (both positive and negative) about the existence of preservation theorems for algebras of binary relations.

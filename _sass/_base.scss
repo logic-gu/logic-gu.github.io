@@ -687,6 +687,7 @@ footer.sticky-bottom {
 
     details[open] summary {
       // display: none;
+      cursor: text;
       p:last-of-type {
         padding-bottom: 1rem;
       }
