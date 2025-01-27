@@ -1,6 +1,6 @@
 ---
-speaker: 
-affil: 
+speaker: Errol Yuksel
+affil: Stockholm University
 title: 
 date: 2025-03-21 10:15:00 +01:00
 location: Humanisten, J577
