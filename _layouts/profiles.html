@@ -52,6 +52,7 @@ layout: page
       {% endunless %}
       {% endfor %}
     {% endfor %}
+    {%- if page.profile-order.secondary -%}
     <h2>Past and affiliate members</h2>
     {% for position in page.profile-order.secondary %}
       {% assign profiles = site.profiles | where:"position",position | sort: "sort_by" %}
@@ -70,6 +71,7 @@ layout: page
       {% endunless %}
       {% endfor %}
     {% endfor %}
+    {%- endif %}
   {%- endif %}
 </article>
 

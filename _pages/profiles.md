@@ -15,10 +15,7 @@ profile-order:
     - lecturer
     - postdoc
     - phd
-  secondary:
     - visitor
-    - affiliate
-    - past
 
 ---
 

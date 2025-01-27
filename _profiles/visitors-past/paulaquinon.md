@@ -3,6 +3,7 @@ name: Paula Quinon
 short_name: Paula
 sort_by: Quinon
 position: visitor
+homepage: https://www.paulaquinon.com
 
 # hide: true
 
