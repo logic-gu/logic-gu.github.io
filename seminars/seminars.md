@@ -9,7 +9,7 @@ contact: graham # person in _profiles/
 nav: true
 nav_order: 2
 
-show_categories:
+display_categories:
   - seminars
   - nol
   - lindstrom-lectures

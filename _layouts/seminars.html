@@ -14,8 +14,10 @@ layout: default
       {{ content | markdownify }}
     </div>
 
+    {% assign dis_cats = site.display_categories %}
+
     {% include events/display-tags.liquid 
-      categories = site.display_categories
+      categories = dis_cats
       %}
 
     {% include events/display-years.liquid %}
