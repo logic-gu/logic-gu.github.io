@@ -26,3 +26,5 @@ social: false  # includes social icons at the bottom of the page
 Welcome to the webpage of the Logic group at the University of Gothenburg.
 Information about our research and activities can be found through the menu at the top.
 More detailed information about our research and activities can be found on the personal pages of [group members]({% link _pages/profiles.md %}) and our [homepage at the University of Gothenburg]({{ site.data.links['flov-logic-group'].url }}).
+
+Our group holds a bi-weekly [research seminar in Logic]({% link seminars/seminars.md %}), the annual [Lindström Lecture series]({% link lindstrom-lectures/index.md %}) and other [events]({% link _pages/activities.md %}) including workshops and an annual Gothenburg World Logic Day Pub Quiz.

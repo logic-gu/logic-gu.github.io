@@ -13,9 +13,9 @@ We organise a number of different activities to promote logic and its integratio
 
 ## Seminars
 
-- [Research seminar in logic]({{ '/seminars/' | prepend: site.baseurl }}) at the University of Gothenburg.
-- [Nordic Online Logic Seminar]({{ '/nol/' | prepend: site.baseurl }}).
-- [The Lindström Lectures]({{ '/lindstrom-lectures/' | prepend: site.baseurl }}), distinguished lecture series in logic.
+- [Research seminar in logic]({% link seminars/seminars.md %}) at the University of Gothenburg.
+- [Nordic Online Logic Seminar]({{ '/nol/' | prepend: site.baseurl }}), a monthly online seminar of expository talks across all areas in logic.
+- [The Lindström Lectures]({% link lindstrom-lectures/index.md %}), distinguished lecture series in logic.
 
 ## World Logic Day
 
