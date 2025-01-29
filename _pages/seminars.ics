@@ -1,0 +1,30 @@
+---
+layout: null
+permalink: seminars.ics
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:https://gu-logic.se
+METHOD:PUBLISH{% for post in site.posts limit:10 %}
+BEGIN:VEVENT
+UID:{{ post.date | date: "%Y%m%d" }}@gu-logic.se
+ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:logicgroup@gu.se
+LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
+SUMMARY:{{ post.title | replace: ',', '\\,' | replace: ';', '\\;' }}
+DESCRIPTION:{%- if post.speaker -%}Speaker: {{post.speaker | replace: ',', '\\,' | replace: ';', '\\;' }}\, {{post.affil | replace: ',', '\\,' | replace: ';', '\\;' }}\n{% endif %}More details at {{ site.url }}{{ post.url }}
+CLASS:PUBLIC
+DTSTART;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
+{% assign mins = post.date | date: "%M" | plus: 45 -%}
+{% assign overflow = mins | divided_by: 60 -%}
+{% assign mins = mins | modulo: 60 -%}
+{% assign hours = post.date | date: "%H" | plus: 1 | plus: overflow -%}
+{% if mins < 10  -%}
+  {% assign mins = mins | prepend: "0" -%}
+{% endif -%}
+{% if hours < 10  -%}
+  {% assign hours = hours | prepend: "0" -%}
+{% endif -%}
+DTEND;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT" }}{{hours}}{{mins}}00
+DTSTAMP:{{ post.date | date: "%Y%m%dT%H%M%S" }}
+END:VEVENT{% endfor %}
+END:VCALENDAR
