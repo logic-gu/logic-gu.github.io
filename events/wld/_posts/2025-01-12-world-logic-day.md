@@ -1,7 +1,7 @@
 ---
 speaker: 
 affil: 
-title: World Logic Day 2025 Pub Quiz
+title: World Logic Day Pub Quiz
 date: 2025-01-12 17:30:00 +01:00
 ---
 

@@ -1,7 +1,7 @@
 ---
 speaker: 
 affil: 
-title: World Logic Day 2024
+title: World Logic Day Pub Quiz
 date: 2024-01-14 17:30:00 +01:00
 ---
 

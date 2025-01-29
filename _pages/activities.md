@@ -17,6 +17,10 @@ We organise a number of different activities to promote logic and its integratio
 - [Nordic Online Logic Seminar]({{ '/nol/' | prepend: site.baseurl }}).
 - [The Lindström Lectures]({{ '/lindstrom-lectures/' | prepend: site.baseurl }}), distinguished lecture series in logic.
 
+## World Logic Day
+
+- Gothenburg [World Logic Day Pub Quiz]({{ '/wld/' | prepend: site.baseurl }}) (since 2022).
+
 ## Conferences and workshops
 
 - [Logic Colloquium 2024](https://lc2024.se), 24--28 June 2024.

@@ -1,12 +1,11 @@
 ---
 layout: seminars
-permalink: events/
-title: Events
-description: Workshops, conferences and socials
+permalink: /wld/
+title: World Logic Day at Gothenburg
+description: A logic-themed Pub Quiz to celebrate World Logic Day on 14 January.
 
 display_categories:
-  - events
-  - wld
+    - wld
 
 nav: false
 nav_order: 6
@@ -14,8 +13,8 @@ nav_order: 6
 pagination:
   enabled: true
   collection: posts
-  category: events
-  # permalink: :num/
+  category: wld
+  # permalink: /nol/:num/
   per_page: 10
   sort_field: date
   sort_reverse: true

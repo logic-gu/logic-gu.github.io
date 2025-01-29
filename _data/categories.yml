@@ -13,3 +13,6 @@ event:
 events: 
   name: "Events"
   page: '/events/'
+wld: 
+  name: "World Logic Day"
+  page: '/wld/'
