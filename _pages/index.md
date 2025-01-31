@@ -28,3 +28,4 @@ Information about our research and activities can be found through the menu at t
 More detailed information about our research and activities can be found on the personal pages of [group members]({% link _pages/profiles.md %}) and our [homepage at the University of Gothenburg]({{ site.data.links['flov-logic-group'].url }}).
 
 Our group holds a bi-weekly [research seminar in Logic]({% link seminars/seminars.md %}), the annual [Lindström Lecture series]({% link lindstrom-lectures/index.md %}) and other [events]({% link _pages/activities.md %}) including workshops and an annual Gothenburg World Logic Day Pub Quiz.
+Together with Stockholm University, we organise the monthly [Nordic Online Logic Seminar]({{ '/nol/' | prepend: site.baseurl }}).
