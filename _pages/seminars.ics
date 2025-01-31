@@ -1,17 +1,18 @@
 ---
 layout: null
 permalink: seminars.ics
+contact: graham.leigh@gu.se
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:https://gu-logic.se
-METHOD:PUBLISH{% for post in site.posts limit:10 %}
+PRODID:{{ site.url }}
+METHOD:PUBLISH{% for post in site.posts limit:12 %}
 BEGIN:VEVENT
-UID:{{ post.date | date: "%Y%m%d" }}@gu-logic.se
-ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:logicgroup@gu.se
+UID:{{ post.date | date: "%Y%m%dT%H" }}@logic-gu.se
+ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:{{ page.contact }}
 LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 SUMMARY:{{ post.title | replace: ',', '\\,' | replace: ';', '\\;' }}
-DESCRIPTION:{%- if post.speaker -%}Speaker: {{post.speaker | replace: ',', '\\,' | replace: ';', '\\;' }}\, {{post.affil | replace: ',', '\\,' | replace: ';', '\\;' }}\n{% endif %}More details at {{ site.url }}{{ post.url }}
+DESCRIPTION:{%- if post.speaker -%}Speaker: {{post.speaker | replace: ',', '\\,' | replace: ';', '\\;' }}\, {{post.affil | replace: ',', '\\,' | replace: ';', '\\;' }}\n{% endif %}More details at {{ site.url }}{{ site.baseurl }}{{ post.url }}
 CLASS:PUBLIC
 DTSTART;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
 {% assign mins = post.date | date: "%M" | plus: 45 -%}
