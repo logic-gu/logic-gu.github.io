@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: events.ics
+contact: graham.leigh@gu.se
+---
+{%- include event-calendar.ics
+  contact = page.contact
+  limit = 12
+-%}

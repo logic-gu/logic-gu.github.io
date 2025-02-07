@@ -1,15 +1,13 @@
----
-layout: null
-permalink: seminars.ics
-contact: graham.leigh@gu.se
----
+{%- assign contact = include.contact -%}
+{%- assign events = include.events | default: site.posts -%}
+{%- assign limit = include.limit | default: events.size -%}
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:{{ site.url }}
-METHOD:PUBLISH{% for post in site.posts limit:12 %}
+METHOD:PUBLISH{% for post in events limit: limit %}
 BEGIN:VEVENT
 UID:{{ post.date | date: "%Y%m%dT%H" }}@logic-gu.se
-{{ page.contact | prepend: 'ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:' | wrap_lines }}
+{{ contact | prepend: 'ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:' | wrap_lines }}
 LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 {{ post.title | prepend: "SUMMARY:" | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
 {% assign description = "DESCRIPTION:" -%}
