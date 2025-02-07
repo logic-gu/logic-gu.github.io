@@ -1,0 +1,8 @@
+---
+layout: null
+permalink: events-archive.ics
+contact: graham.leigh@gu.se
+---
+{%- include event-calendar.ics
+  contact = page.contact
+-%}
