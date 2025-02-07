@@ -9,10 +9,18 @@ PRODID:{{ site.url }}
 METHOD:PUBLISH{% for post in site.posts limit:12 %}
 BEGIN:VEVENT
 UID:{{ post.date | date: "%Y%m%dT%H" }}@logic-gu.se
-ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:{{ page.contact }}
+{{ page.contact | prepend: 'ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:' | wrap_lines }}
 LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
-SUMMARY:{{ post.title | replace: ',', '\\,' | replace: ';', '\\;' }}
-DESCRIPTION:{%- if post.speaker -%}Speaker: {{post.speaker | replace: ',', '\\,' | replace: ';', '\\;' }}\, {{post.affil | replace: ',', '\\,' | replace: ';', '\\;' }}\n{% endif %}More details at {{ site.url }}{{ site.baseurl }}{{ post.url }}
+{{ post.title | prepend: "SUMMARY:" | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
+{% assign description = "DESCRIPTION:" -%}
+{% if post.speaker -%}
+  {% assign description = description | append: "Speaker: " | append: post.speaker -%}
+  {% assign description = description | append: ", " | append: post.affil | append: "\n" -%}
+{% endif -%}
+{% assign description = description | append: "More details at " | append: site.url -%}
+{% assign description = description | append: site.baseurl | append: post.url -%}
+{% assign description = description | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines -%}
+{{ description }}
 CLASS:PUBLIC
 DTSTART;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
 {% assign mins = post.date | date: "%M" | plus: 45 -%}
