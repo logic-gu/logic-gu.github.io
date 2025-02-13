@@ -1,6 +1,6 @@
 ---
-speaker: 
-affil: 
+speaker: Giovanni Varricchione
+affil: Utrecht University
 title: 
 date: 2025-05-16 09:15:00 +01:00
 location: Humanisten, C562
