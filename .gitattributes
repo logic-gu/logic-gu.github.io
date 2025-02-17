@@ -1,0 +1,3 @@
+## Specify line ending behavior for specific file types
+* text=auto
+*.ics text eol=crlf
