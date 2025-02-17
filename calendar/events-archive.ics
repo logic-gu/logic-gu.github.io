@@ -2,7 +2,10 @@
 layout: null
 permalink: events-archive.ics
 contact: graham.leigh@gu.se
+start: 2025-01-01 00:00:00 +0100
 ---
+{%- assign posts = site.posts | where_exp:"item", "page.start < item.date" -%}
 {%- include event-calendar.ics
   contact = page.contact
+  events = posts
 -%}
