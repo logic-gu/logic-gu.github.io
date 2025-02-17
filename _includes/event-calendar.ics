@@ -35,3 +35,4 @@ DTEND;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT" }}{{hours}}{{mins}}00
 DTSTAMP:{{ post.date | date: "%Y%m%dT%H%M%S" }}
 END:VEVENT{% endfor %}
 END:VCALENDAR
+
