@@ -52,7 +52,7 @@ layout: default
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
       {% assign events = site.posts | where_exp:"item", "site.time < item.date" | sort:"date-start" | sort:"featured" | reverse %}
       {% if site.debug %}Found {{ events.size }} upcoming events; limit is {{ page.upcoming-limit }} {% endif %}
-      {% if page.upcoming-limit %}
+      {% if page.upcoming-limit > 0 %}
         {% assign events = events | slice:0, page.upcoming-limit  %}
       {% endif %}
 

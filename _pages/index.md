@@ -12,7 +12,7 @@ image_credit: Amelie Wehr
 
 news: true  # includes a list of news items
 upcoming: true # include list of upcoming events
-upcoming-limit: 6
+upcoming-limit: 0
 show_upcoming:
   - seminar
   - nol
