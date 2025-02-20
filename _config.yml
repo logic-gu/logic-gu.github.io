@@ -295,7 +295,7 @@ optional_front_matter:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ['robots.txt']
+  exclude: ['robots.txt','calendar/test.ics','*.ics']
   uglifier_args:
     harmony: true
 
