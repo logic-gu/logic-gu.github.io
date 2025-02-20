@@ -278,10 +278,17 @@ plugins:
   # - jekyll-toc
   # - jekyll-twitter-plugin
   # - jemoji
+  # - jekyll-optional-front-matter
 
 
 sass:
   style: compressed
+
+# -----------------------------------------------------------------------------
+# Jekyll Optional Front matter (Github pages)
+# -----------------------------------------------------------------------------
+optional_front_matter:
+  enabled: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
