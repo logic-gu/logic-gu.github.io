@@ -181,6 +181,7 @@ defaults:
     values:
       title: Logic Seminar
       event-type: Logic Seminar
+      duration: 105 # length in mins
       # speaker: TBC
   - scope:
       path: "nol/"
@@ -188,6 +189,7 @@ defaults:
     values:
       title: Nordic Online Logic Seminar
       event-type: Nordic Online Logic Seminar
+      duration: 90
       location: zoom
   - scope:
       path: "events/"
@@ -207,6 +209,7 @@ defaults:
       # permalink: /lindstrom-lectures/:title
       lindstrom-lecture: true
       event-type: Lindström Lecture
+      duration: 90 # default talk duration
   - scope: # a place for old stuff
       path: "unused/"
     values:
