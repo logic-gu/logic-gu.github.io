@@ -9,10 +9,18 @@ BEGIN:VEVENT
 UID:{{ post.date | date: "%Y%m%dT%H" }}@logic-gu.se
 {{ contact | prepend: 'ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:' | wrap_lines }}
 LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
-{{ post.title | prepend: "SUMMARY:" | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
+{% assign summary = post.speaker | default: post.title -%}
+{% if post.event-type -%}
+  {% assign summary = post.event-type | append: ": " | append: summary -%}
+{% endif -%}
+{{ summary | prepend: "SUMMARY:" | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
 {% assign description = "DESCRIPTION:" -%}
 {% if post.speaker -%}
   {% assign description = description | append: "Speaker: " | append: post.speaker -%}
+  {% assign description = description | append: ", " | append: post.affil | append: "\n" -%}
+{% endif -%}
+{% if post.title -%}
+  {% assign description = description | append: "Title: " | append: post.title -%}
   {% assign description = description | append: ", " | append: post.affil | append: "\n" -%}
 {% endif -%}
 {% assign description = description | append: "More details at " | append: site.url -%}
@@ -20,7 +28,11 @@ LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 {% assign description = description | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines -%}
 {{ description }}
 CLASS:PUBLIC
-DTSTART;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
+{% if post.date-start -%}{% comment %}Specifies multi-day{% endcomment -%}
+DTSTART;TZ=Europe/Stockholm:{{ post.date-start | date: "%Y%m%dT%H%M%S" }}
+DTEND;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
+{% else -%}{% comment %}Assume seminar{% endcomment -%}
+ DTSTART;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
 {% assign mins = post.date | date: "%M" | plus: 45 -%}
 {% assign overflow = mins | divided_by: 60 -%}
 {% assign mins = mins | modulo: 60 -%}
@@ -32,6 +44,7 @@ DTSTART;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
   {% assign hours = hours | prepend: "0" -%}
 {% endif -%}
 DTEND;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT" }}{{hours}}{{mins}}00
+{% endif -%}
 DTSTAMP:{{ post.date | date: "%Y%m%dT%H%M%S" }}
 END:VEVENT{% endfor %}
 END:VCALENDAR
