@@ -180,18 +180,21 @@ defaults:
       type: "posts"
     values:
       title: Logic Seminar
+      event-type: Logic Seminar
       # speaker: TBC
   - scope:
       path: "nol/"
       type: "posts"
     values:
       title: Nordic Online Logic Seminar
+      event-type: Nordic Online Logic Seminar
       location: zoom
   - scope:
       path: "events/"
       type: "posts"
     values:
       excerpt-only: true
+      # event-type: Event
   - scope:
       path: "assets"
     values:
@@ -203,6 +206,7 @@ defaults:
       # layout: lindstrom-lectures
       # permalink: /lindstrom-lectures/:title
       lindstrom-lecture: true
+      event-type: Lindström Lecture
   - scope: # a place for old stuff
       path: "unused/"
     values:
