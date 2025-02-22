@@ -13,54 +13,60 @@
   {% if debug_mode %}Showing {{ include.events.size }} events{% endif %}
 
   {% for event in include.events %}
+    {%- capture heading1 -%} {{ event.speaker | default: event.title }}{%- if event.speaker and event.affil %} <span class="event-affiliation">({{ event.affil }})</span>{%- endif -%}{%- endcapture -%}
+    {%- if event.speaker %}
+      {%- assign heading2 = event.title -%}
+    {%- else %}
+      {%- assign heading2 = -%}
+    {% endif %}
 
-  <li>
+    <li>
 
-    <div class="post-title">
-      <a href="{{ event.url | relative_url }}">
-      <h3>{% if event.headline %}{{ event.headline }}: {% endif %}{{ event.speaker }}{%- if event.speaker and event.affil %} <span class="event-affiliation">({{ event.affil }})</span>{%- endif -%}</h3>
-      <h4>{{ event.title }}</h4>
-      </a>
-      <div class="post-meta">
-        {% include snippets/show_date.liquid 
-          start-date = event.date-start
-          date = event.date
-          end-date = event.date-end
-          -%}
-        {%- if event.location %}
-          &nbsp;
-          {% include snippets/show_location.liquid location=event.location %}
-        {%- endif %}
-        {% if categories != "" %}
-          &nbsp; &middot; 
-          {% for category in event.categories %}
-          &nbsp;
-            {% include snippets/show_category.liquid 
-              category = category
-              active = true
-              %}
-          {% endfor %}
-        {% endif %}
+      <div class="post-title">
+        <a href="{{ event.url | relative_url }}">
+        <h3>{{ heading1 }}</h3>
+        {% if heading2 %}<h4>{{ heading2 }}</h4>{% endif %}
+        </a>
+        <div class="post-meta">
+          {% include snippets/show_date.liquid 
+            start-date = event.date-start
+            date = event.date
+            end-date = event.date-end
+            -%}
+          {%- if event.location %}
+            &nbsp;
+            {% include snippets/show_location.liquid location=event.location %}
+          {%- endif %}
+          {% if categories != "" %}
+            &nbsp; &middot; 
+            {% for category in event.categories %}
+            &nbsp;
+              {% include snippets/show_category.liquid 
+                category = category
+                active = true
+                %}
+            {% endfor %}
+          {% endif %}
+        </div>
       </div>
-    </div>
 
-    <div class="post-body">
-      {%- assign excerptParts = event.content | split: event.excerpt_separator -%}
-      {%- if event.excerpt-only -%}
-        {%- if debug_mode -%}<em>Excerpt only requested:</em>{%- endif -%}
-        {{ event.excerpt }}
-      {%- elsif excerptParts[1] == nil -%}
-        {%- if debug_mode -%}<em>No excerpt:</em>{%- endif -%}
-        {{ event.content | markdownify }}
-      {%- else -%}
-        {%- if debug_mode -%}<em>More content than excerpt</em>{%- endif -%}
-        <details>
-          <summary><div>{{ event.excerpt }}</div></summary>
-          {{ excerptParts[1] | markdownify }}
-        </details>
-      {%- endif -%}
-    </div>
-  </li>
+      <div class="post-body">
+        {%- assign excerptParts = event.content | split: event.excerpt_separator -%}
+        {%- if event.excerpt-only -%}
+          {%- if debug_mode -%}<em>Excerpt only requested:</em>{%- endif -%}
+          {{ event.excerpt }}
+        {%- elsif excerptParts[1] == nil -%}
+          {%- if debug_mode -%}<em>No excerpt:</em>{%- endif -%}
+          {{ event.content | markdownify }}
+        {%- else -%}
+          {%- if debug_mode -%}<em>More content than excerpt</em>{%- endif -%}
+          <details>
+            <summary><div>{{ event.excerpt }}</div></summary>
+            {{ excerptParts[1] | markdownify }}
+          </details>
+        {%- endif -%}
+      </div>
+    </li>
 
   {% endfor %}
 </ul>

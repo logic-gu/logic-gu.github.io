@@ -25,7 +25,7 @@ layout: default
     {%- if page.pagination.enabled -%}
       {%- assign eventlist = paginator.posts -%}
     {%- else -%}
-      {%- assign eventlist = site.posts | where_exp:"item", "item.speaker or item.headline or item.title != 'Logic Seminar'" | where_exp:"item", "display_categories contains item.categories.first" -%}
+      {%- assign eventlist = site.posts | where_exp:"item", "item.speaker or item.headline or item.title != item.event-type" | where_exp:"item", "display_categories contains item.categories.first" -%}
       {%- if page.limit -%}
         {%- assign eventlist = eventlist | slice:0, page.limit -%}
       {%- endif -%}

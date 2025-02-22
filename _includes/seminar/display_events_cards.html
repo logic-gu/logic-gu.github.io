@@ -3,8 +3,12 @@
 <div class="container featured-posts">
   <div class="row row-cols-1">
   {% for event in featured_events limit: limit %}
-    {% assign heading1 = event.title | default: event.event-type %}
-    {% capture heading2 -%}{{ event.speaker }}{%- if event.speaker and event.affil %} ({{ event.affil }}){%- endif -%}{% endcapture %}
+    {%- capture heading1 -%} {{ event.speaker | default: event.title }}{%- if event.speaker and event.affil %} <span class="event-affiliation">({{ event.affil }})</span>{%- endif -%}{%- endcapture -%}
+    {%- if event.speaker %}
+      {%- assign heading2 = event.title -%}
+    {%- else %}
+      {%- assign heading2 = -%}
+    {% endif %}
     <div class="card-item col">
       <div class="card hoverable">
         <div class="card-body">
