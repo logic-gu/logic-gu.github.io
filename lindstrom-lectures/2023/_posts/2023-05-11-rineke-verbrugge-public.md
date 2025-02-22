@@ -1,7 +1,7 @@
 ---
 speaker: Rineke Verbrugge
 affil: University of Groningen
-headline: Public Lindström Lecture
+event-type: Public Lindström Lecture
 title: Combining probability and provability logic
 date: 2023-05-11 18:00:00 +02:00
 location:  J439, Humanisten

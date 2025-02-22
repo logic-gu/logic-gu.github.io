@@ -2,7 +2,7 @@
 speaker: Johan van Benthem
 affil: University of Amsterdam, Stanford University, Tsinghua University Beijing
 title: Dynamic Logics of Model Change
-headline: Research Lindström Lecture
+event-type: Research Lindström Lecture
 date: 2019-11-21 14:30:00 +01:00
 ---
 Information update and real-world action suggest a universe of changing models, where finding the valid dynamic laws involves logical languages with modalities for model change. I will discuss two families of such dynamic modal logics, stating some typical results, as well as open problems.

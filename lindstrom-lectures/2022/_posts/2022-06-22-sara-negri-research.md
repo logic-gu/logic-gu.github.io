@@ -2,7 +2,7 @@
 speaker: Sara Negri
 affil: University of Genoa
 title: On modal embeddings
-headline: Research Lindström Lecture
+event-type: Research Lindström Lecture
 date: 2022-06-22 10:00:00 +02:00
 ---
 

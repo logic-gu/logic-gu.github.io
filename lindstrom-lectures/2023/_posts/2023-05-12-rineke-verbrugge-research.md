@@ -1,7 +1,7 @@
 ---
 speaker: Rineke Verbrugge
 affil: University of Groningen
-headline: Research Lindström Lecture
+event-type: Research Lindström Lecture
 title: Aspects of provability and interpretability
 date: 2023-05-12 10:00:00 +02:00
 location:  J439

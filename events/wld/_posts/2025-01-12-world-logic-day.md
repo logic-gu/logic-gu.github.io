@@ -3,6 +3,7 @@ speaker:
 affil: 
 title: World Logic Day Pub Quiz
 date: 2025-01-12 17:30:00 +01:00
+duration: 150
 ---
 
 The Logic Group at the University of Gothenburg hosts its annual World Logic Day Pub Quiz.

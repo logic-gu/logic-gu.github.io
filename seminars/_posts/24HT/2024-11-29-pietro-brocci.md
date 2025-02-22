@@ -12,6 +12,8 @@ Following Feferman and McGee, we argue in favour of the open-ended nature of the
 mathematical concept is legitimately defined the schema should hold for the extended language. For truth, this results in more justificatory power as one can prove the consistency statement of the arithmetical theory.
 Moreover, the exact nature of the justificatory power of positive disquotational truth can be pinned down via an ordinal analysis of the theory, as done by Halbach.
 
+<!--more-->
+
 We explore the possibility of extending this disquotational definition of truth via a principle of Generalised Induction introduced by Cantini. The principle is conservative
 over PA, meaning it preserves the epistemic status of a definition. Furthermore, we argue that the adoption of this principle is particularly motivated in the case of positive disquotational truth. Once this new truth predicate is allowed in the induction schema, we obtain significantly more justificatory power than the original disquotational theory. I conclude by sketching a possible
 strategy via a collapsing procedure to show that this result is sharp. 

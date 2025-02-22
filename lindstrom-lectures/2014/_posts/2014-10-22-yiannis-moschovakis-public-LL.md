@@ -1,7 +1,7 @@
 ---
 speaker: Yiannis Moschovakis
 affil: Emeritus Professor of Mathematics at University of Southern California, Los Angeles
-headline: Public Lindström Lecture
+event-type: Public Lindström Lecture
 title: "Frege’s sense and denotation as algorithm and value"
 date: 2014-10-22 15:30:00 +01:00
 ---

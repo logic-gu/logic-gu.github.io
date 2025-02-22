@@ -1,7 +1,7 @@
 ---
 speaker: Joan Rand Moschovakis
 affil: Emerita Professor of Mathematics at Occidental College, Los Angeles, California
-headline: Public Lindström Lecture
+event-type: Public Lindström Lecture
 title: "Intuitionistic Analysis, Forward and Backward"
 date: 2014-10-22 13:15:00 +01:00
 ---

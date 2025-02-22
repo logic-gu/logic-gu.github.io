@@ -15,7 +15,7 @@ display_categories:
   - lindstrom-lectures
   - events
 
-limit: 10
+limit: 20
 
 # debug: true
 

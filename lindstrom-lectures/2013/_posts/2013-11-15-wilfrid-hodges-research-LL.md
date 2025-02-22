@@ -1,7 +1,7 @@
 ---
 speaker: Wilfrid Hodges
 affil: Fellow of the British Academy and Emeritus Professor, Queen Mary, University of London
-headline: Research Lindström Lecture
+event-type: Research Lindström Lecture
 title: "Ibn Sina on discharging assumptions in proofs"
 date: 2013-11-15 16:00:00 +01:00
 ---

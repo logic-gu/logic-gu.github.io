@@ -1,7 +1,7 @@
 ---
 speaker: Phokion G. Kolaitis
 affil: University of California Santa Cruz and IBM Research
-headline: Public Lindström Lecture
+event-type: Public Lindström Lecture
 title: Characterizing Rule-based Languages
 date: 2024-04-15 18:00:00 +02:00
 location:  J439, Humanisten

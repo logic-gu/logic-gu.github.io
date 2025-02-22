@@ -1,7 +1,7 @@
 ---
 speaker: Wilfrid Hodges
 affil: Fellow of the British Academy and Emeritus Professor, Queen Mary, University of London
-headline: Public Lindström Lecture
+event-type: Public Lindström Lecture
 title: "Ibn Sina on the foundations of logic"
 date: 2013-11-14 16:00:00 +01:00
 ---

@@ -5,7 +5,10 @@ title: "Proof-theoretic semantics: from intuitionism to classical, from natural 
 date: 2025-02-24 16:00:00 +01:00
 ---
 
-What is the meaning of a logical connective? This is a very difficult and controversial question, primarily because its answer depends on the underlying logical framework. In model-theoretic semantics, the meaning of logical connectives is grounded in mathematical structures that define validity in terms of truth. Proof-theoretic semantics (PtS), by contrast, offers an alternative perspective in which truth is replaced by proof. This shift highlights the role of proofs as the foundation for demonstrative knowledge, particularly in mathematical reasoning. Philosophically, PtS aligns with inferentialism, which holds that the meaning of expressions is determined by inference rules. This makes PtS particularly well-suited for understanding reasoning, as it defines logical connectives based on their role in inference.
+What is the meaning of a logical connective? This is a very difficult and controversial question, primarily because its answer depends on the underlying logical framework. In model-theoretic semantics, the meaning of logical connectives is grounded in mathematical structures that define validity in terms of truth. Proof-theoretic semantics (PtS), by contrast, offers an alternative perspective in which truth is replaced by proof. This shift highlights the role of proofs as the foundation for demonstrative knowledge, particularly in mathematical reasoning. Philosophically, PtS aligns with inferentialism, which holds that the meaning of expressions is determined by inference rules. 
+This makes PtS particularly well-suited for understanding reasoning, as it defines logical connectives based on their role in inference.
+
+<!--more-->
 
 Base-extension semantics (BeS) is a strand of PtS where proof-theoretic validity is defined relative to a given collection of inference rules regarding basic formulas of the language. Although the BeS project has been successfully developed for intuitionistic propositional logic, first-order classical logic and the multiplicative fragment of linear logic among others, its progression as a comprehensive foundation for logical reasoning is still in its early stages.
 

@@ -1,7 +1,7 @@
 ---
 speaker: Yiannis Moschovakis
 affil: Emeritus Professor of Mathematics at University of Southern California, Los Angeles
-headline: Research Lindström Lecture
+event-type: Research Lindström Lecture
 title: "The logical form and meaning of attitudinal sentences"
 date: 2014-10-24 15:30:00 +01:00
 ---

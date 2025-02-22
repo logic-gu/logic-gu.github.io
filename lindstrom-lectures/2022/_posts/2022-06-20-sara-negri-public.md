@@ -2,7 +2,7 @@
 speaker: Sara Negri
 affil: University of Genoa
 title: Syntax and semantics in synergy
-headline: Public Lindström Lecture
+event-type: Public Lindström Lecture
 date: 2022-06-20 18:00:00 +02:00
 ---
 

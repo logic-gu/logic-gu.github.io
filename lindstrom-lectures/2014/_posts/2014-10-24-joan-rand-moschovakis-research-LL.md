@@ -1,7 +1,7 @@
 ---
 speaker: Joan Rand Moschovakis
 affil: Emerita Professor of Mathematics at Occidental College, Los Angeles, California
-headline: Research Lindström Lecture
+event-type: Research Lindström Lecture
 title: "Now Under Construction: Intuitionistic Reverse Analysis"
 date: 2014-10-24 13:15:00 +01:00
 ---
