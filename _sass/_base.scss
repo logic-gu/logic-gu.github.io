@@ -175,6 +175,7 @@ blockquote {
   
   .card-body {
     padding: 1rem;
+    padding-bottom: .5rem;
     height: 13rem;
     font-weight: 300;
   }
@@ -194,6 +195,12 @@ blockquote {
     .row {
       display: flex;
       align-items: center;
+    }
+  }
+
+  .card-text {
+    h1, h2, h3, h4, h5 {
+      font-size: medium;
     }
   }
 }
@@ -1293,7 +1300,7 @@ nav[data-toggle="toc"] {
     // text-overflow: none;
     // white-space: nowrap;
     max-height: 8rem;
-    min-height: 3rem;
+    min-height: 0rem;
     mask-image: linear-gradient(180deg, #000 80%, transparent);
 
     p {
