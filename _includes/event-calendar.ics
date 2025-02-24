@@ -20,14 +20,14 @@ LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 {% if post.event-type -%}
   {% assign description = description | append: post.event-type | append: "\n" -%}
 {% endif -%}
+{% if post.speaker -%}
+  {% assign description = description | append: "Speaker: " | append: post.speaker -%}
+  {% assign description = description | append: ", " | append: post.affil | append: "\n" -%}
+{% endif -%}
 {% if post.title != post.event-type -%}
   {% assign description = description | append: "Title: " | append: post.title | append: "\n" -%}
 {% else -%}
   {% assign description = description | append: event.event-type | append: "\n" -%}
-{% endif -%}
-{% if post.speaker -%}
-  {% assign description = description | append: "Speaker: " | append: post.speaker -%}
-  {% assign description = description | append: ", " | append: post.affil | append: "\n" -%}
 {% endif -%}
 {% assign description = description | append: "More details at " | append: site.url -%}
 {% assign description = description | append: site.baseurl | append: post.url -%}
