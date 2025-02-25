@@ -34,13 +34,12 @@ LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 {% assign description = description | append: "More details at " | append: post-url %}
 {{ description | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
 {%- comment -%}URL: section{%- endcomment -%}
-{% assign url = "URL:" -%}
 {%- if post.online and post.online-id -%}
-  {% assign url = url | append: post.online-id -%}
+  {% assign url = "URL;VALUE=URI:" | append: post.online-id -%}
 {%- else -%}
-  {% assign url = url | append: post-url -%}
+  {% assign url = "URL:" | append: post-url -%}
 {%- endif %}
-{{ url | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
+{{ url | wrap_lines }}
 CLASS:PUBLIC
 {% if post.date-start -%}{% comment %}Specifies multi-day{% endcomment -%}
 DTSTART;TZ=Europe/Stockholm:{{ post.date-start | date: "%Y%m%dT%H%M%S" }}
