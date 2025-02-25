@@ -3,6 +3,8 @@ speaker: Peter van Emde Boas and Ghica van Emde Boas
 affil: University of Amsterdam; Independent Scholar
 title: Analyzing the Logic of Sun Tzu in “The Art of War”, using Mind Maps
 date: 2025-03-24 16:00:00 +01:00
+
+online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
 
 Sun Tzu was a military strategist who lived in China about 2500 years ago.

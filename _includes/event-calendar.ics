@@ -1,21 +1,22 @@
 {%- assign contact = include.contact -%}
 {%- assign events = include.events | default: site.posts -%}
-{%- assign limit = include.limit | default: events.size -%}
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:{{ site.url }}
-METHOD:PUBLISH{% for post in events limit: limit %}
+METHOD:PUBLISH{% for post in events %}
 BEGIN:VEVENT
 UID:{{ post.date | date: "%Y%m%dT%H" }}@logic-gu.se
 {{ contact | prepend: 'ORGANIZER;CN="Logic Group, FLoV, University of Gothenburg":MAILTO:' | wrap_lines }}
 LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
+{%- comment -%}SUMMARY: section{%- endcomment -%}
 {% assign summary = "SUMMARY:" -%}
 {% if post.event-type -%}
   {% assign summary = summary | append: post.event-type | append: ": " | append: post.speaker -%}
 {% else -%}
   {% assign summary = summary | append: post.title -%}
-{% endif -%}
+{% endif %}
 {{ summary | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
+{%- comment -%}DESCRIPTION: section{%- endcomment -%}
 {% assign description = "DESCRIPTION:" -%}
 {% if post.event-type -%}
   {% assign description = description | append: post.event-type | append: "\n" -%}
@@ -29,10 +30,17 @@ LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 {% else -%}
   {% assign description = description | append: event.event-type | append: "\n" -%}
 {% endif -%}
-{% assign description = description | append: "More details at " | append: site.url -%}
-{% assign description = description | append: site.baseurl | append: post.url -%}
-{% assign description = description | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines -%}
-{{ description }}
+{% assign post-url = post.url | absolute_url -%}
+{% assign description = description | append: "More details at " | append: post-url %}
+{{ description | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
+{%- comment -%}URL: section{%- endcomment -%}
+{% assign url = "URL:" -%}
+{%- if post.online and post.online-id -%}
+  {% assign url = url | append: post.online-id -%}
+{%- else -%}
+  {% assign url = url | append: post-url -%}
+{%- endif %}
+{{ url | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
 CLASS:PUBLIC
 {% if post.date-start -%}{% comment %}Specifies multi-day{% endcomment -%}
 DTSTART;TZ=Europe/Stockholm:{{ post.date-start | date: "%Y%m%dT%H%M%S" }}

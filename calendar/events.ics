@@ -2,9 +2,12 @@
 layout: none
 permalink: events.ics
 contact: graham.leigh@gu.se
+limit: 2
 ---
+{% assign old_events = site.posts | where_exp:"item", "item.date <= site.time" | slice:0, page.limit %}
+{% assign events = site.posts | where_exp:"item", "site.time < item.date" | concat: old_events %}
 {%- include event-calendar.ics
   contact = page.contact
-  limit = 12
+  events=events
 -%}
 

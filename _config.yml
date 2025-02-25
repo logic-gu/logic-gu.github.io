@@ -190,7 +190,8 @@ defaults:
       title: Nordic Online Logic Seminar
       event-type: Nordic Online Logic Seminar
       duration: 90
-      location: zoom
+      location: Zoom
+      online: true
   - scope:
       path: "events/"
       type: "posts"
