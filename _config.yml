@@ -28,6 +28,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 # -----------------------------------------------------------------------------
 # Locations
 # -----------------------------------------------------------------------------
+assets_dir: 'assets/'
 image_dir: 'assets/img/'
 people_img_dir: 'assets/img/people/'
 image_dir_LL: 'assets/img/lindstrom-lectures/'

@@ -17,14 +17,14 @@ layout: default
 
 <div class="post">
   {% if page.image -%}
-    {%- assign image_dir = page.image_dir | default: site.image_dir -%}
-    {%- assign image_path = page.image | prepend: site.image_dir -%}
+    {%- assign image_dir = page.assets_dir | default: site.assets_dir | append: '/img/' -%}
+    {%- assign image_path = page.image | prepend: image_dir -%}
     {%- assign image_class = "img-fluid rounded" -%}
     {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
     {%- assign alt_text = page.image_alt -%}
     {%- assign more_info = page.image_more_info -%}
 
-    <div class="page-image float-left" style="max-width: 20%;">
+    <div class="page-image float-{%- if page.image_align == "right" -%}right{%- else -%}left{%- endif %}" style="max-width: 20%;">
       
       {% include figure.html
         path = image_path
