@@ -23,6 +23,7 @@ We organise a number of different activities to promote logic and its integratio
 
 ## Conferences and workshops
 
+- [Gothenburg Cyclothon 2025]({% post_url events/2025-09-24-cyclothon %}), 24--28 June 2024.
 - [Logic Colloquium 2024](https://lc2024.se), 24--28 June 2024.
 - [Workshop on Fixed Points and Ill-founded Proofs]({% post_url events/2023-04-27-wofpip %}), April 2023.
 - [Workshop in Philosophy of Computing](https://www.ans.pw.edu.pl/Aktualnosci/Warsztaty-z-filozofii-obliczen/(language)/eng-GB), September 2021.
