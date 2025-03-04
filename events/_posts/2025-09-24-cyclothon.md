@@ -28,7 +28,6 @@ The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw
 - Alex Leitsch (TU Wien)
 - Reuben Rowe (Royal Holloway)
 - Alexis Saurin (IRIF)
-- Luigi Santocanale (Aix Marseille), TBC
 - Takeshi Tsukada (Chiba University)
 
 
