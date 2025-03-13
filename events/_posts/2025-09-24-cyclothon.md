@@ -4,7 +4,7 @@ permalink: events/cyclothon25
 
 date-start: 2025-09-24 09:30:00 +02:00
 date: 2025-09-26 13:30:00 +02:00
-location: Humanisten
+location: Humanisten, J439
 
 assets_dir: 'events/assets/' 
 image: stenen.png
