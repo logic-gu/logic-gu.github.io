@@ -28,6 +28,7 @@ The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw
 - Reuben Rowe (Royal Holloway)
 - Alexis Saurin (IRIF)
 - Sebastian Enqvist (Stockholm University)
+- Zainab Galal (RIMS, Kyoto and University of Bologna), TBC
 - Helle Hvid Hansen (University of Groningen), TBC
 
 
