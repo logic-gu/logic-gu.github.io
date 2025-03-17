@@ -19,17 +19,17 @@ The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw
 
 ## Confirmed Speakers
 
-- Takeshi Tsukada (Chiba University)
 - Henning Basold (Leiden University)
 - Anupam Das (University of Birmingham)
+- Sebastian Enqvist (Stockholm University)
+- Zainab Galal (RIMS, Kyoto and University of Bologna), TBC
 - Marianna Girlando (University of Amsterdam)
 - Iris van der Giessen (University of Amsterdam)
+- Helle Hvid Hansen (University of Groningen), TBC
 - Alex Leitsch (TU Wien)
 - Reuben Rowe (Royal Holloway)
 - Alexis Saurin (IRIF)
-- Sebastian Enqvist (Stockholm University)
-- Zainab Galal (RIMS, Kyoto and University of Bologna), TBC
-- Helle Hvid Hansen (University of Groningen), TBC
+- Takeshi Tsukada (Chiba University)
 
 
 ## Location
