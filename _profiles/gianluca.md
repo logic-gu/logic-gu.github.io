@@ -2,7 +2,7 @@
 name: Gianluca Curzi 
 short_name: Gianluca
 sort_by: Curzi
-position: postdoc
+position: researcher
 homepage: https://www.gu.se/en/about/find-staff/gianlucacurzi
 
 

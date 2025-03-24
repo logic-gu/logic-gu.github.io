@@ -13,6 +13,7 @@ profile-order:
     - s-lecturer
     - ass-lecturer
     - lecturer
+    - researcher
     - postdoc
     - phd
     - visitor

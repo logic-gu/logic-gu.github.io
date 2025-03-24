@@ -3,6 +3,7 @@ aliases:
   s-lecturer: "Senior Lecturer"
   ass-lecturer: "Associate Senior Lecturer"
   lecturer: "Lecturer"
+  researcher: "Researcher"
   postdoc: "Postdoctoral Researcher"
   phd: "PhD student"
   visitor: "Visiting Researcher"
