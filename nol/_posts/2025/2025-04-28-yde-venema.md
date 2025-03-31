@@ -1,6 +1,6 @@
 ---
-speaker: 
-affil: 
+speaker: Yde Venema
+affil: University of Amsterdam
 title: 
 date: 2025-04-28 16:00:00 +02:00
 
