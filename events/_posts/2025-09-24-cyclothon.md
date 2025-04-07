@@ -12,7 +12,7 @@ image_align: right
 # header-image: wofpip-photo.jpeg
 ---
 
-A workshop dedicated to current and future trens in cyclic and illfounded notions of provability and justification. 
+A workshop dedicated to current and future trends in cyclic and illfounded notions of provability and justification. 
 The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw.wallenberg.org) via the research project [Taming Jörmungandr: The Logical Foundations of Circularity](https://www.gu.se/forskning/taming-jormungandr-the-logical-foundations-of-circularity) and the Department of Philosophy, Linguistics and Theory of Science.
 
 <!--more-->
