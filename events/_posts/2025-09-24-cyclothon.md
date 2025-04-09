@@ -1,5 +1,5 @@
 ---
-title: Gothenburg Cylcothon
+title: Gothenburg Cyclothon
 permalink: cyclothon25
 
 date-start: 2025-09-24 09:30:00 +02:00
