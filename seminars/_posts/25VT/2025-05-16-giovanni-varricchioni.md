@@ -2,7 +2,7 @@
 speaker: Giovanni Varricchione
 affil: Utrecht University
 title: Defining finite posets via non-nested Conditional Logic
-date: 2025-05-16 09:15:00 +01:00
+date: 2025-05-16 10:15:00 +02:00
 location: Humanisten, C562
 ---
 Frame definability is a well-studied notion for a plethora of logics: a class of frames is _defined_ by a set of formulas if and only if such formulas are validities for all and only the frames in such class. 
