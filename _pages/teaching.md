@@ -26,7 +26,7 @@ The main goal is that students, after successful completion of the programme, wi
 
 The two-year programme opens with a selection of core courses, common for all students, which provide a solid foundation in the fundamentals of theoretical logic and its applications, and then follow elective courses, tailored to the background, interests and career plans for individual students.
 
-If you have any question on the master, feel free to contact [Ivan Di Liberti](diliberti.github.io) or [Rasmus Blanck](https://rasmusblanck.com) who are the current coordinators.
+If you have any question on the master, feel free to contact [Ivan Di Liberti](diliberti.github.io) who is the current coordinator.
 
 ![Students in the Master in Logic complete the programme with a deep and well-rounded education in Logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }})
 
@@ -70,7 +70,7 @@ Note, the choice of elective courses varies from year to year based on availabil
  - Semantic paradoxes and the logic of truth 
  
 
-You’re also encouraged to choose elective courses taught at partner departments.
+You’re also encouraged to choose elective courses taught at partner departments. More information of this matter and on the Master in general can be found at our [Canvas page](https://canvas.gu.se/courses/45028).
 You will receive guidance to help build a profile matching your individual plans for your future career.
 Seminars, peer review, and supervising will assist you in writing your thesis, which is an in-depth exploration of a topic of your choice.
 
