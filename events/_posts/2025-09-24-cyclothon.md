@@ -38,6 +38,24 @@ The workshop will be held at the [Faculty of Humanities](https://www.openstreetm
 University of Gothenburg, address Renströmsgatan 6, Gothenburg.
 It is adjacent to the Korsvägen transport hub and within walking distance from the city centre.
 
+## Registration
+
+Attendence is free but registration is required.
+This page will be updated in due course with information.
+
 ## Schedule
 
 Morning of Wednesday, 24 September until afternoon of Friday, 26 September 2025.
+
+## Organisors
+
+The event is organised by the research project [Taming Jörmungandr: The Logical Foundations of Circularity](https://www.gu.se/forskning/taming-jormungandr-the-logical-foundations-of-circularity) supported by the [Knut and Alice Wallenberg Foundation](https://kaw.wallenberg.org):
+
+- Graham E Leigh
+- Bahareh Afshari
+- Ivan Di Liberti
+- Gianluca Curzi
+- Dominik Wehr
+- Giacomo Barlucchi
+
+In case of questions, contact [Graham Leigh](mailto:graham.leigh@gu.se)
