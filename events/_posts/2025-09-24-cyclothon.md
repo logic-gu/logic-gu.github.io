@@ -49,8 +49,6 @@ Morning of Wednesday, 24 September until afternoon of Friday, 26 September 2025.
 
 ## Organisors
 
-The event is organised by the research project [Taming Jörmungandr: The Logical Foundations of Circularity](https://www.gu.se/forskning/taming-jormungandr-the-logical-foundations-of-circularity) supported by the [Knut and Alice Wallenberg Foundation](https://kaw.wallenberg.org):
-
 - Graham E Leigh
 - Bahareh Afshari
 - Ivan Di Liberti
