@@ -12,12 +12,12 @@ image_align: right
 # header-image: wofpip-photo.jpeg
 ---
 
-A 2½-day workshop dedicated to current and future trends in cyclic and illfounded notions of provability and justification. 
-The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw.wallenberg.org) via the research project [Taming Jörmungandr: The Logical Foundations of Circularity](https://www.gu.se/forskning/taming-jormungandr-the-logical-foundations-of-circularity) and the Department of Philosophy, Linguistics and Theory of Science.
+A 2½-day workshop dedicated to current and future trends in cyclic and illfounded forms of provability and justification. 
+The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw.wallenberg.org) via the research project [Taming Jörmungandr: The Logical Foundations of Circularity](https://www.gu.se/forskning/taming-jormungandr-the-logical-foundations-of-circularity), the [Swedish Research Council](https://www.vr.se) through the research project Proofs with Cycles and Computation, and the Department of Philosophy, Linguistics and Theory of Science at the University of Gothenburg.
 
 <!--more-->
 
-## Confirmed Speakers
+## Speakers
 
 - Henning Basold (Leiden University)
 - Anupam Das (University of Birmingham)
