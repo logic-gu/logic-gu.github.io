@@ -3,7 +3,7 @@ speaker: Tjeerd Fokkens
 affil: FLoV
 title: "Final Seminar: Cognitively Adequate Complexity of Description Logic"
 date: 2025-05-23 10:15:00 +02:00
-location: Humanisten
+location: Humanisten, J233
 event-type: Final Seminar
 
 excerpt-only: false
