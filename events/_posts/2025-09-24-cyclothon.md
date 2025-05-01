@@ -50,9 +50,9 @@ Morning of Wednesday, 24 September until afternoon of Friday, 26 September 2025.
 ## Organisors
 
 - Graham E Leigh
+- Gianluca Curzi
 - Bahareh Afshari
 - Ivan Di Liberti
-- Gianluca Curzi
 - Dominik Wehr
 - Giacomo Barlucchi
 
