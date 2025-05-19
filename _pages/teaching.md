@@ -28,7 +28,11 @@ The two-year programme opens with a selection of core courses, common for all st
 
 If you have any question on the master, feel free to contact [Ivan Di Liberti](diliberti.github.io) who is the current coordinator.
 
-![Students in the Master in Logic complete the programme with a deep and well-rounded education in Logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }})
+{% include figure.html
+    path = "/assets/img/students_working.jpg"
+    alt = "Students in the Master in Logic complete the programme with a deep and well-rounded education in Logic and related topics."
+    cache_bust = true 
+%}
 
 
 ## Programme structure and content

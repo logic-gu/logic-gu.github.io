@@ -26,8 +26,9 @@ Our group has a broad expertise in mathematical, philosophical and computational
 
 We are one of the member groups of the [Scandinavian Logic Society](https://scandinavianlogic.org) which organises a number of events promoting logic in the Nordic regions, for instance the [Nordic Online Logic Seminar](https://scandinavianlogic.org).
 
-
-<figure style="text-align:center;">
-  <img src="{{ '/assets/img/group-photo.jpg' | relative_url }}" alt="Group Photo" style="max-width:600px; width:100%; border-radius:8px;">
-  <figcaption style="font-size: 0.9em; color: #555;">Logic Group, Logic retreat 2025.</figcaption>
-</figure>
+{% include figure.html
+    path = "/assets/img/group-photo.jpg"
+    alt = "The Logic Group has yearly retreat to discuss teaching and research."
+    cache_bust = true 
+    caption = "Logic Group, Logic retreat 2025"
+%}
