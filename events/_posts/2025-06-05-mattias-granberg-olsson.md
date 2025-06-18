@@ -1,5 +1,5 @@
 ---
-speaker: Mattias Granberg Olsson
+speaker: Doctoral Thesis Defence of Mattias Granberg Olsson
 affil: FLoV
 title: "Fixed IDs about Truth: Truth and Fixpoints over Intuitionistic Arithmetic"
 date: 2025-06-05 13:15:00 +02:00
@@ -9,8 +9,6 @@ event-type: PhD defence
 
 excerpt-only: false
 ---
-__Public defence of doctoral thesis__
-
 __Opponent:__ Makoto Fujiwara, Assistant Professor, Tokyo University of Science
 
 **Abstract**
