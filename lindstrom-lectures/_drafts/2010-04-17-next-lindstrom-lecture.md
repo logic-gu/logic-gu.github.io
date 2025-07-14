@@ -2,9 +2,9 @@
 speaker: Per Lindström
 affil: University of Gothenburg
 title: Aspects on Incompleteness
-date: 2025-04-17 10:00:00 +02:00
+date: 2010-04-17 10:00:00 +02:00
 tags: ["LL","LL25"]
-ll_year: 2025
+ll_year: 2010
 ll_kind: research
 featured: true
 ---
