@@ -4,9 +4,9 @@ title: The Lindström Lectures 2025
 speaker: Jouko Väänänen
 year: 2025
 
-# images: 
-#   - path: 2024-kolaitis.jpg
-#     title: Phokion Kolaitis
+images: 
+  - path: 2025-vaananen.jpg
+    title: Jouko Väänänen
 #   - path: poster-2024.jpg
 #     title: 2024 Lindström Lectures
 image_caption: The 2025 Lindström Lectures, delivered by Jouko Väänänen
