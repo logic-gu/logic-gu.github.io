@@ -22,5 +22,5 @@ Annually, a distinguished logician is invited to deliver a general lecture to th
 
 ## The 2025 Lindström Lectures
 
-The 2025 edition of [The Lindström Lectures]({% link lindstrom-lectures/index.md %}) will be delivered in November 2025 by **Phokion Kolaitis**, Professor of Mathematics at the University of Helsinki and the Institute for Logic, Language and Computation at the University of Amsterdam.
+The 2025 edition of [The Lindström Lectures]({% link lindstrom-lectures/index.md %}) will be delivered 17-18 November 2025 by **Jouko Väänänen**, Professor of Mathematics at the University of Helsinki and the Institute for Logic, Language and Computation at the University of Amsterdam.
 See the [webpage of the 2025 edition]({% link lindstrom-lectures/the-lindstrom-lectures-2025.md %}) for more information.
