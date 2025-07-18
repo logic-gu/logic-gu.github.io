@@ -41,7 +41,7 @@ It is adjacent to the Korsvägen transport hub and within walking distance from 
 ## Registration
 
 Attendence is free but registration is required.
-This page will be updated in due course with information.
+To register fill the form at: <https://forms.cloud.microsoft/e/bFQJayDiKe>
 
 ## Schedule
 
