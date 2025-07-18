@@ -41,6 +41,7 @@ It is adjacent to the Korsvägen transport hub and within walking distance from 
 ## Registration
 
 Attendence is free but registration is required.
+The deadline for registration is Monday, 1 September.
 To register fill the form at: <https://forms.cloud.microsoft/e/bFQJayDiKe>
 
 ## Schedule
