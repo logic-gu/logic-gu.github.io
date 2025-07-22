@@ -22,7 +22,7 @@ The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw
 - Henning Basold (Leiden University)
 - Anupam Das (University of Birmingham)
 - Sebastian Enqvist (Stockholm University)
-- Zainab Galal (RIMS, Kyoto and University of Bologna), TBC
+- Zeinab Galal (RIMS, Kyoto and University of Bologna), TBC
 - Marianna Girlando (University of Amsterdam)
 - Iris van der Giessen (University of Amsterdam)
 - Helle Hvid Hansen (University of Groningen), TBC
