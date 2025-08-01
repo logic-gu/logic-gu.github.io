@@ -25,6 +25,7 @@ The event is sponsored by the [Knut and Alice Wallenberg Foundation](https://kaw
 - Zeinab Galal (RIMS, Kyoto and University of Bologna)
 - Marianna Girlando (University of Amsterdam)
 - Iris van der Giessen (University of Amsterdam)
+- Stefan Hetzl (TU Wien)
 - Helle Hvid Hansen (University of Groningen), TBC
 - Alex Leitsch (TU Wien)
 - Reuben Rowe (Royal Holloway)
