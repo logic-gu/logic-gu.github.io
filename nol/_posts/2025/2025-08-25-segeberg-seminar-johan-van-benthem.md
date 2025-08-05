@@ -8,7 +8,6 @@ duration: 45
 online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
 
-
 Krister Segerberg was one of the architects of modal logic
 as we know it today. 
 I will highlight a few of his major
