@@ -1,7 +1,7 @@
 ---
 speaker: John Cantwell
 affil: KTH
-title: Some reflections on Krister’s philosophy of philosopy
+title: Some reflections on Krister’s philosophy of philosophy
 date: 2025-08-25 16:45:00 +02:00
 duration: 45
 
