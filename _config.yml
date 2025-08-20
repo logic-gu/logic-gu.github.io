@@ -180,7 +180,7 @@ defaults:
       path: "seminars/"
       type: "posts"
     values:
-      title: Logic Seminar
+      # title: Logic Seminar
       event-type: Logic Seminar
       duration: 105 # length in mins
       # speaker: TBC
@@ -188,7 +188,7 @@ defaults:
       path: "nol/"
       type: "posts"
     values:
-      title: Nordic Online Logic Seminar
+      # title: Nordic Online Logic Seminar
       event-type: Nordic Online Logic Seminar
       duration: 90
       location: Zoom

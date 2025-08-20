@@ -1,5 +1,5 @@
 ---
-speaker: "Doctoral Thesis Defence of Jelle Tjeerd Fokkens"
+speaker: "Jelle Tjeerd Fokkens"
 affil: FLoV
 title: "Cognitively Adequate Complexity of Description Logic"
 date: 2025-11-07 13:15:00 +01:00

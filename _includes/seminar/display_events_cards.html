@@ -3,19 +3,28 @@
 <div class="container featured-posts">
   <div class="row row-cols-1">
   {% for event in featured_events limit: limit %}
-    {%- capture heading1 -%} {{ event.speaker | default: event.title }}{%- if event.speaker and event.affil %} <span class="event-affiliation">({{ event.affil }})</span>{%- endif -%}{%- endcapture -%}
-    {%- if event.speaker %}
-      {%- assign heading2 = event.title -%}
-    {%- else %}
-      {%- assign heading2 = -%}
-    {% endif %}
+    {%- assign heading1 = event.event-type | default: event.title -%}
+    {%- capture heading2 -%} 
+      {%- if event.speaker -%}
+        {{ event.speaker }}
+        {%- if event.affil %} <span class="event-affiliation">({{ event.affil }})</span>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endcapture -%}
+    {%- if event.event-type -%}
+      {%- assign heading3 = event.title -%}
+    {%- else -%}
+      {%- assign heading3 = -%}
+    {%- endif -%}
     <div class="card-item col">
       <div class="card hoverable">
         <div class="card-body">
           <a href="{{ event.url | relative_url }}">
             <div class="card-title">
-              <h3>{{ heading1 }}</h3>
-              <h4>{{ heading2 }}</h4>
+              <h3>{{ heading1 }}
+                {%- if heading2 -%}<br/>{{ heading2 }}{%- endif -%}
+              </h3>
+              <h4>{{ heading3 }}</h4>
               <div class="post-meta">
                 {% include snippets/show_date.liquid 
                   start-date = event.date-start
