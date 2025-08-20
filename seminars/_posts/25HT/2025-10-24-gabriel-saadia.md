@@ -2,7 +2,7 @@
 speaker: Gabriel Saadia 
 affil: Stockholm University
 title: ""
-date: 2025-10-10 10:15:00 +02:00
+date: 2025-10-24 10:15:00 +02:00
 location: Humanisten, J303
 ---
 
