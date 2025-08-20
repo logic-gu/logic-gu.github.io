@@ -1,6 +1,6 @@
 ---
 speaker: Martino Lupini
-affil: 
+affil: Università di Bologna
 title: Logic Seminar
 date: 2025-09-12 10:15:00 +02:00
 location: Humanisten, J415
