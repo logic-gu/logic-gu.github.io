@@ -9,3 +9,7 @@ duration: 120
 location: J335, Humanisten
 ---
 
+Dependence and independence concepts are ubiquitous in natural science, social science, humanities as well as in everyday life.
+The sentences "I park on this side of the road depending only on the day of the week" and "the time of descent is independent of the weight of the object" are examples of this.
+The question arises, do these concepts possess enough exactness for us to investigate their logic? There is currently a whole literature on this topic.
+It is the purpose of this talk to give a non-technical overview of this area of logic.
