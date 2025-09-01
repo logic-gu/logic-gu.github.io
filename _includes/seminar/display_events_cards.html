@@ -11,7 +11,7 @@
         {%- endif -%}
       {%- endif -%}
     {%- endcapture -%}
-    {%- if event.event-type -%}
+    {%- if event.event-type and event.title != event.event-type -%}
       {%- assign heading3 = event.title -%}
     {%- else -%}
       {%- assign heading3 = -%}
