@@ -5,6 +5,8 @@ title: "Cognitively Adequate Complexity of Description Logic"
 date: 2025-11-07 13:15:00 +01:00
 duration: 225
 location: Humanisten
+
+duration: 180
 event-type: PhD defence
 
 excerpt-only: false
