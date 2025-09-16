@@ -218,7 +218,7 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > by local invariants.
 - 12.00 _Closing_
 
-## Organisors
+## Organisers
 
 - Graham E Leigh
 - Gianluca Curzi
