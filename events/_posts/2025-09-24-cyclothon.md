@@ -67,7 +67,25 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
     > Schematic CERES (Cut-elimination by RESolution) is such a method which will be presented in brief.
     > By their potential in extracting relevant information from mathematical proofs, Herbrand systems provide a powerful tool in automated proof analysis.
 - 12.00 _Lunch_               
-- 13.30 **Marianna Girlando** -- _Propositional Dynamic Logic to Transitive Closure Logic: Cyclic Proofs via Hypersequents_
+- 13.30 **Helle Hvid Hansen** -- _Craig Interpolation for PDL via Cyclic Tableaux_
+ > _Abstract_ 
+ > The question of whether Propositional Dynamic Logic (PDL) has Craig 
+ > interpolation was disputed for several years, with three proof attempts 
+ > being published but later criticized or retracted.
+ > In this talk, I will present a proof based on the ideas of Borzechowski 
+ > (1988).
+ > The proof uses a cyclic tableau system for PDL and an adaptation of 
+ > Maehara's method.
+ > In this approach, interpolants for cycles are obtained as the solutions to 
+ > fixpoint equations, and the challenge is to ensure that these fixpoint 
+ > equations have solutions in PDL.
+ > To achieve this, the construction of interpolants for clusters (strongly 
+ > connected components) employs an auxiliary structure called a 
+ > quasi-tableau.
+ > 
+ > This is joint work with Malvin Gattinger, Revantha Ramanayake, Valentina 
+ > Trucco Dalmas and Yde Venema.
+- 14.30 **Marianna Girlando** -- _Propositional Dynamic Logic to Transitive Closure Logic: Cyclic Proofs via Hypersequents_
  > _Abstract_ 
  > Propositional Dynamic Logic (PDL) is a modal logic for reasoning about 
  > the iterative execution of programs.
@@ -89,7 +107,8 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > of Automated Reasoning: 
  > <https://link.springer.com/article/10.1007/s10817-023-09675-1>.
  > A preprint is available here: <https://arxiv.org/abs/2205.08616>
-- 14.30 **Iris van der Giessen** -- _Uniform interpolation for intuitionistic Gödel-Löb logic_
+- 15.30 Break 
+- 16.00 **Iris van der Giessen** -- _Uniform interpolation for intuitionistic Gödel-Löb logic_
  > _Abstract_
  > In this talk I would like to present ongoing joint work with Guillermo 
  > Menéndez Turata and Borja Sierra Miranda.
@@ -103,25 +122,6 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > Gödel-Löb logic GL.
  > Most interestingly, it provides a first proof of the uniform interpolation 
  > property for intuitionistic Gödel-Löb logic iGL.
-- 15.30 Break 
-- 16.00 **Helle Hvid Hansen** -- _Craig Interpolation for PDL via Cyclic Tableaux_
- > _Abstract_ 
- > The question of whether Propositional Dynamic Logic (PDL) has Craig 
- > interpolation was disputed for several years, with three proof attempts 
- > being published but later criticized or retracted.
- > In this talk, I will present a proof based on the ideas of Borzechowski 
- > (1988).
- > The proof uses a cyclic tableau system for PDL and an adaptation of 
- > Maehara's method.
- > In this approach, interpolants for cycles are obtained as the solutions to 
- > fixpoint equations, and the challenge is to ensure that these fixpoint 
- > equations have solutions in PDL.
- > To achieve this, the construction of interpolants for clusters (strongly 
- > connected components) employs an auxiliary structure called a 
- > quasi-tableau.
- > 
- > This is joint work with Malvin Gattinger, Revantha Ramanayake, Valentina 
- > Trucco Dalmas and Yde Venema.
 
 #### Thursday 25 September
 
