@@ -42,12 +42,44 @@ It is adjacent to the Korsvägen transport hub and within walking distance from 
 ## Registration
 
 Attendence is free but registration is required.
-The deadline for registration is Monday, 1 September.
-To register fill the form at: <https://forms.cloud.microsoft/e/bFQJayDiKe>
+The deadline for registration has passed. In case of questions, contact Gianluca Curzi.
+<!-- To register fill the form at: <https://forms.cloud.microsoft/e/bFQJayDiKe> -->
 
 ## Schedule
 
-Morning of Wednesday, 24 September until afternoon of Friday, 26 September 2025.
+The workshop starts at 9am on Wednesday, 24 September and closes at 12.30 on of Friday, 26 September 2025.
+All talks will be in room J439 in the [Humanisten building](https://www.gu.se/humaniora) of Gothenburg University.
+
+#### Wednesday, 24 September
+
+- 9.00 _Registration_
+- 9.30 **Alexis Saurin** -- _Title TBA_
+- 10.30 _Break_
+- 11.00 **Alex Leitsch** -- _Proof Schemata and Herbrand systems_
+- 12.00 _Lunch_               
+- 13.30 **Marianna Girlando** -- _Propositional Dynamic Logic to Transitive Closure Logic: Cyclic Proofs via Hypersequents_
+- 14.30 **Iris van der Giessen** -- _Uniform interpolation for intuitionistic Gödel-Löb logic_
+- 15.30 Break 
+- 16.00 **Helle Hvid Hansen** -- _Craig Interpolation for PDL via Cyclic Tableaux_
+
+#### Thursday 25 September
+
+- 9.00  **Takeshi Tsukada** -- _Title TBA_
+- 10.00 Break 
+- 10.30 **Reuben Rowe** -- _Algorithms for Checking Infinite Descent_
+- 11.30 **Stefan Hetzl** -- _Title TBA_
+- 12.30 Lunch
+- 14.00 **Anupam Das** -- _Title TBA_
+- 15.00 Break 
+- 15.30 **Sebastian Enqvist** -- _Computation by infinite descent made explicit_
+
+
+#### Friday 26 September
+
+- 9.30 **Zeinab Galal** -- _A categorical viewpoint on systems of fixpoint equations_
+- 10.30 Break
+- 11.00 **Hening Basold** -- _Invariants in Cyclic Proofs_
+- 12.00 _Closing_
 
 ## Organisors
 
