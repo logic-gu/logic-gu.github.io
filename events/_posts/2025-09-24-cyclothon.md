@@ -153,7 +153,21 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
   > framework. 
   > Interestingly, we found the approximate methods to provide good coverage 
   > in practice.
-- 11.30 **Stefan Hetzl** -- _Title TBA_
+- 11.30 **Stefan Hetzl** -- _Clause set cycles_
+ > _Abstract_
+ > The notion of clause set cycle abstracts a family of methods for automated
+ > inductive theorem proving based on the detection of cyclic dependencies between
+ > clause sets. A clause set cycle closely corresponds to a proof by infinite
+ > descent.
+ > 
+ > The strength of clause set cycles can be characterised by a theory. This
+ > characterisation paves the way to showing independence results of practical
+ > relevance for automated deduction.
+ > 
+ > In this talk, I will present this characterisation and several practically
+ > relevant independence results based on different features of clause set cycles.
+ > 
+ > This is joint work with Jannik Vierling.
 - 12.30 Lunch
 - 14.00 **Anupam Das** -- _Title TBA_
 - 15.00 Break 
