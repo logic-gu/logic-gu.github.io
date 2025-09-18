@@ -3,7 +3,7 @@ name: Ivan Di Liberti
 short_name: Ivan
 sort_by: Di Liberti
 position: ass-lecturer
-homepage: https://diliberti.github.io
+homepage: https://www.gu.se/en/about/find-staff/ivandiliberti
 
 
 image: ivan.jpg
