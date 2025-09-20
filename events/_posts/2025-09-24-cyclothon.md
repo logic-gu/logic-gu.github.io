@@ -159,8 +159,17 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > 
  > This is joint work with Jannik Vierling.
 - 12.30 Lunch
-- 14.00 **Anupam Das** -- _Title TBA_
+
+- 14.00 **Anupam Das** -- _Right-linear algebras: decomposing the theory of regular languages via cyclic proofs_
+
+  > _Abstract_ In the second half of the 20th century various theories of regular expressions were proposed, eventually leading to the notion of a Kleene Algebra (KA). Kozen and Krob independently proved the completeness of KA for the model of regular languages, a now celebrated result that has been refined and generalised over the years. In recent years proof theoretic approaches to regular languages have been studied, providing alternative routes to metalogical results like completeness and decidability.
+  >
+  > In this talk I will present a new approach from a different starting point: finite state automata. A notation for non-deterministic finite automata is readily obtained via expressions with least fixed points, leading to a theory of right-linear algebras (RLA). RLA is strictly more general than KA, e.g. admitting ω-regular languages as a model too, and enjoys a simpler proof theory than KA. This allows us to recover (more general) metalogical results in a robust way, combining techniques from automata, games, and cyclic proofs. In particular, our development exposes a novel factorisation of the completeness for KA, controlling the use of multiplication.
+  >
+  > This talk is based on joint works with Abhishek De. 
+
 - 15.00 Break 
+
 - 15.30 **Sebastian Enqvist** -- _Computation by infinite descent made explicit_
  > _Abstract_
  > I will present a non-wellfounded proof system for intuitionistic logic 
