@@ -56,17 +56,17 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
 - 9.30 **Alexis Saurin** -- _Title TBA_
 - 10.30 _Break_
 - 11.00 **Alex Leitsch** -- _Proof Schemata and Herbrand systems_
-    > _Abstract_ A proof schema is an expression (recursively) representing an infinite sequence of proofs.
-    > Proof schemata depend on parameters (variables over natural numbers) and evaluate to proofs when the parameters are replaced by numerals.
-    > These schemata provide a formalism to express induction without induction rules.
-    > The main application of proof schemata lies in the (automated) analysis of mathematical proofs using induction.
-    > While Herbrand's theorem fails in presence of induction it can be realized in proof schemata.
-    > Instead of a single Herbrand sequent (we work in sequent calculus) we obtain an infinite sequence of Herbrand sequents.
-    > A Herbrand system is the corresponding  (recursively defined) infinite sequence of Herbrand substitutions defining the Herbrand sequents.
-    > As, in general, the computation of a Herbrand sequent requires cut-elimination, a cut-elimination method for schemata is needed.
-    > Schematic CERES (Cut-elimination by RESolution) is such a method which will be presented in brief.
-    > By their potential in extracting relevant information from mathematical proofs, Herbrand systems provide a powerful tool in automated proof analysis.
-- 12.00 _Lunch_               
+  > _Abstract_ A proof schema is an expression (recursively) representing an infinite sequence of proofs.
+  > Proof schemata depend on parameters (variables over natural numbers) and evaluate to proofs when the parameters are replaced by numerals.
+  > These schemata provide a formalism to express induction without induction rules.
+  > The main application of proof schemata lies in the (automated) analysis of mathematical proofs using induction.
+  > While Herbrand's theorem fails in presence of induction it can be realized in proof schemata.
+  > Instead of a single Herbrand sequent (we work in sequent calculus) we obtain an infinite sequence of Herbrand sequents.
+  > A Herbrand system is the corresponding  (recursively defined) infinite sequence of Herbrand substitutions defining the Herbrand sequents.
+  > As, in general, the computation of a Herbrand sequent requires cut-elimination, a cut-elimination method for schemata is needed.
+  > Schematic CERES (Cut-elimination by RESolution) is such a method which will be presented in brief.
+  > By their potential in extracting relevant information from mathematical proofs, Herbrand systems provide a powerful tool in automated proof analysis.
+- 12.00 _Lunch_ 
 - 13.30 **Helle Hvid Hansen** -- _Craig Interpolation for PDL via Cyclic Tableaux_
  > _Abstract_ 
  > The question of whether Propositional Dynamic Logic (PDL) has Craig 
@@ -109,19 +109,19 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > A preprint is available here: <https://arxiv.org/abs/2205.08616>
 - 15.30 Break 
 - 16.00 **Iris van der Giessen** -- _Uniform interpolation for intuitionistic Gödel-Löb logic_
- > _Abstract_
- > In this talk I would like to present ongoing joint work with Guillermo 
- > Menéndez Turata and Borja Sierra Miranda.
- > The research is concerned with proving the uniform interpolation for 
- > Gödel-Löb logics using cyclic proofs.
- > From a cyclic sequent system a so-called pre-interpolant template is 
- > extracted which is a tree with cycles.
- > Based on this template fixpoint equations are obtained and solved in the 
- > Gödel-Löb logic obtaining uniform interpolants.
- > The method works to reprove the uniform interpolation property for 
- > Gödel-Löb logic GL.
- > Most interestingly, it provides a first proof of the uniform interpolation 
- > property for intuitionistic Gödel-Löb logic iGL.
+  > _Abstract_
+  > In this talk I would like to present ongoing joint work with Guillermo 
+  > Menéndez Turata and Borja Sierra Miranda.
+  > The research is concerned with proving the uniform interpolation for 
+  > Gödel-Löb logics using cyclic proofs.
+  > From a cyclic sequent system a so-called pre-interpolant template is 
+  > extracted which is a tree with cycles.
+  > Based on this template fixpoint equations are obtained and solved in the 
+  > Gödel-Löb logic obtaining uniform interpolants.
+  > The method works to reprove the uniform interpolation property for 
+  > Gödel-Löb logic GL.
+  > Most interestingly, it provides a first proof of the uniform interpolation 
+  > property for intuitionistic Gödel-Löb logic iGL.
 
 #### Thursday 25 September
 
@@ -154,22 +154,18 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
   > Interestingly, we found the approximate methods to provide good coverage 
   > in practice.
 - 11.30 **Stefan Hetzl** -- _Clause set cycles_
- > _Abstract_
- > The notion of clause set cycle abstracts a family of methods for automated inductive theorem proving based on the detection of cyclic dependencies between clause sets. A clause set cycle closely corresponds to a proof by infinite descent. The strength of clause set cycles can be characterised by a theory. This characterisation paves the way to showing independence results of practical relevance for automated deduction. In this talk, I will present this characterisation and several practically relevant independence results based on different features of clause set cycles.
- > 
- > This is joint work with Jannik Vierling.
+  > _Abstract_
+  > The notion of clause set cycle abstracts a family of methods for automated inductive theorem proving based on the detection of cyclic dependencies between clause sets. A clause set cycle closely corresponds to a proof by infinite descent. The strength of clause set cycles can be characterised by a theory. This characterisation paves the way to showing independence results of practical relevance for automated deduction. In this talk, I will present this characterisation and several practically relevant independence results based on different features of clause set cycles.
+  > 
+  > This is joint work with Jannik Vierling.
 - 12.30 Lunch
-
 - 14.00 **Anupam Das** -- _Right-linear algebras: decomposing the theory of regular languages via cyclic proofs_
-
   > _Abstract_ In the second half of the 20th century various theories of regular expressions were proposed, eventually leading to the notion of a Kleene Algebra (KA). Kozen and Krob independently proved the completeness of KA for the model of regular languages, a now celebrated result that has been refined and generalised over the years. In recent years proof theoretic approaches to regular languages have been studied, providing alternative routes to metalogical results like completeness and decidability.
   >
   > In this talk I will present a new approach from a different starting point: finite state automata. A notation for non-deterministic finite automata is readily obtained via expressions with least fixed points, leading to a theory of right-linear algebras (RLA). RLA is strictly more general than KA, e.g. admitting ω-regular languages as a model too, and enjoys a simpler proof theory than KA. This allows us to recover (more general) metalogical results in a robust way, combining techniques from automata, games, and cyclic proofs. In particular, our development exposes a novel factorisation of the completeness for KA, controlling the use of multiplication.
   >
   > This talk is based on joint works with Abhishek De. 
-
 - 15.00 Break 
-
 - 15.30 **Sebastian Enqvist** -- _Computation by infinite descent made explicit_
  > _Abstract_
  > I will present a non-wellfounded proof system for intuitionistic logic 
