@@ -53,9 +53,7 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
 #### Wednesday, 24 September
 
 - 9.00 _Registration_
-
 - 9.30 **Alexis Saurin** -- _Čubrić' interpolation for sequent proofs: What it takes to interpolate in a proof-relevant way_
-
   > _Abstract:_ After Craig's seminal results on interpolation theorem, a number and variety of proof-techniques have been designed to establish interpolation theorems. Among them, one can single out Maehara's method for its applicability to a wide range of logics admitting cut-free complete proof systems.
   >
   > By reconsidering Maehara's method, I will show how one can extract a "proof-relevant" interpolation theorem (that I will refer to as Čubrić' interpolation) for first-order linear-logic. This proof-relevant approach to interpolation will be referred to as Čubrić' interpolation after Djordje Čubrić, a PhD student of Makkai who was the first to consider this kind of results in the 90's
@@ -66,7 +64,6 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
   > (i) to proof nets, that are graphs where the order of inference rules has been forgotten, exploiting their correctness criteria, as well as (ii) to circular proofs in logics with fixed-points, where proofs contain cycles and wellfounded of proof objects is relaxed and (iii) proofs with some forms of cuts.
 
 - 10.30 _Break_
-
 - 11.00 **Alex Leitsch** -- _Proof Schemata and Herbrand systems_
   > _Abstract:_ A proof schema is an expression (recursively) representing an infinite sequence of proofs.
   > Proof schemata depend on parameters (variables over natural numbers) and evaluate to proofs when the parameters are replaced by numerals.
@@ -78,9 +75,8 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
   > As, in general, the computation of a Herbrand sequent requires cut-elimination, a cut-elimination method for schemata is needed.
   > Schematic CERES (Cut-elimination by RESolution) is such a method which will be presented in brief.
   > By their potential in extracting relevant information from mathematical proofs, Herbrand systems provide a powerful tool in automated proof analysis.
-  
-- 12.00 _Lunch_ 
 
+- 12.00 _Lunch_ 
 - 13.30 **Helle Hvid Hansen** -- _Craig Interpolation for PDL via Cyclic Tableaux_
  > _Abstract:_ 
  > The question of whether Propositional Dynamic Logic (PDL) has Craig 
@@ -99,6 +95,7 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > 
  > This is joint work with Malvin Gattinger, Revantha Ramanayake, Valentina 
  > Trucco Dalmas and Yde Venema.
+
 - 14.30 **Marianna Girlando** -- _Propositional Dynamic Logic to Transitive Closure Logic: Cyclic Proofs via Hypersequents_
  > _Abstract:_ 
  > Propositional Dynamic Logic (PDL) is a modal logic for reasoning about 
@@ -121,6 +118,7 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > of Automated Reasoning: 
  > <https://link.springer.com/article/10.1007/s10817-023-09675-1>.
  > A preprint is available here: <https://arxiv.org/abs/2205.08616>
+
 - 15.30 Break 
 - 16.00 **Graham E Leigh** -- _Cyclic interpolation and all the rest_
 
@@ -154,11 +152,13 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
   > framework. 
   > Interestingly, we found the approximate methods to provide good coverage 
   > in practice.
+
 - 11.30 **Stefan Hetzl** -- _Clause set cycles_
   > _Abstract:_
   > The notion of clause set cycle abstracts a family of methods for automated inductive theorem proving based on the detection of cyclic dependencies between clause sets. A clause set cycle closely corresponds to a proof by infinite descent. The strength of clause set cycles can be characterised by a theory. This characterisation paves the way to showing independence results of practical relevance for automated deduction. In this talk, I will present this characterisation and several practically relevant independence results based on different features of clause set cycles.
   > 
   > This is joint work with Jannik Vierling.
+
 - 12.30 Lunch
 - 14.00 **Anupam Das** -- _Right-linear algebras: decomposing the theory of regular languages via cyclic proofs_
   > _Abstract:_ In the second half of the 20th century various theories of regular expressions were proposed, eventually leading to the notion of a Kleene Algebra (KA). Kozen and Krob independently proved the completeness of KA for the model of regular languages, a now celebrated result that has been refined and generalised over the years. In recent years proof theoretic approaches to regular languages have been studied, providing alternative routes to metalogical results like completeness and decidability.
@@ -166,6 +166,7 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
   > In this talk I will present a new approach from a different starting point: finite state automata. A notation for non-deterministic finite automata is readily obtained via expressions with least fixed points, leading to a theory of right-linear algebras (RLA). RLA is strictly more general than KA, e.g. admitting ω-regular languages as a model too, and enjoys a simpler proof theory than KA. This allows us to recover (more general) metalogical results in a robust way, combining techniques from automata, games, and cyclic proofs. In particular, our development exposes a novel factorisation of the completeness for KA, controlling the use of multiplication.
   >
   > This talk is based on joint works with Abhishek De. 
+
 - 15.00 Break 
 - 15.30 **Sebastian Enqvist** -- _Computation by infinite descent made explicit_
  > _Abstract:_
@@ -204,6 +205,7 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
  > first in the 1-categorical setting and then briefly mention how to extend
  > to 2-categories in order to capture the examples of (parametrized) initial
  > algebras and coalgebras of accessible functors, analytic and polynomial
+
 - 10.30 Break
 - 11.00 **Hening Basold** -- _Invariants in Cyclic Proofs_
  > _Abstract:_
