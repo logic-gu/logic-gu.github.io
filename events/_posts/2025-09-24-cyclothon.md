@@ -124,7 +124,11 @@ All talks will be in room J439 in the [Humanisten building](https://www.gu.se/hu
 
 #### Thursday 25 September
 
-- 9.00  **Takeshi Tsukada** -- _Title TBA_
+- 9.00  **Takeshi Tsukada** -- _Software model checking and cyclic proof search_
+  > _Abstract:_
+  > The software model-checking community have developed many procedure to efficiently find an inductive invariant of a given program.  By a well-known connection between software model checking and fixed-point logics, what these procedures seek can be seen as an appropriate cut.  In this talk, I will present how software model-checking procedure can naturally seen as a proof-search procedure in a cyclic proof system.  Interestingly, the cyclic proof perspective allows us to compare seemingly different procedures, such as IC3/PDR and Furzan-Kincaid procedure for game solving, and I expect this perspective would also be useful in developing new procedures.
+  > 
+  > This talk is based on joint work with Hiroshi Unno published in POPL 2022 and PLDI 2023.
 - 10.00 Break 
 - 10.30 **Reuben Rowe** -- _Algorithms for Checking Infinite Descent_
   > _Abstract:_ 
