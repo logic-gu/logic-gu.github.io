@@ -9,7 +9,7 @@ location: Humanisten, J439
 assets_dir: 'events/assets/' 
 image: stenen.png
 image_align: right
-# header-image: wofpip-photo.jpeg
+header-image: img/25-cyclothon.jpeg
 ---
 
 A 2½-day workshop dedicated to current and future trends in cyclic and illfounded forms of provability and justification. 
@@ -32,6 +32,7 @@ The event is sponsored by the Knut and Alice Wallenberg Foundation via the resea
 - Alexis Saurin (IRIF)
 - Takeshi Tsukada (Chiba University)
 
+![Workshop photo]({{ page.header-image | prepend: page.assets_dir }})
 
 ## Location
 

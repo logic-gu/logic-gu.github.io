@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: activities/
-title: Activities
+title: Events & Activities
 description: A list of our activities
 
 nav: false
