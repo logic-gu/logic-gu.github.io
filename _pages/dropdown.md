@@ -13,7 +13,7 @@ children:
   - title: Nordic Online Logic Seminar
     permalink: /nol/
   - title: divider
-  - title: Activities
+  - title: Activities & Events
     permalink: /activities/
   - title: divider
   - title: Resources
