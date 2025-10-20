@@ -26,13 +26,7 @@ The main goal is that students, after successful completion of the programme, wi
 
 The two-year programme opens with a selection of core courses, common for all students, which provide a solid foundation in the fundamentals of theoretical logic and its applications, and then follow elective courses, tailored to the background, interests and career plans for individual students.
 
-If you have any question on the master, feel free to contact [Ivan Di Liberti](diliberti.github.io) who is the current coordinator.
-
-{% include figure.html
-    path = "/assets/img/students_working.jpg"
-    alt = "Students in the Master in Logic complete the programme with a deep and well-rounded education in Logic and related topics."
-    cache_bust = true 
-%}
+![Students in the Master in Logic complete the programme with a deep and well-rounded education in Logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }})
 
 
 ## Programme structure and content
@@ -51,31 +45,34 @@ Below you find a selection of elective courses that were offered in the recent p
 Note, the choice of elective courses varies from year to year based on availability and interest, so we cannot guarantee that all courses will be offered during your stay.
 
  **Proof and Truth**
+ - Advanced Proof Theory
+ - Advanced Set Theory
  - Logic of provability
- - Quantified modal logic
- - Dependence logic 
+ - Quantified modal Logic
+ - Dependence Logic 
 
  **Categorical Logic**
  - Category theory 
- - Functorial semantics
- - Introduction to topos theory
- - Semantics of Dependent Type Theory  
+ - Functorial Semantics
+ - Topos theory
+ - Semantics of Type Theory 
 
  **Logic and Computation**
  - Models of computation
- - Lambda calculus and type theory
+ - Lambda calculus, type theory and foundations of programming languages
  - Logic, games and automata
  - Decision theory
 
  **Logic in Philosophy**
  - Philosophy of mathematics
  - History of logic
- - Human reasoning and cognitive science
  - Semantic paradoxes and the logic of truth 
  
 
-You’re also encouraged to choose elective courses taught at partner departments. More information of this matter and on the Master in general can be found at our [Canvas page](https://canvas.gu.se/courses/45028).
+You’re also encouraged to choose elective courses taught at partner departments.
 You will receive guidance to help build a profile matching your individual plans for your future career.
 Seminars, peer review, and supervising will assist you in writing your thesis, which is an in-depth exploration of a topic of your choice.
+
+How is it to study at the University of Gothenburg? How is it to find accomodation in town? Check out [this](https://www.youtube.com/watch?v=DgmwwZUMRto) video and [this](https://www.youtube.com/watch?v=FU79ji8n4kM) video for further information!
 
 
