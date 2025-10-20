@@ -12,10 +12,13 @@ image: library.jpg
 The page collects a list of useful resources for our master students and international students interested in learning logic.
 
 * Visit our [homepage on gu.se]({{ site.data.links['flov-logic-group'].url }}).
+* Visit our [master thesis collection](https://gupea.ub.gu.se/handle/2077/89643).
 * If you can't join our master, teach yourself logic with the [study guide book](https://www.logicmatters.net/tyl/).
-* Check out [Ivan's suggested readings](https://diliberti.notion.site/Suggested-Readings-4b5a05f6f26647cfb543d320edc3e358). 
+* Check out [Ivan](https://diliberti.github.io)'s suggested [readings](https://diliberti.notion.site/Suggested-Readings-4b5a05f6f26647cfb543d320edc3e358) and his [list](https://diliberti.notion.site/Books-in-the-library-2634d461454f80a99b13f3f01bafc5e3) of books at the library. 
 * Access the course notes for *[Logical Theory]({{ site.data.links['logical-theory'].url }})*, an introductory course in logic given in our [Master in Logic programme]({{ site.data.links['MiL'].url }}).
 * Borrow a book from the **Logic Library** outside room C569.
 * Submit suggestions and corrections for this website at our [GitHub repository]({{ site.data.links['github-repo'].url }}).
 * Write your PhD thesis using the [ACTA LaTeX template]({{ site.data.links['acta-template'].url }}) designed and kindly shared by Rasmus Blanck.
 * Read our [guide on getting started with LaTeX]({% link _pages/resources/learning-latex.md %}).
+
+
