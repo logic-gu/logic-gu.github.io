@@ -3,7 +3,7 @@ speaker: Gabriel Saadia
 affil: Stockholm University
 title: Forgetting the theory by remembering the (ultra)convergence of its models
 date: 2025-10-24 10:15:00 +02:00
-location: Humanisten, J303
+location: Humanisten, J412
 ---
 
 Stone duality associates to each (finitary classical propositional) theory a topological space whose points are the models. The theory can be fully recovered from the space—this is a form of completeness: everything we need to know about the theory is encoded in the topology, and we can replace the bureaucracy of syntax by suitable topological notions.
