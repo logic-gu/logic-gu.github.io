@@ -6,4 +6,3 @@ date: 2026-01-09 10:15:00 +01:00
 location: Humanisten, J577
 ---
 
-    
