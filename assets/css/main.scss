@@ -6,15 +6,14 @@
 // Dimensions
 $max-content-width: {{ site.max_width }};
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "font-awesome/fontawesome",
-  "font-awesome/brands",
-  "font-awesome/solid",
-  "font-awesome/regular"
-;
+// @use "variables" as *; // Now @use'd in each file where needed.
+@use "themes";
+@use "layout" with ($max-content-width: {{ site.max_width }});
+@use "base";
+// @use "distill"; // we don't use this
+// @use "cv"; // we don't use this
+
+@use "font-awesome/fontawesome";
+@use "font-awesome/brands";
+@use "font-awesome/solid";
+@use "font-awesome/regular";

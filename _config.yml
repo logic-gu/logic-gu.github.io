@@ -279,7 +279,7 @@ plugins:
   - jekyll-imagemagick
   # - jekyll-jupyter-notebook
   - jekyll-link-attributes
-  # - jekyll-minifier
+  - jekyll-minifier
   - jekyll-paginate-v2
   # - jekyll/scholar
   - jekyll-sitemap
@@ -305,8 +305,8 @@ optional_front_matter:
 
 jekyll-minifier:
   exclude: ['robots.txt','calendar/test.ics','*.ics']
-  uglifier_args:
-    harmony: true
+  # uglifier_args:
+  #   harmony: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
