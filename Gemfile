@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
+
+gem 'sass-embedded','~> 1.92.0'
+
 group :jekyll_plugins do
   gem 'classifier-reborn'
   gem 'jekyll'
