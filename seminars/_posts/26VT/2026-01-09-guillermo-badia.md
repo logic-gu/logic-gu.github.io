@@ -1,8 +1,12 @@
 ---
 speaker: Guillermo Badia
 affil: University of Queensland
-title: 
+title: Codd's Theorem for Databases over Semirings
 date: 2026-01-09 10:15:00 +01:00
 location: Humanisten, J577
 ---
 
+Codd's Theorem, a fundamental result of database theory, asserts that relational algebra and relational calculus have the same expressive power on relational databases.
+We explore Codd's Theorem for databases over semirings and establish two different versions of this result for such databases: the first version involves the five basic operations of relational algebra, while in the second version the division operation is added to the five basic operations of relational algebra.
+In both versions, the difference operation of relations is given semantics using semirings with monus, while on the side of relational calculus a limited form of negation is used.
+The reason for considering these two different versions of Codd's theorem is that, unlike the case of ordinary relational databases, the division operation need not be expressible in terms of the five basic operations of relational algebra for databases over an arbitrary positive semiring; in fact, we show that this inexpressibility result holds even for bag databases.
