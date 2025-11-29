@@ -2,7 +2,7 @@
 speaker: Phokion Kolaitis
 affil: University of California Santa Cruz and IBM Research 
 title: Possible Worlds and Certain Answers
-date: 2025-120-15 16:00:00 +01:00
+date: 2025-12-15 16:00:00 +01:00
 
 online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
