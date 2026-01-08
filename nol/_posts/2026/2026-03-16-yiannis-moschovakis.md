@@ -1,0 +1,8 @@
+---
+speaker: Yiannis Moschovakis
+affil: University of California and University of Athens
+title: 
+date: 2026-03-16 16:00:00 +01:00
+
+online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+---
