@@ -1,6 +1,6 @@
 ---
 speaker: Henry Towsner
-affil: University of Pennslyvania
+affil: University of Pennsylvania
 title: What proofs can be
 date: 2026-01-26 16:00:00 +01:00
 
