@@ -13,6 +13,9 @@ children:
   - title: Nordic Online Logic Seminar
     permalink: /nol/
   - title: divider
+  - title: GothCaT Seminar
+    permalink: https://gothcat.github.io
+  - title: divider
   - title: Activities & Events
     permalink: /activities/
   - title: divider

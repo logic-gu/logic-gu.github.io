@@ -14,6 +14,7 @@ We organise a number of different activities to promote logic and its integratio
 ## Seminars
 
 - [Research seminar in logic]({% link seminars/seminars.md %}) at the University of Gothenburg.
+- [GothCaT Seminar](https://gothcat.github.io), the Gothenburg Categories and Types Seminar.
 - [Nordic Online Logic Seminar]({{ '/nol/' | prepend: site.baseurl }}), a monthly online seminar of expository talks across all areas in logic.
 - [The Lindström Lectures]({% link lindstrom-lectures/index.md %}), distinguished lecture series in logic.
 
