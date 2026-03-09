@@ -1,6 +1,6 @@
 ---
-speaker: 
-affil: 
+speaker: Leon Horsten
+affil: University of Konstanz
 title: 
 date: 2026-06-22 16:00:00 +02:00
 
