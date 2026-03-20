@@ -15,6 +15,8 @@
         <td>
           {% if item.content != blank -%}
             <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title | emojify  }}</a>
+          {%- elsif item.internal_source -%}
+            <a class="news-title" href="{{ item.internal_source | relative_url }}">{{ item.title | emojify  }}</a>
           {%- elsif item.external_source -%}
             <a class="news-title" href="{{ item.external_source }}">{{ item.title | emojify  }}</a>
           {% else %}
