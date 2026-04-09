@@ -26,14 +26,14 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"Shopify.theme-check-vscode",
-				// "esbenp.prettier-vscode",
+				"esbenp.prettier-vscode",
 				"redhat.vscode-yaml"
 			],
 
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"themeCheck.checkOnOpen": true,
-				// "editor.defaultFormatter": "esbenp.prettier-vscode"
+				"editor.defaultFormatter": "esbenp.prettier-vscode"
 			}
 
 		}
