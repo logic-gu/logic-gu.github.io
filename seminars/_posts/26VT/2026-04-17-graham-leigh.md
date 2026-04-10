@@ -2,7 +2,7 @@
 speaker: Graham E Leigh
 affil: FLoV
 title: "Craig's amazing children: The marvellous consequences of interpolation"
-date: 2026-04-17 10:15:00 +01:00
+date: 2026-04-17 10:15:00 +02:00
 location: Humanisten, J411
 ---
 
