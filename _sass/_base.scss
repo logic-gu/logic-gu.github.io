@@ -59,32 +59,34 @@ table.table a {
 
 .table-dark {
   background-color: transparent;
-  &.table-bordered{
+  &.table-bordered {
     border: 1px solid var(--global-divider-color) !important;
   }
 }
 
 img {
   width: 80%;
-  border-radius:.25rem!important;
-  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important
+  border-radius: 0.25rem !important;
+  box-shadow:
+    0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
 }
 
 figure {
-
   text-align: center;
-  
+
   img {
     max-width: 90vw;
     margin-bottom: 5px;
   }
 
   picture:last-child {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
+  }
 }
 
-p > img { // for images within pages
+p > img {
+  // for images within pages
   width: 80%;
   margin: 0 10%;
 }
@@ -114,7 +116,12 @@ blockquote {
       color: var(--global-tip-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-tip-block-title);
     }
   }
@@ -127,7 +134,12 @@ blockquote {
       color: var(--global-warning-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-warning-block-title);
     }
   }
@@ -140,7 +152,12 @@ blockquote {
       color: var(--global-danger-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-danger-block-title);
     }
   }
@@ -170,7 +187,6 @@ blockquote {
       color: var(--global-theme-color);
     }
   }
-
 }
 
 // Card
@@ -181,10 +197,10 @@ blockquote {
 
 .card {
   background-color: var(--global-card-bg-color);
-  
+
   .card-body {
     padding: 1rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     height: 13rem;
     font-weight: 300;
   }
@@ -208,12 +224,15 @@ blockquote {
   }
 
   .card-text {
-    h1, h2, h3, h4, h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       font-size: medium;
     }
   }
 }
-
 
 // Citation
 
@@ -256,7 +275,6 @@ blockquote {
   figure {
     margin: 0;
   }
-  
 }
 
 .page-image.float-right {
@@ -288,13 +306,10 @@ blockquote {
 // news
 
 .news {
-
   @media (min-width: 576px) {
-
     .table-responsive {
       padding-left: 1rem;
     }
-    
   }
 }
 // Profile
@@ -319,16 +334,14 @@ blockquote {
   figure {
     margin-bottom: 0.2rem;
   }
-  
 }
 
 .profile-description {
-
   h2 {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
   }
-  
+
   h3 {
     font-size: 1.25rem;
     margin-bottom: 0.2rem;
@@ -363,7 +376,6 @@ blockquote {
   }
 }
 
-
 // Navbar customization
 
 .navbar {
@@ -381,7 +393,7 @@ blockquote {
     color: var(--global-text-color);
   }
 
-  a.active{
+  a.active {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);
@@ -424,7 +436,7 @@ blockquote {
     }
   }
 
-  .navbar-nav .nav-item.active>.nav-link {
+  .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);
@@ -542,8 +554,8 @@ blockquote {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .wechat-modal > img {
@@ -556,12 +568,11 @@ blockquote {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   .wechat-modal > img {
     width: 100%;
   }
 }
-
 
 // Footer
 footer.fixed-bottom {
@@ -659,110 +670,125 @@ footer.sticky-bottom {
     }
   }
 }
+.post {
+  .post-title {
+    margin-bottom: 0.2rem;
 
-.post-title {
-  margin-bottom: 0.2rem;
-
-  mjx-container[jax="CHTML"][display="true"] {
-    display: unset;
+    mjx-container[jax="CHTML"][display="true"] {
+      display: unset;
+    }
   }
-}
 
-.post-list {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
+  .post-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
 
-  .post-body {
-
-    p:last-child {
-      padding-bottom: 0;
-    }
-
-    details > summary {
-      cursor: pointer;
-      // font-style: italic;
-      display: inline;
-      // mask-image: linear-gradient(180deg, #000 20%, transparent); // not a good appearence
-    }
-
-    details > summary::after {
-      content: "expand abstract";
-      color: var(--global-theme-color);
-      font-style: italic;
-      font-size: small;
-    }
-
-    details summary > * {
-      display: inline;
-    }
-
-    summary::-webkit-details-marker {
-      display:none;
-    }
-
-    details[open] summary {
-      // display: none;
-      cursor: text;
-      p:last-of-type {
-        padding-bottom: 1rem;
+    .post-body {
+      p:last-child {
+        padding-bottom: 0;
       }
-    }
 
-    details[open] summary::after {
-      display: none;
-    }
+      details > summary {
+        cursor: pointer;
+        // font-style: italic;
+        display: inline;
+        // mask-image: linear-gradient(180deg, #000 20%, transparent); // not a good appearence
+      }
 
-    details[open] summary ~ * {
-      animation: sweep .5s ease-in-out;
-    }
-    @keyframes sweep {
-      0%    {opacity: 0; margin-top: -10px}
-      100%  {opacity: 1; margin-top: 0px}
-    }
-  }
+      details > summary::after {
+        content: "expand abstract";
+        color: var(--global-theme-color);
+        font-style: italic;
+        font-size: small;
+      }
 
-  > li {
-    border-bottom: 1px solid var(--global-divider-color);
-    list-style: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+      details summary > * {
+        display: inline;
+      }
 
-    h2, h3, h4 {
-      text-align: left;
-    }
+      summary::-webkit-details-marker {
+        display: none;
+      }
 
+      details[open] summary {
+        // display: none;
+        cursor: text;
+        p:last-of-type {
+          padding-bottom: 1rem;
+        }
+      }
 
-    .post-footer {
-      margin-top: 1rem;
-      // font-size: 0.875rem;
-      margin-bottom: 0;
-    }
+      details[open] summary::after {
+        display: none;
+      }
 
-    .post-meta {
-      color: var(--global-text-color-light);
-      margin-bottom: 0;
-      
-      a {
-        // color: var(--global-text-color);
-        color: inherit;
-        text-decoration: none;
-  
-        &:hover {
-          color: var(--global-theme-color);
+      details[open] summary ~ * {
+        animation: sweep 0.5s ease-in-out;
+      }
+      @keyframes sweep {
+        0% {
+          opacity: 0;
+          margin-top: -10px;
+        }
+        100% {
+          opacity: 1;
+          margin-top: 0px;
         }
       }
     }
 
-    .post-tags {
-      font-size: 0.875rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
+    > li {
+      border-bottom: 1px solid var(--global-divider-color);
+      list-style: none;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
 
-    mjx-container[jax="CHTML"][display="true"] {
-      display: unset;
+      h2,
+      h3,
+      h4 {
+        text-align: left;
+      }
+
+      .post-footer {
+        margin-top: 1rem;
+        // font-size: 0.875rem;
+        margin-bottom: 0;
+      }
+
+      .post-meta {
+        color: var(--global-text-color-light);
+        margin-bottom: 0;
+
+        a {
+          // color: var(--global-text-color);
+          color: inherit;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--global-theme-color);
+          }
+        }
+      }
+
+      .post-tags {
+        font-size: 0.875rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      mjx-container[jax="CHTML"][display="true"] {
+        display: unset;
+      }
+    }
+  }
+  .video-embed {
+    margin: auto;
+    display: block;
+    iframe {
+      display: block;
+      margin: auto;
     }
   }
 }
@@ -788,7 +814,6 @@ footer.sticky-bottom {
   }
 }
 
-
 // Distill
 
 .distill {
@@ -797,7 +822,6 @@ footer.sticky-bottom {
     text-decoration: none;
   }
 }
-
 
 // Projects
 
@@ -843,7 +867,6 @@ footer.sticky-bottom {
     text-align: right;
   }
 }
-
 
 // Publications
 
@@ -928,12 +951,12 @@ footer.sticky-bottom {
           }
         }
 
-        >em {
+        > em {
           border-bottom: 1px solid;
           font-style: normal;
         }
 
-        >span.more-authors {
+        > span.more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
@@ -1047,7 +1070,6 @@ code {
   padding: 3px 3px;
 }
 
-
 // Transitioning Themes
 html.transition,
 html.transition *,
@@ -1059,11 +1081,13 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
-
   .post-header {
     margin-bottom: 1rem;
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       margin-bottom: 0;
     }
 
@@ -1167,14 +1191,14 @@ progress::-moz-progress-bar {
   .copy {
     background: var(--global-card-bg-color);
     border-color: var(--global-bg-color);
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     border-style: none;
     color: var(--global-text-color);
     font-size: medium;
     opacity: 0;
     position: absolute;
-    right: .2rem;
-    top: .2rem;
+    right: 0.2rem;
+    top: 0.2rem;
   }
 
   &:active .copy,
@@ -1222,7 +1246,8 @@ progress::-moz-progress-bar {
     }
   }
 
-  .dropdown-item.active, .dropdown-item:active {
+  .dropdown-item.active,
+  .dropdown-item:active {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);
@@ -1237,13 +1262,13 @@ progress::-moz-progress-bar {
 nav[data-toggle="toc"] {
   top: 5rem;
 
-  .nav .nav>li>a {
-    font-size: .75rem;
+  .nav .nav > li > a {
+    font-size: 0.75rem;
   }
 
-  .nav>li>a {
+  .nav > li > a {
     color: var(--global-text-color);
-    font-size: .75rem;
+    font-size: 0.75rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -1254,7 +1279,7 @@ nav[data-toggle="toc"] {
   .nav-link.active {
     color: var(--global-theme-color);
     border-left-color: var(--global-theme-color);
-    font-size: .75rem;
+    font-size: 0.75rem;
 
     &:hover {
       color: var(--global-hover-color);
@@ -1274,9 +1299,9 @@ nav[data-toggle="toc"] {
 }
 
 .featured-posts {
-  text-align: left!important;
+  text-align: left !important;
   padding: 0;
-  
+
   // Override card widths
   .row-cols-2 > * {
     flex: 1 0 350px;
@@ -1320,8 +1345,6 @@ nav[data-toggle="toc"] {
       padding-bottom: 0rem;
     }
   }
-
-
 
   .card-item {
     margin: 0.5rem 0;
