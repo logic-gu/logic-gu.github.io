@@ -5,7 +5,8 @@ sort_by: Olsson
 position: phd
 homepage: https://www.gu.se/en/about/find-staff/mattiasgranbergolsson
 
-
 image: mattias.jpg
+past: true
+duration: 2017-2025
 
 ---

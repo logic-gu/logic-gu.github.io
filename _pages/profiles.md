@@ -8,7 +8,7 @@ nav_order: 1
 
 profiles: true
 profile-order:
-  primary:
+  current:
     - professor
     - s-lecturer
     - ass-lecturer
@@ -16,6 +16,11 @@ profile-order:
     - researcher
     - postdoc
     - phd
+    - visitor
+    - emeritus
+  past:
+    - phd
+    - postdoc
     - visitor
 
 ---

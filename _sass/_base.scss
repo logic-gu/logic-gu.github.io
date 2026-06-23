@@ -314,6 +314,14 @@ blockquote {
 }
 // Profile
 
+.profile-page {
+  h2 {
+    size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .profile {
   width: 50%;
   max-width: 150px;
@@ -340,11 +348,13 @@ blockquote {
   h2 {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
+    margin-top: 0rem;
   }
 
   h3 {
     font-size: 1.25rem;
     margin-bottom: 0.2rem;
+    margin-top: 0rem;
   }
 
   p {

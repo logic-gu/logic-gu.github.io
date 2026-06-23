@@ -5,7 +5,8 @@ sort_by: Fokkens
 position: phd
 homepage: https://www.gu.se/en/about/find-staff/tjeerdfokkens
 
-
 image: tjeerd.jpg
+past: true
+duration: 2020-2025
 
 ---
