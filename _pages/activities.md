@@ -27,7 +27,7 @@ We organise a number of different activities to promote logic and its integratio
 - [Scandinavian Logic Symposium and Nordic Logic Summer School, Copenhagen]({% post_url events/2026-08-17-nlss-slss %}), 17--23 August 2026.
 - [Gothenburg Cyclothon 2025]({% post_url events/2025-09-24-cyclothon %}), 24--26 September 2025.
 - [Krister Segerberg Memorial Seminar]({% post_url events/2025-08-25-krister-segerberg-memorial %}), 25 August 2025.
-- [Logic Colloquium 2024](https://lc2024.se), 24--28 June 2024.
+- [Logic Colloquium 2024](https://lc2024.github.io), 24--28 June 2024.
 - [Workshop on Fixed Points and Ill-founded Proofs]({% post_url events/2023-04-27-wofpip %}), April 2023.
 - [Workshop in Philosophy of Computing](https://www.ans.pw.edu.pl/Aktualnosci/Warsztaty-z-filozofii-obliczen/(language)/eng-GB), September 2021.
 - [Circularity in Syntax and Semantics]({% link _static_sites/ciss19/index.html %}) (CiSS), November 2019.

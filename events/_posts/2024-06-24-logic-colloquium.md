@@ -11,5 +11,5 @@ The 2024 Annual European Meeting of the Association for Symbolic Logic, also kno
 The colloquium comprises 3 tutorials, 7 plenary lectures and 6 special sessions as well as contributed talks. 
 In addition, the 2024 Gödel Lecture was delivered at the meeting.
 
-See [lc2024.se](https://lc2024.se) for full information.
+See [lc2024.github.io](https://lc2024.github.io) for full information.
 
