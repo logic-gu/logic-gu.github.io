@@ -12,67 +12,112 @@ image_caption: Should you study logic?
 image_url: _pages/poster.md
 ---
 
-Our research group powers the Master’s programme in Logic offered at the University of Gothenburg. For full details and application procedure, see the official webpage of [the Master’s Programme in Logic](https://www.gu.se/en/study-gothenburg/logic-masters-programme-h2log).  Do check out our [poster](https://logic-gu.se/poster)!
+Our research group powers the [Master’s Programme in Logic](https://www.gu.se/en/study-gothenburg/logic-masters-programme-h2log) offered at the University of Gothenburg. For official information about admission requirements, application procedures, and deadlines, please consult the programme webpage. You can also have a look at our [poster](https://logic-gu.se/poster)!
 
-The Master in Logic offers the opportunity to delve into the theory and use of logic accross the fields of mathematics, philosophy, linguistics, computer science and other disciplines.
-<!-- The programme provides an thorough introduction to the field and in-depth rounded education over the topic which can allow the student to jump from the most theoretical aspects of the subjects to its more applied. -->
-The programme provides an in-depth and rounded education which allows students to move between the most theoretical aspects of logic and its varied applications.
+The Master’s Programme in Logic offers the opportunity to study the theory and applications of logic across mathematics, philosophy, linguistics, computer science, and neighbouring disciplines. The programme combines a broad common foundation with substantial freedom to specialise, allowing students to move between the most theoretical aspects of logic and its many applications.
 
-<!-- The purpose of the Master’s Programme in Logic is to provide a new generation of students with thorough theoretical knowledge, and the ability to apply it, within a central intellectual field, which gets its theoretical interest and practical value from a unique combination of humanities, mathematics and information science. For the Faculty of Humanities this is a commitment to promote and further develop the field of mathematical humanities.
+The programme is closely connected to the [Logic@GU research group](https://logic-gu.se/). Students are invited to participate in seminars, lectures, and other scientific activities throughout their studies, and gradually develop their own academic profile through elective courses, specialisations, and thesis work.
 
-The main goal is that students, after successful completion of the programme, will have a coherent training and thorough understanding of the theoretical fundamentals of the subject of logic itself, its general role in the sciences and humanities, as well as its applications in fields like philosophy, linguistics, mathematics and computer science. Students will be well prepared for a career of research and development in logic and its applications, both in academia and industry. -->
-
-<!-- ![In 2024 our Logic Group hosted the Logic Colloquium, the most important conference in Logic in Europe, and many master students were involved in the organisation.]({{ '/assets/img/students_cooperating.jpg' | relative_url }}) -->
-
-The two-year programme opens with a selection of core courses, common for all students, which provide a solid foundation in the fundamentals of theoretical logic and its applications, and then follow elective courses, tailored to the background, interests and career plans for individual students.
-
-![Students in the Master in Logic complete the programme with a deep and well-rounded education in Logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }})
-
+![Students in the Master in Logic complete the programme with a deep and well-rounded education in logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }})
 
 ## Programme structure and content
 
-The programme begins with an in-depth introductory course specifically designed to give students from diverse backgrounds the foundational knowledge needed. There are six **mandatory courses** providing core knowledge:
+The programme comprises four semesters. All courses are worth 7.5 credits, with the exception of the 30-credit Master’s Thesis.
 
-- Logical Theory
-- Set Theory
-- Modal Logic
-- Philosophy of Logic
-- Proof Theory
-- Model theory
+The **first and second semesters** provide the core theoretical background. Together, they cover central areas of contemporary logic, including proof theory, model theory, computability theory, set theory, modal logic, incompleteness, and the philosophy of logic. These courses establish a common foundation for students arriving from mathematics, computer science, philosophy, linguistics, and related subjects.
 
-Next to the mandatory courses, the program offers a broad and dynamic collection of **elective courses**. 
-Below you find a selection of elective courses that were offered in the recent past at our master, roughly sorted by topic. 
-Note, the choice of elective courses varies from year to year based on availability and interest, so we cannot guarantee that all courses will be offered during your stay.
+### First semester
 
- **Proof and Truth**
- - Advanced Proof Theory
- - Advanced Set Theory
- - Logic of provability
- - Quantified modal Logic
- - Dependence Logic 
+- Logic & Completeness (LOG112)
+- Set Theory (LOG121)
+- Models of Computation (LOG115)
+- Modal Logic (LOG131)
 
- **Categorical Logic**
- - Category theory 
- - Functorial Semantics
- - Topos theory
- - Semantics of Type Theory 
+### Second semester
 
- **Logic and Computation**
- - Models of computation
- - Lambda calculus, type theory and foundations of programming languages
- - Logic, games and automata
- - Decision theory
+- Proof Theory (LOG221)
+- Expressibility & Incompleteness (LOG215)
+- Philosophy of Logic (LOG250)
+- Model Theory (LOG211)
 
- **Logic in Philosophy**
- - Philosophy of mathematics
- - History of logic
- - Semantic paradoxes and the logic of truth 
- 
+The **third semester** is devoted to increasing specialisation. Students take three elective courses together with Research Skills in Logic (LOG311). The research-skills course provides a bridge between coursework and independent research, with emphasis on academic writing, presentation, and research planning. During this semester, students are encouraged to explore possible thesis topics and begin discussions with prospective supervisors.
 
-You’re also encouraged to choose elective courses taught at partner departments.
-You will receive guidance to help build a profile matching your individual plans for your future career.
-Seminars, peer review, and supervising will assist you in writing your thesis, which is an in-depth exploration of a topic of your choice.
+The **fourth semester** is devoted entirely to the Master’s Thesis (LOG410/420). Students conduct an in-depth investigation of a topic of their choice under the guidance of a supervisor and present the results as a substantial piece of independent research.
 
-How is it to study at the University of Gothenburg? How is it to find accomodation in town? Check out [this](https://www.youtube.com/watch?v=DgmwwZUMRto) video and [this](https://www.youtube.com/watch?v=FU79ji8n4kM) video for further information!
+Throughout all four semesters, students can participate in the **Research Seminar in Logic**. The seminar gives students regular contact with visiting speakers and members of the research group, and provides an introduction to current developments across the field.
 
+## Elective courses and specialisations
 
+The programme offers a broad and changing collection of elective courses. The precise selection varies from year to year according to student interest and staff availability, so not every course listed below can be guaranteed during a particular period of study.
+
+### Proof, truth, and foundations
+
+- Advanced Set Theory (LOG270)
+- Advanced Topics in Proof Theory (LOG365)
+- Formal Theories of Truth
+- Semantic Paradoxes and the Logic of Truth
+- Provability Logics
+- Dependence Logic
+- Quantified Modal Logic
+- Models of Arithmetic
+- Advanced Model Theory
+
+### Categorical logic and type theory
+
+- Category Theory (LOG350)
+- Functorial Semantics (LOG390)
+- Topos Theory (LOG380)
+- Lambda Calculus, Types and Foundations of Programming Languages (LOG370)
+- Semantics of Dependent Type Theory
+
+### Logic and computation
+
+- Logic, Games and Automata (LOG290)
+- Decision Theory
+
+### Logic in philosophy and history
+
+- History of Logic (LOG280)
+- Philosophy of Mathematics (LOG360)
+
+Some advanced topics are offered through **Specialization in Logic** courses (LOG230/240/320/330/340). A specialisation is often organised as a reading course for an individual student or a small group. Under the guidance of a member of staff, students work through selected books and research articles, meet regularly to discuss the material, and complete an appropriate form of assessment, such as written work, a presentation, or an oral examination. Reading courses make it possible to explore advanced subjects that are not offered regularly as lecture courses and often provide valuable preparation for the Master’s Thesis.
+
+## Electives at other departments
+
+Students are also encouraged to choose suitable elective courses offered by partner departments. These courses can help students develop a profile aligned with their academic interests and future plans. External electives require prior approval from a study tutor and may have prerequisites not covered within the programme.
+
+Courses at the University of Gothenburg and Chalmers that may be relevant include:
+
+- Computational Semantics (LT2813)
+- Artificial Intelligence: Cognitive Systems (LT2318)
+- Topology (MMA100)
+- Discrete Mathematics (MMG610)
+- Algebraic Structures (MMG500)
+- Functional Programming (DIT143)
+- Types for Programs and Proofs (DIT235)
+
+Applications for external courses are normally made through [University Admissions](https://www.universityadmissions.se/). Students should consult the current application periods and discuss their choices with the programme coordinator or study tutor well in advance.
+
+## Who is the programme for?
+
+The Master’s Programme in Logic welcomes students from a broad range of academic backgrounds who share a serious interest in logic and formal reasoning. Many students enter from mathematics, theoretical computer science, philosophy, or linguistics, but applications from neighbouring disciplines are also encouraged.
+
+The programme has a strong emphasis on symbolic and formal methods. Students regularly work with definitions, proofs, formal systems, and abstract structures. No single disciplinary background is expected, but applicants should be comfortable with precise and rigorous reasoning and willing to acquire new technical skills when necessary.
+
+Students from mathematics and theoretical computer science can deepen their understanding of proof, computation, and mathematical structure. Students from philosophy can engage directly with formal theories of inference, truth, meaning, and rationality. Students from linguistics can explore formal semantics, type theory, and logical approaches to natural language. A central strength of the programme is that these perspectives meet and interact within the same classroom and research environment.
+
+The official admission requirements are published on the [programme webpage](https://www.gu.se/en/study-gothenburg/logic-masters-programme-h2log) and should always be regarded as authoritative.
+
+## Research environment and mentorship
+
+Every student is assigned a personal mentor from among the programme’s teachers. The mentor provides academic guidance, helps students make informed choices about electives and specialisations, and supports the development of a coherent academic profile. During the third semester, mentors also help students identify possible thesis areas and suitable supervisors.
+
+The programme is embedded in the activities of [Logic@GU](https://logic-gu.se/), whose research spans mathematical, philosophical, computational, and categorical logic. In addition to the Research Seminar in Logic, students can attend the [Nordic Online Logic Seminar](https://logic-gu.se/nol/), the annual [Lindström Lectures](https://logic-gu.se/lindstrom-lectures/), and the [GothCaT Seminar](https://gothcat.github.io/) in category theory and type theory. Current talks and events are listed on the group’s [seminars page](https://logic-gu.se/seminars/).
+
+## Studying in Gothenburg
+
+The University of Gothenburg is distributed across the city rather than concentrated on a single campus. Students therefore study in an environment that combines university buildings, libraries, cafés, museums, cultural institutions, parks, and easy access to the sea and the southern archipelago.
+
+Students in the programme also have access to the department’s common room in Humanisten, where they can study, meet other students, and take part in informal academic and social activities. Beyond the programme, student unions, associations, the Erasmus Student Network, and the University’s alumni network provide opportunities to build wider academic and professional connections.
+
+For an introduction to studying and living in Gothenburg, including practical information about student life and accommodation, see these videos on [student life in Gothenburg](https://www.youtube.com/watch?v=DgmwwZUMRto) and [finding accommodation](https://www.youtube.com/watch?v=FU79ji8n4kM). Further information is available through the University’s [Campus and Student Life](https://www.gu.se/en/study-in-gothenburg/campus-and-student-life) pages.
