@@ -3,7 +3,8 @@
 # -----------------------------------------------------------------------------
 
 title: Logic@GU # the website title (if blank, full name will be used instead)
-copyright: The Logic Group at GU
+copyright: The Logic Group@GU
+copyright-date: 2025-09-02
 author: The Logic Group at GU
 email: graham.leigh@gu.se
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
