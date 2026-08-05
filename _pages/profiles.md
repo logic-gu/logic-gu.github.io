@@ -16,8 +16,8 @@ profile-order:
     - researcher
     - postdoc
     - phd
-    - visitor
     - emeritus
+    - visitor
   past:
     - phd
     - postdoc

@@ -10,4 +10,4 @@ past: true
 duration: 2021-2025
 
 ---
-I am interested in the exploration of foundational systems by means of proof theory and (constructive) reverse mathematics. At the moment I work in cyclic proof theory, focusing on the soundness conditions of cyclic derivation systems.
+Dominik completed his PhD, [_Cyclic Proof Theory_](https://gupea.ub.gu.se/items/e3340796-20f0-4578-aeb2-13e290fe9f33) on 12 December 2025.

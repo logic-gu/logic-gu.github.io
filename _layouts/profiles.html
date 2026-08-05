@@ -81,7 +81,13 @@ layout: page
         </div>
         {%- endif -%}
          <div class="clearfix profile-description">
-          <h2>{{ profile.name }}, {{ position-names[profile.position] }} {%- if profile.duration -%}, {{ profile.duration }}{%- endif -%}</h2>
+          <h2>{{ profile.name }}, {{ position-names[profile.position] }}</h2>
+          {% if profile.content -%}
+            {{ profile.content | markdownify }}
+          {%- endif %}
+          {% if profile.homepage %}
+            <div class="profile-footer"><a href="{{ profile.homepage }}">Personal webpage</a></div>
+          {% endif %}
         </div>
         <hr>
       {% endunless %}
