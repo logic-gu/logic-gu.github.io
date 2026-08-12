@@ -265,6 +265,7 @@ exclude:
   - .devcontainer
   - .vscode
   - .ruby-lsp
+  - .obsidian
   - bundle
 keep_files:
   - CNAME
