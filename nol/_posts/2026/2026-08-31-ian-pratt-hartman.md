@@ -3,7 +3,7 @@ speaker: Ian Pratt-Hartmann
 title: Variable-ordering fragments of first-order logic
 affil: University of Manchester and Uniwersytet Opolski
 time: "16:00"
-online-id: 
+url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 video:
   id: 
 ---

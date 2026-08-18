@@ -5,7 +5,7 @@ title: Some reflections on Krister’s philosophy of philosophy
 date: 2025-08-25 16:45:00 +02:00
 duration: 45
 
-online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
 
 In this talk I will briefly outline Krister’s biography, focusing mainly on the early nineties onwards when I became Krister’s first PhD student. 

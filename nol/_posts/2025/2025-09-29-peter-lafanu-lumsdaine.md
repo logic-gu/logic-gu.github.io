@@ -4,7 +4,7 @@ affil: Stockholm University
 title: "Getting rich but staying weak: Usable foundational systems for finitistic mathematics"
 date: 2025-09-29 16:00:00 +02:00
 
-online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
 There is a long tradition of distinguishing *finistic* methods of reasoning, for both philosophical and mathematical motivations.
 Typically, this is made precise by reducing arguments to some theory of arithmetic -- usually Peano or Heyting Arithmetic, or weaker fragments thereof.

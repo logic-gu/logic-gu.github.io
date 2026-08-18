@@ -34,8 +34,8 @@ LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 {% assign description = description | append: "More details at " | append: post-url %}
 {{ description | replace: ',', '\\,' | replace: ';', '\\;' | wrap_lines }}
 {%- comment -%}URL: section{%- endcomment -%}
-{%- if post.online and post.online-id -%}
-  {% assign url = "URL;VALUE=URI:" | append: post.online-id -%}
+{%- if post.online and post.url -%}
+  {% assign url = "URL;VALUE=URI:" | append: post.url -%}
 {%- else -%}
   {% assign url = "URL:" | append: post-url -%}
 {%- endif %}

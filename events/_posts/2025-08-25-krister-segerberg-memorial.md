@@ -5,7 +5,7 @@ date: 2025-08-25 16:00:00 +02:00
 duration: 90
 location: zoom
 
-online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 
 # assets_dir: 'events/assets/' 
 # image: stenen.png

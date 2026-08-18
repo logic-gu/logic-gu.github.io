@@ -8,7 +8,7 @@ duration: 120
 
 location: J335, Humanisten
 online: true
-online-id: https://gu-se.zoom.us/j/68668786137?pwd=KhesmPZHouzxhu4NAMKhASkxS1kFf8.1
+url: https://gu-se.zoom.us/j/68668786137?pwd=KhesmPZHouzxhu4NAMKhASkxS1kFf8.1
 ---
 
 Dependence and independence concepts are ubiquitous in natural science, social science, humanities as well as in everyday life.
