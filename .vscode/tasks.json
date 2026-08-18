@@ -9,7 +9,7 @@
             "command": "./bin/entry_point_incremental.sh",
             "group": {
                 "kind": "build",
-                "isDefault": false
+                "isDefault": true
             },
             "isBackground": true,
             "problemMatcher": []
@@ -18,10 +18,7 @@
             "label": "Serve",
             "type": "shell",
             "command": "./bin/entry_point.sh",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "isBackground": true,
             "problemMatcher": []
         },
