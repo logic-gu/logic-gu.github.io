@@ -2,6 +2,10 @@
 speaker: Ian Pratt-Hartmann
 title: Variable-ordering fragments of first-order logic
 affil: University of Manchester and Uniwersytet Opolski
+time: "16:00"
+online-id: 
+video:
+  id: 
 ---
 In the context of first-order logic, a ‘variable-ordering fragment' is
 a subset of formulas identified by restricting the permitted sequences

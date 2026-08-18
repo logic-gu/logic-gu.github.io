@@ -2,7 +2,6 @@
 speaker: Alice
 affil: Wonderland
 title: Logic Seminar
-date: "{{date}} 10:00:00 +02:00"
 location: J577, Humanisten
 ---
 <!--more-->

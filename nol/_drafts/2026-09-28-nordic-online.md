@@ -2,6 +2,7 @@
 speaker: Scarlett O'Hara
 title: Nordic Online Logic Seminar
 affil:
+time: "16:00"
 ---
 Until you've lost your reputation, you never realize what a burden it was or what freedom really is.
 
