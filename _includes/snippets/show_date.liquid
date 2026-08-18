@@ -9,59 +9,38 @@
         start-date [-> end-date]
         NB: (hours omitted in case of start-date)
 {% endcomment %}
-{% assign format-date = '%Y-%m-%d' %}
-{% assign format-time = 'T%H:%M:%S' %}
-{%- assign event = include.event -%}
+{% assign d_fmt = '%Y-%m-%d' %}
+{% assign t_fmt = 'T%H:%M:%S' %}
+{% assign event = include.event %}
 
-{%- assign e_time = event.date -%}
-{%- assign e_date = event.date | date: format-date -%}
+{% assign start = "" %}
+{% assign end = "" %}
+{% include snippets/get_date.liquid event=event %}
+{% assign start-day = start | date: d_fmt %}
+{% assign end-day = end | date: d_fmt %}
+{% if start-day == end-day %}
+    {% assign is_multiday = false %}
+{% else %}
+    {% assign is_multiday = true %}
+{% endif %}
 
-{%- assign is_multiday = false -%}
-{%- assign omit_time = false -%}
-{%- if event.date-start -%}
-    {%- assign is_multiday = true -%}
-    {%- assign s_time = event.date-start | date: format-date -%}
-    {%- assign omit_time = true -%}
-{%- endif -%}
+{% if is_multiday %}
+    {% assign omit_time = true %}
+{% else %}
+    {% assign omit_time = false %}
+{% endif %}
 
+{% assign format = '%A, %-d %B %Y' %}
+{% unless omit_time %}{% assign format = format | append: ' at %H:%M' %}{% endunless %}
 
-{%- assign hm = event.date | date: format-time -%}
-{%- assign tz = event.date | date: '%z' -%}
-{% comment %} {%- assign time = event.time | default: hm -%} {% endcomment %}
-
-{%- comment -%}
-  Use an explicit time if one has been given.
-{%- endcomment -%}
-{%- if hm == "T00:00:00" -%}
-    {%- if event.time -%}
-        {%- assign e_time = e_date | append: 'T' | append: event.time | append: tz -%}
-    {%- endif -%}
-{%- endif -%}
-
-{%- assign format = '%A, %-d %B %Y' -%}
-{%- unless omit_time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
-{%- comment -%}
- {%- case include.format -%}
-    {%- when "long", nil -%}
-        {%- assign format = '%A, %-d %B %Y' -%}
-        {%- unless omit_time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
-    {%- when "short" -%}
-        {%- assign format = '%a, %-d %b %Y' -%}
-        {%- unless omit_time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
-    {%- else -%}
-        {%- assign format = include.format -%}
-{%- endcase -%}
-{%- endcomment -%}
-
-{%- comment -%}
+{% comment %}
   Create icon objects
-{%- endcomment -%}
-{%- capture calendar -%}<i class="fa-solid fa-calendar fa-sm">&nbsp;</i>{%- endcapture -%}
-{%- capture arrow -%}<i class="fa-solid fa-long-arrow-right fa-sm"></i>{%- endcapture -%}
+{% endcomment %}
+{% capture calendar %}<i class="fa-solid fa-calendar fa-sm">&nbsp;</i>{% endcapture %}
+{% capture arrow %}<i class="fa-solid fa-long-arrow-right fa-sm"></i>{% endcapture %}
 
+<time datetime="{{ start }}">{{ calendar }}{{ start | date: format }}</time>
 {%- if is_multiday %} 
-    <time datetime="{{ s_time }}">{{ calendar }}{{ s_time | date: format }}</time>&nbsp;{{ arrow }}&nbsp; 
+    &nbsp;{{ arrow }}&nbsp; 
+    <time datetime="{{ end }}">{{ calendar }}{{ end | date: format }}</time>
 {% endif -%}
-<time datetime="{{ e_time }}">{{ calendar }}{{ e_time | date: format }}</time>
-{% comment %} X{{ s_time }}X{{ e_time }}X{{ is_multiday }} {% endcomment %}
-{% comment %} {{ tz }} {% endcomment %}

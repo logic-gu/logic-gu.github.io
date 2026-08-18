@@ -1,10 +1,41 @@
-{% comment %}
+{%- comment %}
     Snippet for calculating start or end time of event
     input:
         event 
     output:
-        datetime
-{% endcomment %}
+        pair of datetimes (start & end)
+    We use
+    - event.date (a datetime)
+    - event.start (optional datetime)
+    - event.time (opt, combined with date gives explicit start time)'
+    - event.duration (opt) calculate end from date
+{% endcomment -%}
 {%- comment -%}
     Standard time format for Jekyll: date: '%Y%m%d %H:%M:%S %z'
 {%- endcomment -%}
+{%- assign e = include.event -%}
+{%- assign output = "" | split: ',' -%}
+{%- assign d_fmt = '%Y%m%d' -%}
+{%- assign t_fmt = 'T%H:%M' -%}
+{%- assign tz_fmt = '%z' -%}
+{%- assign fmt = d_fmt | append: t_fmt | append: tz_fmt -%}
+{%- if e.start -%}
+    {%- comment -%}
+        event begins at `start` and ends at `date` (midnight)
+    {%- endcomment -%}
+    {%- assign start = e.start | date: fmt -%}
+    {%- assign end = e.date -%}
+{%- else -%}
+    {%- comment -%}
+        start = `date` + `time` 
+        end = start + duration
+    {%- endcomment -%}
+    {%- assign start = e.date | date: fmt -%}
+    {%- if e.time -%}
+        {%- assign tz = start | date: tz_fmt -%}
+        {%- assign start = start | date: d_fmt | append: 'T' | append: e.time | append: tz | date: fmt -%}
+    {%- endif -%}
+    {%- assign d = e.duration | default: 15 -%}
+    {%- assign sectoAdd = d | times: 60 -%}
+    {%- assign end = start | date: '%s' | plus: sectoAdd | date: fmt -%}
+{%- endif -%}

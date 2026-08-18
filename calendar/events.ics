@@ -6,7 +6,7 @@ limit: 2
 ---
 {% assign old_events = site.posts | where_exp:"item", "item.date <= site.time" | slice:0, page.limit %}
 {% assign events = site.posts | where_exp:"item", "site.time < item.date" | concat: old_events %}
-{%- include event-calendar.ics
+{%- include event-calendar.liquid
   contact = page.contact
   events=events
 -%}
