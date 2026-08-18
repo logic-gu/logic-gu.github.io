@@ -34,7 +34,7 @@
 {%- endcomment -%}
 {%- if hm == "T00:00:00" -%}
     {%- if event.time -%}
-        {%- assign e_time = e_date | append: 'T' | append: event.time | append: 'Z' | append: tz -%}
+        {%- assign e_time = e_date | append: 'T' | append: event.time | append: tz -%}
     {%- endif -%}
 {%- endif -%}
 
