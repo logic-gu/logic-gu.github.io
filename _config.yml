@@ -183,6 +183,7 @@ defaults:
     values:
       title: Logic Seminar
       event-type: Logic Seminar
+      time: "10:15"
       duration: 105 # length in mins
       # speaker: TBC
   - scope:
@@ -191,6 +192,7 @@ defaults:
     values:
       title: Nordic Online Logic Seminar
       event-type: Nordic Online Logic Seminar
+      time: "16:00"
       duration: 90
       location: Zoom
       online: true

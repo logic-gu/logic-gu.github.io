@@ -27,10 +27,7 @@
               <h4>{{ heading3 }}</h4>
               <div class="post-meta">
                 {% include snippets/show_date.liquid 
-                  start-date = event.date-start
-                  date = event.date
-                  end-date = event.date-end
-                  format = "long"
+                  event=event
                   -%}
                 {%- if event.location %}
                   &nbsp;

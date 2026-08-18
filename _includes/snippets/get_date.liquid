@@ -1,0 +1,93 @@
+{% comment %}
+    Create a standard date from inputs with localised timezone
+    input:
+        event 
+    output:
+        datetime string
+{% endcomment %}
+{%- comment -%}
+    Standard time format for Jekyll: date: '%Y%m%d %H:%M:%S %z'
+{%- endcomment -%}
+{%- assign dates = include -%}
+{%- assign end-time = dates.end-date | default: dates.date -%}
+{%- assign end-date = end-time | date: '%Y%m%d' -%}
+
+{%- assign hm = end-time | date: '%H%M' -%}
+{%- comment -%}
+  Compute timezone offset of end-date using site.timezone (is +1 or +2)
+{%- endcomment -%}
+{%- assign tz = end-time | date: '%z' -%}
+
+{%- comment -%}
+    Check if event has different start/end times and days
+        is_start_end : boolean 
+        is_multiday : boolean 
+{%- endcomment -%}
+{%- assign is_start_end = true -%}
+{%- assign is-multiday = false -%}
+{%- if start-time != end-time -%}
+    {%- assign is_start_end = false -%}
+    {%- if start-date != end-date -%}
+        {%- assign is-multiday = true -%}
+    {%- endif -%}
+{%- endif -%}
+
+{%- comment -%}
+  Now build the *actual* event time with timezone from
+  available parameters:
+    - dates.date (full datetime or date only)
+    - dates.time (override the time)
+    - tz (location relevant timezone)
+{%- endcomment -%}
+{%- if dates.time and not is-multiday -%}
+    {%- assign end-time = end-date | append: ' ' | append: dates.time | append: ' ' | append: tz -%}
+{%- endif -%}
+
+{%- comment -%}
+ Ignore time *if* 
+    not explicitly mentioned 
+    OR 
+    is a multi-day event
+  event we won't mention it
+{%- endcomment -%}
+{%- if hm == '0000' and not dates.time -%}
+    {%- assign omit-time = true -%}
+{%- elseif is-multiday -%}
+    {%- assign omit-time = true -%}
+{%- else -%}
+    {%- assign omit-time = false -%}
+{%- endif -%}
+
+
+{%- if start-time != end-time or hm == '0000' -%}
+    {%- assign omit-time = true -%}
+{%- else -%}
+    {%- assign omit-time = false -%}
+{%- endif -%}
+
+{%- comment -%}
+  Decide format for printing event date-time
+{%- endcomment -%}
+{%- case dates.format -%}
+    {%- when "long", nil -%}
+        {%- assign format = '%A, %-d %B %Y' -%}
+        {%- unless omit-time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
+    {%- when "short" -%}
+        {%- assign format = '%a, %-d %b %Y' -%}
+        {%- unless omit-time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
+    {%- else -%}
+        {%- assign format = dates.format -%}
+{%- endcase -%}
+
+{%- comment -%}
+  Create icon objects
+{%- endcomment -%}
+{%- capture calendar -%}<i class="fa-solid fa-calendar fa-sm">&nbsp;</i>{%- endcapture -%}
+{%- capture arrow -%}<i class="fa-solid fa-long-arrow-right fa-sm"></i>{%- endcapture -%}
+{%- comment -%}
+  Output event date & time and (optional) start-time
+{%- endcomment -%}
+{%- unless is_start_end %} 
+    <time datetime="{{ start-time }}">{{ calendar }}{{ start-time | date: format }}</time>&nbsp;{{ arrow }}&nbsp;
+{% endunless -%}
+<time datetime="{{ end-time }}">{{ calendar }}{{ end-time | date: format }}</time>

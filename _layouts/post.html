@@ -49,9 +49,7 @@ layout: default
     <h2 class="post-title">{{ page.speaker }}{%- if page.speaker and page.affil %}, {% endif -%}{{ page.affil }}</h2>
     <div class="post-meta">
       {% include snippets/show_date.liquid 
-        start-date = page.date-start
-        date = page.date
-        end-date = page.date-end
+        event=page
         %}
       {%- if page.location %}
         &nbsp;

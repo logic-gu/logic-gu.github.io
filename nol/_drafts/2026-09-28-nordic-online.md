@@ -1,9 +1,7 @@
 ---
 speaker: Scarlett O'Hara
-title: Ain't it Windy?
-affil: Tara
-homepage: https://en.wikipedia.org/wiki/Scarlett_O%27Hara
-date: 2024-09-20 10:15:00 +0200
+title: Nordic Online Logic Seminar
+affil:
 ---
 Until you've lost your reputation, you never realize what a burden it was or what freedom really is.
 

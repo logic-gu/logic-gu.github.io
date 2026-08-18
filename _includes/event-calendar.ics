@@ -41,25 +41,33 @@ LOCATION:{{ post.location | replace: ',', '\\,' | replace: ';', '\\;' }}
 {%- endif %}
 {{ url | wrap_lines }}
 CLASS:PUBLIC
-{% if post.date-start -%}{% comment %}Specifies multi-day{% endcomment -%}
+{% if post.date-start -%}{% comment %}Specifies multi-day start-end at midnight unless specified{% endcomment -%}
+{%- assign hm = post.date | date: 'T%H%M%S' -%}
+{%- if hm == 'T000000' -%}
+  {%- assign hm = "T235900" -%}
+{%- endif -%}
 DTSTART;TZ=Europe/Stockholm:{{ post.date-start | date: "%Y%m%dT%H%M%S" }}
-DTEND;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
-{% else -%}{% comment %}Otherwise use post.duration{% endcomment -%}
-DTSTART;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT%H%M%S" }}
+DTEND;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%d" | append: hm }}
+{% else -%}{% comment %}Otherwise use post.time & post.duration{% endcomment -%}
+{%- assign start-time = post.date -%}
+{%- if post.time -%}
+  {%- assign start-time = start-time | date: '%Y%m%d' | append: 'T' | append: post.time -%}
+{%- endif -%}
+DTSTART;TZ=Europe/Stockholm:{{ start-time | date: "%Y%m%dT%H%M%S" }}
 {% assign duration = post.duration | default: 105 | plus:0  -%}
-{% assign mins = post.date | date: "%M" | plus: duration -%}
+{% assign mins = start-time | date: "%M" | plus: duration -%}
 {% assign overflow = mins | divided_by: 60 -%}
 {% assign mins = mins | modulo: 60 -%}
-{% assign hours = post.date | date: "%H" | plus: overflow -%}
+{% assign hours = start-time | date: "%H" | plus: overflow -%}
 {% if mins < 10  -%}
   {% assign mins = mins | prepend: "0" -%}
 {% endif -%}
 {% if hours < 10  -%}
   {% assign hours = hours | prepend: "0" -%}
 {% endif -%}
-  DTEND;TZ=Europe/Stockholm:{{ post.date | date: "%Y%m%dT" }}{{hours}}{{mins}}00
+  DTEND;TZ=Europe/Stockholm:{{ start-time | date: "%Y%m%dT" }}{{hours}}{{mins}}00
 {% endif -%}
-DTSTAMP:{{ post.date | date: "%Y%m%dT%H%M%S" }}
+DTSTAMP:{{ start-time | date: "%Y%m%dT%H%M%S" }}
 END:VEVENT{% endfor %}
 END:VCALENDAR
 

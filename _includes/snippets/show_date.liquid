@@ -9,15 +9,39 @@
         start-date [-> end-date]
         NB: (hours omitted in case of start-date)
 {% endcomment %}
-{%- assign s_date = include.start-date | default: include.date -%}
-{%- assign e_date = include.end-date | default: include.date -%}
-{%- assign hm = include.date | date: '%H%M' -%}
-{%- if s_date != e_date or hm == '0000' -%}
+{% assign format-date = '%Y-%m-%d' %}
+{% assign format-time = 'T%H:%M:%S' %}
+{%- assign event = include.event -%}
+
+{%- assign e_time = event.date -%}
+{%- assign e_date = event.date | date: format-date -%}
+
+{%- assign is_multiday = false -%}
+{%- assign omit_time = false -%}
+{%- if event.date-start -%}
+    {%- assign is_multiday = true -%}
+    {%- assign s_time = event.date-start | date: format-date -%}
     {%- assign omit_time = true -%}
-{%- else -%}
-    {%- assign omit_time = false -%}
 {%- endif -%}
-{%- case include.format -%}
+
+
+{%- assign hm = event.date | date: format-time -%}
+{%- assign tz = event.date | date: '%z' -%}
+{% comment %} {%- assign time = event.time | default: hm -%} {% endcomment %}
+
+{%- comment -%}
+  Use an explicit time if one has been given.
+{%- endcomment -%}
+{%- if hm == "T00:00:00" -%}
+    {%- if event.time -%}
+        {%- assign e_time = e_date | append: 'T' | append: event.time | append: 'Z' | append: tz -%}
+    {%- endif -%}
+{%- endif -%}
+
+{%- assign format = '%A, %-d %B %Y' -%}
+{%- unless omit_time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
+{%- comment -%}
+ {%- case include.format -%}
     {%- when "long", nil -%}
         {%- assign format = '%A, %-d %B %Y' -%}
         {%- unless omit_time -%}{%- assign format = format | append: ' at %H:%M' -%}{%- endunless -%}
@@ -27,7 +51,17 @@
     {%- else -%}
         {%- assign format = include.format -%}
 {%- endcase -%}
-{%- unless s_date == e_date %} 
-    <time datetime="{{ s_date }}"><i class="fa-solid fa-calendar fa-sm"> </i> {{ s_date | date: format }}</time>&nbsp; <i class="fa-solid fa-long-arrow-right fa-sm"></i>&nbsp; 
-{% endunless -%}
-<time datetime="{{ e_date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ e_date | date: format }}</time>
+{%- endcomment -%}
+
+{%- comment -%}
+  Create icon objects
+{%- endcomment -%}
+{%- capture calendar -%}<i class="fa-solid fa-calendar fa-sm">&nbsp;</i>{%- endcapture -%}
+{%- capture arrow -%}<i class="fa-solid fa-long-arrow-right fa-sm"></i>{%- endcapture -%}
+
+{%- if is_multiday %} 
+    <time datetime="{{ s_time }}">{{ calendar }}{{ s_time | date: format }}</time>&nbsp;{{ arrow }}&nbsp; 
+{% endif -%}
+<time datetime="{{ e_time }}">{{ calendar }}{{ e_time | date: format }}</time>
+{% comment %} X{{ s_time }}X{{ e_time }}X{{ is_multiday }} {% endcomment %}
+{% comment %} {{ tz }} {% endcomment %}

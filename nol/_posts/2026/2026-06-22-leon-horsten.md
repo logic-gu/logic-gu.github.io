@@ -2,7 +2,6 @@
 speaker: Leon Horsten
 affil: University of Konstanz
 title: Axioms for Arbitrary Object Theory
-date: 2026-06-22 16:00:00 +02:00
 online-id: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 video:
   id: 0_9h6snpwi

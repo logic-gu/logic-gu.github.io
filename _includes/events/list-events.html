@@ -44,9 +44,7 @@
         </a>
         <div class="post-meta">
           {% include snippets/show_date.liquid 
-            start-date = event.date-start
-            date = event.date
-            end-date = event.date-end
+            event=event
             -%}
           {%- if event.location %}
             &nbsp;

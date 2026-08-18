@@ -1,23 +1,12 @@
 ---
 speaker: Alice
 affil: Wonderland
-title: "'Twas brillig?"
-date: 2024-09-06 10:15:00 +02:00
-location: J577
+title: Logic Seminar
+date: "{{date}} 10:00:00 +02:00"
+location: J577, Humanisten
 ---
-
-> 'Twas brillig, and the slithy toves\
-> Did gyre and gimble in the wabe;\
-> All mimsy were the borogoves,\
-> And the mome raths outgrabe.
-> 
-> "Beware the Jabberwock, my son!\
-> The jaws that bite, the claws that catch!\
-> Beware the Jubjub bird, and shun\
-> The frumious Bandersnatch!"
-> 
-
 <!--more-->
+And more
 > 
 > He took his vorpal sword in hand:\
 > Long time the manxome foe he sought—\
