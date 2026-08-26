@@ -18,13 +18,13 @@ The Master’s Programme in Logic offers the opportunity to study the theory and
 
 The programme is closely connected to the [Logic@GU research group](https://logic-gu.se/). Students are invited to participate in seminars, lectures, and other scientific activities throughout their studies, and gradually develop their own academic profile through elective courses, specialisations, and thesis work.
 
-![Students in the Master in Logic complete the programme with a deep and well-rounded education in logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }})
-
-
+<!-- ![Students in the Master in Logic complete the programme with a deep and well-rounded education in logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }}) -->
 
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-<iframe id="kaltura_player" type="text/javascript"  src='https://api.kaltura.nordu.net/p/302/embedPlaykitJs/uiconf_id/23454130?iframeembed=true&entry_id=0_78etbucq&config[provider]={"widgetId":"0_6mx8f6qy"}'  style="width: 722px;height: 406px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Kaltura Player"></iframe>
+<iframe id="kaltura_player" type="text/javascript"  src='https://api.kaltura.nordu.net/p/302/embedPlaykitJs/uiconf_id/23454130?iframeembed=true&entry_id=0_78etbucq&config[provider]={"widgetId":"0_6mx8f6qy"}'  style="width: 460px;height: 258px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Kaltura Player"></iframe>
 </div>
+
+<iframe id="kaltura_player" type="text/javascript"  src='https://api.kaltura.nordu.net/p/302/embedPlaykitJs/uiconf_id/23454130?iframeembed=true&entry_id=0_jgzj33yn&config[provider]={"widgetId":"0_jtquyni4"}'  style="width: 460px;height: 258px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Kaltura Player"></iframe>
 
 
 # Structure of the programme
