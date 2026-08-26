@@ -22,9 +22,11 @@ The programme is closely connected to the [Logic@GU research group](https://logi
 
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
 <iframe id="kaltura_player" type="text/javascript"  src='https://api.kaltura.nordu.net/p/302/embedPlaykitJs/uiconf_id/23454130?iframeembed=true&entry_id=0_78etbucq&config[provider]={"widgetId":"0_6mx8f6qy"}'  style="width: 460px;height: 258px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Kaltura Player"></iframe>
-</div>
 
 <iframe id="kaltura_player" type="text/javascript"  src='https://api.kaltura.nordu.net/p/302/embedPlaykitJs/uiconf_id/23454130?iframeembed=true&entry_id=0_jgzj33yn&config[provider]={"widgetId":"0_jtquyni4"}'  style="width: 460px;height: 258px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Kaltura Player"></iframe>
+</div>
+
+
 
 
 # Structure of the programme
