@@ -20,6 +20,13 @@ The programme is closely connected to the [Logic@GU research group](https://logi
 
 ![Students in the Master in Logic complete the programme with a deep and well-rounded education in logic and related topics.]({{ '/assets/img/students_working.jpg' | relative_url }})
 
+
+
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+<iframe id="kaltura_player" type="text/javascript"  src='https://api.kaltura.nordu.net/p/302/embedPlaykitJs/uiconf_id/23454130?iframeembed=true&entry_id=0_78etbucq&config[provider]={"widgetId":"0_6mx8f6qy"}'  style="width: 722px;height: 406px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Kaltura Player"></iframe>
+</div>
+
+
 # Structure of the programme
 
 The programme is structured to guide students from a broad foundation in logic towards increasing specialisation and independent research. All courses are worth 7.5 credits, with the exception of the Master’s Thesis, which is worth 30 credits.
