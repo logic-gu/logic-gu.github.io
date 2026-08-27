@@ -14,7 +14,7 @@ image_url: _pages/poster.md
 
 Our research group powers the [Master’s Programme in Logic](https://www.gu.se/en/study-gothenburg/logic-masters-programme-h2log) offered at the University of Gothenburg. For official information about admission requirements, application procedures, and deadlines, please consult the programme webpage. 
 
-You can also have a look at our [poster](https://logic-gu.se/poster) and [handbook](/assets/pdf/handbook.pdf)!
+<div style="text-align: center;">You can also have a look at our [Student Handbook](/assets/pdf/handbook.pdf)!</div> 
 
 The Master’s Programme in Logic offers the opportunity to study the theory and applications of logic across mathematics, philosophy, linguistics, computer science, and neighbouring disciplines. The programme combines a broad common foundation with substantial freedom to specialise, allowing students to move between the most theoretical aspects of logic and its many applications.
 
