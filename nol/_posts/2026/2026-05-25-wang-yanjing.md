@@ -3,7 +3,7 @@ speaker: Yanjing Wang
 affil: Peking University
 title: Bundled Fragments of First-order Modal Logic
 date: 2026-05-25 15:00:00 +02:00
-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+online-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 video:
   id: 0_eeerx7ic
 ---

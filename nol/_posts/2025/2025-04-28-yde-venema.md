@@ -4,7 +4,7 @@ affil: University of Amsterdam
 title: Propositional Dynamic Logic (re)visited
 date: 2025-04-28 16:00:00 +02:00
 
-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+online-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
 
 Propositional dynamic logic (PDL) is a well-known modal logic which originates from the wave of so-called process logics that emerged in the 1970s.
