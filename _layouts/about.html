@@ -49,7 +49,7 @@ layout: default
 
     <!-- Latest posts -->
     {% if page.upcoming -%}
-    {%- assign time = site.time | plus: -86400 -%}
+    {%- assign time = site.time | plus: -86400 | date: "%Y-%m-%d" -%}
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
       {% assign events = site.posts | where_exp:"item", "time < item.date" | sort:"featured" | reverse %}
       {% if site.debug %}Found {{ events.size }} upcoming events; limit is {{ page.upcoming-limit }} {% endif %}
