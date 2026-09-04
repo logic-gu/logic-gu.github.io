@@ -13,7 +13,7 @@ on:
       - main
     
   schedule:
-    - cron: '25 21 * * *' # run at 21:25 UTC
+    - cron: '25 19 * * *' # run at 19:25 UTC
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
