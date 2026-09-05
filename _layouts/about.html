@@ -49,7 +49,6 @@ layout: default
 
     <!-- Latest posts -->
     {% if page.upcoming -%}
-    {% assign cutoff = site.time | date: "%s" | plus: -86400 %}
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
       {% assign events = site.posts | where_exp:"post", "post.date >= site.time" | sort:"featured" | reverse %}
       {% if site.debug %}Found {{ events.size }} upcoming events; limit is {{ page.upcoming-limit }} {% endif %}
