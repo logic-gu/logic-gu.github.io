@@ -80,7 +80,7 @@ layout: default
     </div>
   </article>
 
-  {%- unless page.video.hide  -%}
+  {%- if page.video.show  -%}
   {%- if page.video.id  -%}
   <div class="video-embed">
     {%- include video/embed-kaltura.html 
@@ -88,7 +88,7 @@ layout: default
     -%}
   </div>
   {%- endif -%}
-  {%- endunless -%}
+  {%- endif -%}
 
   {%- if site.related_blog_posts.enabled -%}
     {%- if page.related_posts == null or page.related_posts -%}

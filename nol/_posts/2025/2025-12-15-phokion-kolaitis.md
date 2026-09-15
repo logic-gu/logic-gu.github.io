@@ -4,7 +4,7 @@ affil: University of California Santa Cruz and IBM Research
 title: Possible Worlds and Certain Answers
 date: 2025-12-15 16:00:00 +01:00
 
-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+online-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
 Databases are typically assumed to have definite content so that users can pose queries and retrieve unambiguous answers.
 It is often the case, however, that a database may contain information that is incomplete, inconsistent, or uncertain.

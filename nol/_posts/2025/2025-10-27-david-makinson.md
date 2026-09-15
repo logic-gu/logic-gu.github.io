@@ -4,7 +4,7 @@ affil: University of Queensland
 title: Decomposing Arrows with Parity
 date: 2025-10-27 16:00:00 +01:00
 
-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
+online-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 ---
 The idea of articulating a propositional logic that adds a relevance-sensitive implication connective
 to the usual truth-functional ones has been approached in many ways, e.g. using axioms and
