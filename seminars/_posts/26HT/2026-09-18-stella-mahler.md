@@ -2,7 +2,7 @@
 speaker: Stella Mahler
 affil: TU Wien
 title: Proof Schemata and Cyclic Proofs
-time: 10:15
+time: "10:15"
 location: Humanisten, C364
 ---
 Proof schemata are finite representations of recursively defined families of proofs. They provide a framework for formalising and analysing inductive arguments while retaining access, at the instance level, to methods from classical proof theory. At the same time, their recursive structure supports schematic methods, including schematic CERES and the extraction of so-called Herbrand systems, which generalise Herbrand’s theorem to the schematic setting.
