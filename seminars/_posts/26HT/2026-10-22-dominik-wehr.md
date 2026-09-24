@@ -1,7 +1,7 @@
 ---
 speaker: Dominik Wehr
-affil:
+affil: University of Würzburg
 title:
-time: “13:15”
+time: “15:15”
 location: Humanisten, J442
 ---
