@@ -5,7 +5,7 @@ affil: University of Helsinki
 time: "16:00"
 online-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
 video:
-  id:
+  id: 0_j55tkmm9
 ---
 Dependence logic extends first-order logic with dependence atoms, which express that the value of a variable is functionally determined by other variables. Team semantics gives dependence logic a second-order flavour, and even quantifier-free dependence logic formulas can have an NP-complete model-checking problem. This motivates the study of syntactic conditions under which model checking becomes tractable.
 
