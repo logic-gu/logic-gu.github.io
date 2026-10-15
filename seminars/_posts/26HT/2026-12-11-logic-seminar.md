@@ -2,6 +2,6 @@
 speaker:
 affil:
 title:
-time: "10:15"
+time: 1015
 location: Humanisten, C442
 ---

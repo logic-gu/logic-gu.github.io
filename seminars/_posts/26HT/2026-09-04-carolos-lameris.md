@@ -3,7 +3,7 @@ speaker: Cárolos Laméris
 affil: University of Groningen
 title: Proof systems for the coalgebraic mu-calculus
 location: Humanisten, C364
-time: "10:15"
+time: 1015
 ---
 
 The mu-calculus is obtained from basic modal logic by adding least and greatest fixpoint operators.

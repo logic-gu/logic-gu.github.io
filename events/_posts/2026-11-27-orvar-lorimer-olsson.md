@@ -4,7 +4,7 @@ affil: FLoV
 title: |-
   Power Lifting Logics: An Algebraic Approach 
   to-Semantic-Set-Lifting
-time: "10:15"
+time: 1015
 location: Humanisten, J233
 
 event-type: Licentiate Seminar
