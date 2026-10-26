@@ -1,6 +1,6 @@
 ---
 speaker: Gaia Belardinelli
-title: '"Awareness and attention: what enters epistemic reasoning?"'
+title: 'Awareness and attention: what enters epistemic reasoning?'
 affil: Technical University of Denmark
 time: 1600
 online-url: https://stockholmuniversity.zoom.us/j/64758893199?pwd=LzF6RUpaNk1BNngyc1FxK05GNStwUT09
