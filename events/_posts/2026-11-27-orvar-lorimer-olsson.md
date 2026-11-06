@@ -22,7 +22,7 @@ This thesis includes three papers presenting applications of the power-algebra i
 The thesis can be accessed via the Gothenburg University Library Archive at [https://hdl.handle.net/2077/93583](https://hdl.handle.net/2077/93583)
 # Articles contained within the thesis
 This thesis is a compilation of the following articles
-- Paper I: Kommande i The Australasian Journal of Logic.  
-- Paper II: Publicerad i The proceedings of the ESSLLI 2026 Student Session, Tillgänglig via länk: [https://philpapers.org/rec/JOSPOT-2](https://philpapers.org/rec/JOSPOT-2)  
-- Paper III: Opublicerad. även tillgänglig via länk: [https://arxiv.org/abs/2303.14022](https://arxiv.org/abs/2303.14022).
+- Paper I: Forthcoming in The Australasian Journal of Logic.  
+- Paper II: Published in Proceedings of the ESSLLI 2026 Student Session, available via: [https://philpapers.org/rec/JOSPOT-2](https://philpapers.org/rec/JOSPOT-2)  
+- Paper III: Unpublished. Also available via: [https://arxiv.org/abs/2303.14022](https://arxiv.org/abs/2303.14022).
 
