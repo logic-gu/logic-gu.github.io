@@ -5,15 +5,16 @@ title: |-
   Power Lifting Logics: An Algebraic Approach 
   to Semantic Set Lifting
 time: 1015
-location: Humanisten, J233
+location: Humanisten, J233 and Zoom
 event-type: Licentiate Seminar
 duration: "105"
 ---
-Public defence of Orvar Lorimer Olsson's Licentiate thesis.
+Public defence of Orvar Lorimer-Olsson's Licentiate thesis.
 
 **Opponent** Assistant Professor Fan Yang, Utrecht University<br/>
 **Examiner** Professor Graham E Leigh, Göteborgs universitet<br/>
 
+(for Zoom link, see the [University event page](https://www.gu.se/en/event/orvar-lorimer-olsson-power-lifting-logics-an-algebraic-approach-to-semantic-set-lifting))
 # Abstract
 This thesis concerns semantic set-lifting procedures in logic, particularly plurivalence and team semantics. These are methods of constructing new logical semantics in terms of collections of semantic objects from an initial logical semantic (for the studied cases in terms of sets of truth values or teams of assignments respectively). By representing the underlying semantics in terms of algebraic structures we present versions of these set-lifting constructions in terms of _power algebras_ [Brink, 1992], that is, algebras of subsets with pointwise operations in an underlying algebraic structure. Doing so, and by considering the classes of such algebras, we present versions of the set-lifting procedures that are independent of the semantic representation of the original logic.
 
